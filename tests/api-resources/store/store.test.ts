@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import MoreConflicting from 'emcees-prod-testing-5';
 
-const client = new EmceesProdTesting5({
+const client = new MoreConflicting({
   apiKey: 'My API Key',
   baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
 });

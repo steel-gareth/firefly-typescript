@@ -22,7 +22,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^firefly(/.*)?',
+              regex: '^firefly-iii-api(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

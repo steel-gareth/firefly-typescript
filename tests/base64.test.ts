@@ -1,4 +1,4 @@
-import { fromBase64, toBase64 } from 'firefly/internal/utils/base64';
+import { fromBase64, toBase64 } from 'firefly-iii-api/internal/utils/base64';
 
 describe.each(['Buffer', 'atob'])('with %s', (mode) => {
   let originalBuffer: BufferConstructor;

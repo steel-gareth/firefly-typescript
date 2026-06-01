@@ -1,4 +1,4 @@
-import { combine, merge, is_buffer, assign_single_source } from 'firefly/internal/qs/utils';
+import { combine, merge, is_buffer, assign_single_source } from 'firefly-iii-api/internal/qs/utils';
 
 describe('merge()', function () {
   // t.deepEqual(merge(null, true), [null, true], 'merges true into null');

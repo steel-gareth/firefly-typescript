@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^firefly$': '<rootDir>/src/index.ts',
-    '^firefly/(.*)$': '<rootDir>/src/$1',
+    '^firefly-iii-api$': '<rootDir>/src/index.ts',
+    '^firefly-iii-api/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

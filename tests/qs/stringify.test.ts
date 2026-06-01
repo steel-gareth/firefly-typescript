@@ -1,7 +1,7 @@
 import iconv from 'iconv-lite';
-import { stringify } from 'firefly/internal/qs';
-import { encode } from 'firefly/internal/qs/utils';
-import { StringifyOptions } from 'firefly/internal/qs/types';
+import { stringify } from 'firefly-iii-api/internal/qs';
+import { encode } from 'firefly-iii-api/internal/qs/utils';
+import { StringifyOptions } from 'firefly-iii-api/internal/qs/types';
 import { empty_test_cases } from './empty-keys-cases';
 import assert from 'assert';
 

@@ -1,5 +1,5 @@
 {
-  "name": "firefly",
+  "name": "firefly-iii-api",
   "version": "0.0.1",
   "description": "The official TypeScript library for the Firefly API",
   "author": "Firefly <james@firefly-iii.org>",

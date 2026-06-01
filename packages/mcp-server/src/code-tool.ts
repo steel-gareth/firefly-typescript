@@ -15,7 +15,7 @@ import { WorkerInput, WorkerOutput } from './code-tool-types';
 import { getLogger } from './logger';
 import { SdkMethod } from './methods';
 import { McpCodeExecutionMode } from './options';
-import { ClientOptions } from 'firefly';
+import { ClientOptions } from 'firefly-iii-api';
 
 const prompt = `Runs JavaScript code to interact with the Firefly API.
 
@@ -242,7 +242,7 @@ const localDenoHandler = async ({
 
   // Follow symlinks in node_modules to allow read access to workspace-linked packages
   try {
-    const sdkPkgName = 'firefly';
+    const sdkPkgName = 'firefly-iii-api';
     const sdkDir = path.resolve(packageNodeModulesPath, sdkPkgName);
     const realSdkDir = fs.realpathSync(sdkDir);
     if (realSdkDir !== sdkDir) {

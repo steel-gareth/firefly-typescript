@@ -5,7 +5,7 @@ import util from 'node:util';
 import Fuse from 'fuse.js';
 import ts from 'typescript';
 import { WorkerOutput } from './code-tool-types';
-import { Firefly, ClientOptions } from 'firefly';
+import { Firefly, ClientOptions } from 'firefly-iii-api';
 
 async function tseval(code: string) {
   return import('data:application/typescript;charset=utf-8;base64,' + Buffer.from(code).toString('base64'));
@@ -57,7 +57,7 @@ function getRunFunctionSource(code: string): {
 function getTSDiagnostics(code: string): string[] {
   const functionSource = getRunFunctionSource(code)!;
   const codeWithImport = [
-    'import { Firefly } from "firefly";',
+    'import { Firefly } from "firefly-iii-api";',
     functionSource.type === 'declaration' ?
       `async function run(${functionSource.client}: Firefly)`
     : `const run: (${functionSource.client}: Firefly) => Promise<unknown> =`,

@@ -4,32 +4,17 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
-### Building
+### Direct invocation
 
-Because it's not published yet, clone the repo and build it:
-
-```sh
-git clone git@github.com:steel-gareth/firefly-typescript.git
-cd firefly-typescript
-./scripts/bootstrap
-./scripts/build
-```
-
-### Running
+You can run the MCP Server directly via `npx`:
 
 ```sh
-# set env vars as needed
 export FIREFLY_BEARER_TOKEN="My Bearer Token"
 export FIREFLY_ENVIRONMENT="production"
-node ./packages/mcp-server/dist/index.js
+npx -y firefly-mcp@latest
 ```
 
-> [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npx -y firefly-mcp`
-
 ### Via MCP Client
-
-[Build the project](#building) as mentioned above.
 
 There is a partial list of existing clients at [modelcontextprotocol.io](https://modelcontextprotocol.io/clients). If you already
 have a client, consult their documentation to install the MCP server.
@@ -39,9 +24,9 @@ For clients with a configuration JSON, it might look something like this:
 ```json
 {
   "mcpServers": {
-    "firefly_api": {
-      "command": "node",
-      "args": ["/path/to/local/firefly-typescript/packages/mcp-server"],
+    "firefly_iii_api_api": {
+      "command": "npx",
+      "args": ["-y", "firefly-mcp"],
       "env": {
         "FIREFLY_BEARER_TOKEN": "My Bearer Token",
         "FIREFLY_ENVIRONMENT": "production"
@@ -49,6 +34,29 @@ For clients with a configuration JSON, it might look something like this:
     }
   }
 }
+```
+
+### Cursor
+
+If you use Cursor, you can install the MCP server by using the button below. You will need to set your environment variables
+in Cursor's `mcp.json`, which can be found in Cursor Settings > Tools & MCP > New MCP Server.
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)
+
+### VS Code
+
+If you use MCP, you can install the MCP server by clicking the link below. You will need to set your environment variables
+in VS Code's `mcp.json`, which can be found via Command Palette > MCP: Open User Configuration.
+
+[Open VS Code](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)
+
+### Claude Code
+
+If you use Claude Code, you can install the MCP server by running the command below in your terminal. You will need to set your
+environment variables in Claude Code's `.claude.json`, which can be found in your home directory.
+
+```
+claude mcp add firefly_mcp_api --env FIREFLY_BEARER_TOKEN="My Bearer Token" -- npx -y firefly-mcp
 ```
 
 ## Code Mode
@@ -84,7 +92,7 @@ A configuration JSON for this server might look like this, assuming the server i
 ```json
 {
   "mcpServers": {
-    "firefly_api": {
+    "firefly_iii_api_api": {
       "url": "http://localhost:3000",
       "headers": {
         "Authorization": "Bearer <auth value>"

@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "firefly/*": ["./src/*"],
-      "firefly": ["./src/index.ts"]
+      "firefly-iii-api/*": ["./src/*"],
+      "firefly-iii-api": ["./src/index.ts"]
     },
     "noEmit": true,
 

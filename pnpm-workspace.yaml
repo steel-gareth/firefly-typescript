@@ -4,4 +4,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - firefly
+  - firefly-iii-api

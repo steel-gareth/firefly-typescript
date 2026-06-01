@@ -9,8 +9,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 Because it's not published yet, clone the repo and build it:
 
 ```sh
-git clone git@github.com:stainless-sdks/emcees-prod-testing-5-typescript.git
-cd emcees-prod-testing-5-typescript
+git clone git@github.com:steel-gareth/firefly-typescript.git
+cd firefly-typescript
 ./scripts/bootstrap
 ./scripts/build
 ```
@@ -41,7 +41,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "firefly_api": {
       "command": "node",
-      "args": ["/path/to/local/emcees-prod-testing-5-typescript/packages/mcp-server"],
+      "args": ["/path/to/local/firefly-typescript/packages/mcp-server"],
       "env": {
         "FIREFLY_BEARER_TOKEN": "My Bearer Token",
         "FIREFLY_ENVIRONMENT": "production"

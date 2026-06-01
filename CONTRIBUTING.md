@@ -42,15 +42,15 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/emcees-prod-testing-5-typescript.git
+$ npm install git+ssh://git@github.com:steel-gareth/firefly-typescript.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/emcees-prod-testing-5-typescript
-$ cd emcees-prod-testing-5-typescript
+$ git clone https://www.github.com/steel-gareth/firefly-typescript
+$ cd firefly-typescript
 
 # With yarn
 $ yarn link

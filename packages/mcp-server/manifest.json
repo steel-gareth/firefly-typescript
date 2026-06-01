@@ -1,16 +1,18 @@
 {
   "dxt_version": "0.2",
-  "name": "emcees-prod-testing-5-mcp",
+  "name": "firefly-mcp",
   "version": "0.0.1",
-  "description": "The official MCP Server for the More Conflicting API",
+  "description": "The official MCP Server for the Firefly API",
   "author": {
-    "name": "More Conflicting"
+    "name": "Firefly",
+    "email": "james@firefly-iii.org"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stainless-sdks/emcees-prod-testing-5-typescript.git"
   },
   "homepage": "https://github.com/stainless-sdks/emcees-prod-testing-5-typescript/tree/main/packages/mcp-server#readme",
+  "documentation": "https://firefly-iii.org",
   "server": {
     "type": "node",
     "entry_point": "index.js",
@@ -20,15 +22,15 @@
         "${__dirname}/index.js"
       ],
       "env": {
-        "PETSTORE_API_KEY": "${user_config.PETSTORE_API_KEY}"
+        "FIREFLY_BEARER_TOKEN": "${user_config.FIREFLY_BEARER_TOKEN}"
       }
     }
   },
   "user_config": {
-    "PETSTORE_API_KEY": {
-      "title": "api_key",
-      "description": "",
-      "required": true,
+    "FIREFLY_BEARER_TOKEN": {
+      "title": "bearer_token",
+      "description": "Optional Bearer token flow",
+      "required": false,
       "type": "string"
     }
   },

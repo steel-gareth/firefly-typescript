@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'emcees-prod-testing-5/internal/to-file';
-import { toFile } from 'emcees-prod-testing-5/core/uploads';
+import type { ResponseLike } from 'firefly/internal/to-file';
+import { toFile } from 'firefly/core/uploads';
 
 class MyClass {
   name: string = 'foo';
@@ -96,7 +96,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('emcees-prod-testing-5/core/uploads');
+    const uploads = await import('firefly/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

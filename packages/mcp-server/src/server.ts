@@ -7,8 +7,8 @@ import {
   ListToolsRequestSchema,
   SetLevelRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js';
-import { ClientOptions } from 'emcees-prod-testing-5';
-import MoreConflicting from 'emcees-prod-testing-5';
+import { ClientOptions } from 'firefly';
+import Firefly from 'firefly';
 import { codeTool } from './code-tool';
 import docsSearchTool from './docs-search-tool';
 import { setLocalSearch } from './docs-search-tool';
@@ -17,6 +17,7 @@ import { getInstructions } from './instructions';
 import { McpOptions } from './options';
 import { blockedMethodsForCodeTool } from './methods';
 import { HandlerFunction, McpRequestContext, ToolCallResult, McpTool } from './types';
+import { readEnv } from './util';
 
 export const newMcpServer = async ({
   stainlessApiKey,
@@ -27,7 +28,7 @@ export const newMcpServer = async ({
 }) =>
   new McpServer(
     {
-      name: 'emcees_prod_testing_5_api',
+      name: 'firefly_api',
       version: '0.0.1',
     },
     {
@@ -72,15 +73,16 @@ export async function initMcpServer(params: {
     setLocalSearch(localSearch);
   }
 
-  let _client: MoreConflicting | undefined;
+  let _client: Firefly | undefined;
   let _clientError: Error | undefined;
   let _logLevel: 'debug' | 'info' | 'warn' | 'error' | 'off' | undefined;
 
-  const getClient = (): MoreConflicting => {
+  const getClient = (): Firefly => {
     if (_clientError) throw _clientError;
     if (!_client) {
       try {
-        _client = new MoreConflicting({
+        _client = new Firefly({
+          ...{ environment: (readEnv('FIREFLY_ENVIRONMENT') || undefined) as any },
           logger,
           ...params.clientOptions,
           defaultHeaders: {
@@ -115,7 +117,7 @@ export async function initMcpServer(params: {
       throw new Error(`Unknown tool: ${name}`);
     }
 
-    let client: MoreConflicting;
+    let client: Firefly;
     try {
       client = getClient();
     } catch (error) {

@@ -1,11 +1,11 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import type { MoreConflicting } from '../client';
+import type { Firefly } from '../client';
 
 export abstract class APIResource {
-  protected _client: MoreConflicting;
+  protected _client: Firefly;
 
-  constructor(client: MoreConflicting) {
+  constructor(client: Firefly) {
     this._client = client;
   }
 }

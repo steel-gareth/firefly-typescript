@@ -1,12 +1,12 @@
-# Dockerfile for More Conflicting MCP Server
+# Dockerfile for Firefly MCP Server
 #
 # This Dockerfile builds a Docker image for the MCP Server.
 #
 # To build the image locally:
-#   docker build -f packages/mcp-server/Dockerfile -t emcees-prod-testing-5-mcp:local .
+#   docker build -f packages/mcp-server/Dockerfile -t firefly-mcp:local .
 #
 # To run the image:
-#   docker run -i emcees-prod-testing-5-mcp:local [OPTIONS]
+#   docker run -i firefly-mcp:local [OPTIONS]
 #
 # Common options:
 #   --tool=<name>              Include specific tools
@@ -16,7 +16,7 @@
 #   --transport=<type>         Set transport type (stdio or http)
 #
 # For a full list of options:
-#   docker run -i emcees-prod-testing-5-mcp:local --help
+#   docker run -i firefly-mcp:local --help
 #
 # Note: The MCP server uses stdio transport by default. Docker's -i flag
 # enables interactive mode, allowing the container to communicate over stdin/stdout.
@@ -59,8 +59,8 @@ WORKDIR /app
 # Copy the build results, preserving directory structure
 COPY --from=builder /build .
 
-# Copy the built emcees-prod-testing-5 into node_modules
-COPY --from=builder /build/dist ./node_modules/emcees-prod-testing-5
+# Copy the built firefly into node_modules
+COPY --from=builder /build/dist ./node_modules/firefly
 
 # Change ownership to nodejs user
 RUN chown -R nodejs:nodejs /app

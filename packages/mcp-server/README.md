@@ -1,4 +1,4 @@
-# More Conflicting TypeScript MCP Server
+# Firefly TypeScript MCP Server
 
 It is generated with [Stainless](https://www.stainless.com/).
 
@@ -19,12 +19,13 @@ cd emcees-prod-testing-5-typescript
 
 ```sh
 # set env vars as needed
-export PETSTORE_API_KEY="My API Key"
+export FIREFLY_BEARER_TOKEN="My Bearer Token"
+export FIREFLY_ENVIRONMENT="production"
 node ./packages/mcp-server/dist/index.js
 ```
 
 > [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npx -y emcees-prod-testing-5-mcp`
+> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npx -y firefly-mcp`
 
 ### Via MCP Client
 
@@ -38,11 +39,12 @@ For clients with a configuration JSON, it might look something like this:
 ```json
 {
   "mcpServers": {
-    "emcees_prod_testing_5_api": {
+    "firefly_api": {
       "command": "node",
       "args": ["/path/to/local/emcees-prod-testing-5-typescript/packages/mcp-server"],
       "env": {
-        "PETSTORE_API_KEY": "My API Key"
+        "FIREFLY_BEARER_TOKEN": "My Bearer Token",
+        "FIREFLY_ENVIRONMENT": "production"
       }
     }
   }
@@ -70,20 +72,22 @@ and repeatably.
 
 Launching the client with `--transport=http` launches the server as a remote server using Streamable HTTP transport. The `--port` setting can choose the port it will run on, and the `--socket` setting allows it to run on a Unix socket.
 
-Authorization can be provided via the following headers:
+Authorization can be provided via the `Authorization` header using the Bearer scheme.
+
+Additionally, authorization can be provided via the following headers:
 | Header | Equivalent client option | Security scheme |
-| --------- | ------------------------ | --------------- |
-| `api_key` | `apiKey` | api_key |
+| ------------------------ | ------------------------ | ----------------- |
+| `x-firefly-bearer-token` | `bearerToken` | local_bearer_auth |
 
 A configuration JSON for this server might look like this, assuming the server is hosted at `http://localhost:3000`:
 
 ```json
 {
   "mcpServers": {
-    "emcees_prod_testing_5_api": {
+    "firefly_api": {
       "url": "http://localhost:3000",
       "headers": {
-        "api_key": "My API Key"
+        "Authorization": "Bearer <auth value>"
       }
     }
   }

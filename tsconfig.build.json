@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "emcees-prod-testing-5/*": ["./dist/src/*"],
-      "emcees-prod-testing-5": ["./dist/src/index.ts"]
+      "firefly/*": ["./dist/src/*"],
+      "firefly": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

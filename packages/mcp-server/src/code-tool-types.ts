@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { ClientOptions } from 'emcees-prod-testing-5';
+import { ClientOptions } from 'firefly';
 
 export type WorkerInput = {
   project_name: string;

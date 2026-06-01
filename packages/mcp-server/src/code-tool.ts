@@ -10,14 +10,14 @@ import {
   asTextContentResult,
 } from './types';
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import { readEnv, requireValue } from './util';
+import { readEnv } from './util';
 import { WorkerInput, WorkerOutput } from './code-tool-types';
 import { getLogger } from './logger';
 import { SdkMethod } from './methods';
 import { McpCodeExecutionMode } from './options';
-import { ClientOptions } from 'emcees-prod-testing-5';
+import { ClientOptions } from 'firefly';
 
-const prompt = `Runs JavaScript code to interact with the More Conflicting API.
+const prompt = `Runs JavaScript code to interact with the Firefly API.
 
 You are a skilled TypeScript programmer writing code to interface with the service.
 Define an async function named "run" that takes a single parameter of an initialized SDK client and it will be run.
@@ -25,13 +25,7 @@ For example:
 
 \`\`\`
 async function run(client) {
-  const order = await client.store.orders.create({
-    petId: 1,
-    quantity: 1,
-    status: 'placed',
-  });
-
-  console.log(order.id);
+  const response = await client.autocomplete.listAccounts();
 }
 \`\`\`
 
@@ -149,11 +143,9 @@ const remoteStainlessHandler = async ({
   const codeModeEndpoint = readEnv('CODE_MODE_ENDPOINT_URL') ?? 'https://api.stainless.com/api/ai/code-tool';
 
   const localClientEnvs = {
-    PETSTORE_API_KEY: requireValue(
-      readEnv('PETSTORE_API_KEY') ?? client.apiKey,
-      'set PETSTORE_API_KEY environment variable or provide apiKey client option',
-    ),
-    MORE_CONFLICTING_BASE_URL: readEnv('MORE_CONFLICTING_BASE_URL') ?? client.baseURL ?? undefined,
+    FIREFLY_BEARER_TOKEN: readEnv('FIREFLY_BEARER_TOKEN') ?? client.bearerToken ?? undefined,
+    FIREFLY_BASE_URL:
+      readEnv('FIREFLY_BASE_URL') ?? readEnv('FIREFLY_ENVIRONMENT') ? undefined : client.baseURL ?? undefined,
   };
   // Merge any upstream client envs from the request header, with upstream values taking precedence.
   const mergedClientEnvs = { ...localClientEnvs, ...reqContext.upstreamClientEnvs };
@@ -170,7 +162,7 @@ const remoteStainlessHandler = async ({
       project_name: 'emcees-prod-testing-5',
       code,
       intent,
-      client_opts: {},
+      client_opts: { environment: (readEnv('FIREFLY_ENVIRONMENT') || undefined) as any },
     } satisfies WorkerInput),
   });
 
@@ -250,7 +242,7 @@ const localDenoHandler = async ({
 
   // Follow symlinks in node_modules to allow read access to workspace-linked packages
   try {
-    const sdkPkgName = 'emcees-prod-testing-5';
+    const sdkPkgName = 'firefly';
     const sdkDir = path.resolve(packageNodeModulesPath, sdkPkgName);
     const realSdkDir = fs.realpathSync(sdkDir);
     if (realSdkDir !== sdkDir) {
@@ -291,7 +283,7 @@ const localDenoHandler = async ({
       // reading from environment variables (including any upstreamClientEnvs).
       const opts = {
         ...(client.baseURL != null ? { baseURL: client.baseURL } : undefined),
-        ...(client.apiKey != null ? { apiKey: client.apiKey } : undefined),
+        ...(client.bearerToken != null ? { bearerToken: client.bearerToken } : undefined),
         defaultHeaders: {
           'X-Stainless-MCP': 'true',
         },

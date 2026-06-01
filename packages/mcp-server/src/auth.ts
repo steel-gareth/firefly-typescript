@@ -1,12 +1,30 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
 import { IncomingMessage } from 'node:http';
-import { ClientOptions } from 'emcees-prod-testing-5';
+import { ClientOptions } from 'firefly';
 import { McpOptions } from './options';
 
 export const parseClientAuthHeaders = (req: IncomingMessage, required?: boolean): Partial<ClientOptions> => {
-  const apiKey = Array.isArray(req.headers['api_key']) ? req.headers['api_key'][0] : req.headers['api_key'];
-  return { apiKey };
+  if (req.headers.authorization) {
+    const scheme = req.headers.authorization.split(' ')[0]!;
+    const value = req.headers.authorization.slice(scheme.length + 1);
+    switch (scheme) {
+      case 'Bearer':
+        return { bearerToken: req.headers.authorization.slice('Bearer '.length) };
+      default:
+        throw new Error(
+          'Unsupported authorization scheme. Expected the "Authorization" header to be a supported scheme (Bearer).',
+        );
+    }
+  } else if (required) {
+    throw new Error('Missing required Authorization header; see WWW-Authenticate header for details.');
+  }
+
+  const bearerToken =
+    Array.isArray(req.headers['x-firefly-bearer-token']) ?
+      req.headers['x-firefly-bearer-token'][0]
+    : req.headers['x-firefly-bearer-token'];
+  return { bearerToken };
 };
 
 export const getStainlessApiKey = (req: IncomingMessage, mcpOptions: McpOptions): string | undefined => {

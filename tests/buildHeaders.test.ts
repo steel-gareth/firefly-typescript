@@ -1,5 +1,5 @@
 import { inspect } from 'node:util';
-import { buildHeaders, type HeadersLike, type NullableHeaders } from 'emcees-prod-testing-5/internal/headers';
+import { buildHeaders, type HeadersLike, type NullableHeaders } from 'firefly/internal/headers';
 
 function inspectNullableHeaders(headers: NullableHeaders) {
   return `NullableHeaders {${[

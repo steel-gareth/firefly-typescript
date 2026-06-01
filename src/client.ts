@@ -18,30 +18,374 @@ import * as Uploads from './core/uploads';
 import * as API from './resources/index';
 import { APIPromise } from './core/api-promise';
 import {
-  Category,
-  Pet,
-  PetCreateParams,
-  PetFindByStatusParams,
-  PetFindByStatusResponse,
-  PetFindByTagsParams,
-  PetFindByTagsResponse,
-  PetUpdateByIDParams,
-  PetUpdateParams,
-  PetUploadImageParams,
-  PetUploadImageResponse,
-  Pets,
-  Tag,
-} from './resources/pets';
+  About,
+  AboutRetrieveInfoParams,
+  AboutRetrieveInfoResponse,
+  AboutRetrieveUserParams,
+  UserRead,
+  UserSingle,
+} from './resources/about';
+import {
+  AccountArray,
+  AccountCreateParams,
+  AccountDeleteParams,
+  AccountListAttachmentsParams,
+  AccountListParams,
+  AccountListPiggyBanksParams,
+  AccountListTransactionsParams,
+  AccountRead,
+  AccountRetrieveParams,
+  AccountRoleProperty,
+  AccountSingle,
+  AccountTypeFilter,
+  AccountUpdateParams,
+  Accounts,
+  AttachmentArray,
+  CreditCardTypeProperty,
+  InterestPeriodProperty,
+  LiabilityDirectionProperty,
+  LiabilityTypeProperty,
+  Meta,
+  PageLink,
+  PiggyBankArray,
+  ShortAccountTypeProperty,
+  TransactionArray,
+  TransactionTypeFilter,
+} from './resources/accounts';
+import {
+  AttachableType,
+  AttachmentCreateParams,
+  AttachmentDeleteParams,
+  AttachmentDownloadParams,
+  AttachmentListParams,
+  AttachmentRead,
+  AttachmentRetrieveParams,
+  AttachmentSingle,
+  AttachmentUpdateParams,
+  AttachmentUploadParams,
+  Attachments,
+  ObjectLink,
+} from './resources/attachments';
+import {
+  Autocomplete,
+  AutocompleteBill,
+  AutocompleteListAccountsParams,
+  AutocompleteListAccountsResponse,
+  AutocompleteListBillsParams,
+  AutocompleteListBillsResponse,
+  AutocompleteListBudgetsParams,
+  AutocompleteListBudgetsResponse,
+  AutocompleteListCategoriesParams,
+  AutocompleteListCategoriesResponse,
+  AutocompleteListCurrenciesParams,
+  AutocompleteListCurrenciesResponse,
+  AutocompleteListCurrenciesWithCodeParams,
+  AutocompleteListCurrenciesWithCodeResponse,
+  AutocompleteListObjectGroupsParams,
+  AutocompleteListObjectGroupsResponse,
+  AutocompleteListPiggyBanksParams,
+  AutocompleteListPiggyBanksResponse,
+  AutocompleteListPiggyBanksWithBalanceParams,
+  AutocompleteListPiggyBanksWithBalanceResponse,
+  AutocompleteListRecurringTransactionsParams,
+  AutocompleteListRecurringTransactionsResponse,
+  AutocompleteListRuleGroupsParams,
+  AutocompleteListRuleGroupsResponse,
+  AutocompleteListRulesParams,
+  AutocompleteListRulesResponse,
+  AutocompleteListSubscriptionsParams,
+  AutocompleteListSubscriptionsResponse,
+  AutocompleteListTagsParams,
+  AutocompleteListTagsResponse,
+  AutocompleteListTransactionTypesParams,
+  AutocompleteListTransactionTypesResponse,
+  AutocompleteListTransactionsParams,
+  AutocompleteListTransactionsResponse,
+  AutocompleteListTransactionsWithIDParams,
+  AutocompleteListTransactionsWithIDResponse,
+} from './resources/autocomplete';
+import {
+  ArrayEntryWithCurrencyAndSum,
+  AvailableBudgetArray,
+  AvailableBudgetListParams,
+  AvailableBudgetRead,
+  AvailableBudgetRetrieveParams,
+  AvailableBudgetRetrieveResponse,
+  AvailableBudgets,
+} from './resources/available-budgets';
+import { Batch, BatchFinishParams } from './resources/batch';
+import {
+  BillArray,
+  BillCreateParams,
+  BillDeleteParams,
+  BillListAttachmentsParams,
+  BillListParams,
+  BillListRulesParams,
+  BillListTransactionsParams,
+  BillRead,
+  BillRepeatFrequency,
+  BillRetrieveParams,
+  BillSingle,
+  BillUpdateParams,
+  Bills,
+  RuleArray,
+} from './resources/bills';
+import {
+  Categories,
+  CategoryCreateParams,
+  CategoryDeleteParams,
+  CategoryListAttachmentsParams,
+  CategoryListParams,
+  CategoryListResponse,
+  CategoryListTransactionsParams,
+  CategoryRead,
+  CategoryRetrieveParams,
+  CategorySingle,
+  CategoryUpdateParams,
+} from './resources/categories';
+import {
+  ConfigValueFilter,
+  Configuration,
+  ConfigurationResource,
+  ConfigurationRetrieveParams,
+  ConfigurationRetrieveResponse,
+  ConfigurationRetrieveValueParams,
+  ConfigurationSingle,
+  ConfigurationUpdateValueParams,
+  PolymorphicProperty,
+} from './resources/configuration';
+import { Cron, CronResultRow, CronRunParams, CronRunResponse } from './resources/cron';
+import {
+  CurrencyExchangeRateArray,
+  CurrencyExchangeRateRead,
+  CurrencyExchangeRateSingle,
+  ExchangeRateCreateByCurrenciesParams,
+  ExchangeRateCreateByDateParams,
+  ExchangeRateCreateParams,
+  ExchangeRateDeleteAllByCurrenciesParams,
+  ExchangeRateDeleteByDateParams,
+  ExchangeRateDeleteParams,
+  ExchangeRateListByCurrenciesParams,
+  ExchangeRateListParams,
+  ExchangeRateRetrieveByDateParams,
+  ExchangeRateRetrieveParams,
+  ExchangeRateUpdateByDateParams,
+  ExchangeRateUpdateParams,
+  ExchangeRates,
+} from './resources/exchange-rates';
+import {
+  LinkType,
+  LinkTypeCreateParams,
+  LinkTypeDeleteParams,
+  LinkTypeListParams,
+  LinkTypeListResponse,
+  LinkTypeListTransactionsParams,
+  LinkTypeRead,
+  LinkTypeRetrieveParams,
+  LinkTypeSingle,
+  LinkTypeUpdateParams,
+  LinkTypes,
+} from './resources/link-types';
+import {
+  ObjectGroupDeleteParams,
+  ObjectGroupListBillsParams,
+  ObjectGroupListParams,
+  ObjectGroupListPiggyBanksParams,
+  ObjectGroupListResponse,
+  ObjectGroupRead,
+  ObjectGroupRetrieveParams,
+  ObjectGroupSingle,
+  ObjectGroupUpdateParams,
+  ObjectGroups,
+} from './resources/object-groups';
+import {
+  PiggyBankCreateParams,
+  PiggyBankDeleteParams,
+  PiggyBankEventArray,
+  PiggyBankListAttachmentsParams,
+  PiggyBankListEventsParams,
+  PiggyBankListParams,
+  PiggyBankRead,
+  PiggyBankRetrieveParams,
+  PiggyBankSingle,
+  PiggyBankUpdateParams,
+  PiggyBanks,
+} from './resources/piggy-banks';
+import {
+  Preference,
+  PreferenceCreateParams,
+  PreferenceListParams,
+  PreferenceListResponse,
+  PreferenceRead,
+  PreferenceRetrieveParams,
+  PreferenceSingle,
+  PreferenceUpdateParams,
+  Preferences,
+} from './resources/preferences';
+import {
+  AccountTypeProperty,
+  RecurrenceArray,
+  RecurrenceCreateParams,
+  RecurrenceDeleteParams,
+  RecurrenceListParams,
+  RecurrenceListTransactionsParams,
+  RecurrenceRead,
+  RecurrenceRepetitionType,
+  RecurrenceRetrieveParams,
+  RecurrenceSingle,
+  RecurrenceTransactionType,
+  RecurrenceTriggerTransactionParams,
+  RecurrenceUpdateParams,
+  Recurrences,
+} from './resources/recurrences';
+import {
+  RuleGroupCreateParams,
+  RuleGroupDeleteParams,
+  RuleGroupListAllParams,
+  RuleGroupListAllResponse,
+  RuleGroupListRulesParams,
+  RuleGroupRead,
+  RuleGroupRetrieveParams,
+  RuleGroupSingle,
+  RuleGroupTestTransactionsParams,
+  RuleGroupTriggerRulesParams,
+  RuleGroupUpdateParams,
+  RuleGroups,
+} from './resources/rule-groups';
+import {
+  RuleActionKeyword,
+  RuleCreateParams,
+  RuleDeleteParams,
+  RuleListParams,
+  RuleRead,
+  RuleRetrieveParams,
+  RuleSingle,
+  RuleTestParams,
+  RuleTriggerKeyword,
+  RuleTriggerParams,
+  RuleTriggerType,
+  RuleUpdateParams,
+  Rules,
+} from './resources/rules';
+import { Search, SearchAccountsParams, SearchTransactionsParams } from './resources/search';
+import { Summary, SummaryRetrieveBasicParams, SummaryRetrieveBasicResponse } from './resources/summary';
+import {
+  TagCreateParams,
+  TagDeleteParams,
+  TagListAttachmentsParams,
+  TagListParams,
+  TagListResponse,
+  TagListTransactionsParams,
+  TagRead,
+  TagRetrieveParams,
+  TagSingle,
+  TagUpdateParams,
+  Tags,
+} from './resources/tags';
+import {
+  TransactionJournalDeleteParams,
+  TransactionJournalListLinksParams,
+  TransactionJournalRetrieveParams,
+  TransactionJournals,
+  TransactionRead,
+  TransactionSingle,
+} from './resources/transaction-journals';
+import {
+  TransactionLinkArray,
+  TransactionLinkCreateParams,
+  TransactionLinkDeleteParams,
+  TransactionLinkListParams,
+  TransactionLinkRead,
+  TransactionLinkRetrieveParams,
+  TransactionLinkSingle,
+  TransactionLinkUpdateParams,
+  TransactionLinks,
+} from './resources/transaction-links';
+import {
+  TransactionCreateParams,
+  TransactionDeleteParams,
+  TransactionListAttachmentsParams,
+  TransactionListParams,
+  TransactionListPiggyBankEventsParams,
+  TransactionRetrieveParams,
+  TransactionTypeProperty,
+  TransactionUpdateParams,
+  Transactions,
+} from './resources/transactions';
+import {
+  UserGroupListParams,
+  UserGroupListResponse,
+  UserGroupRead,
+  UserGroupRetrieveParams,
+  UserGroupSingle,
+  UserGroupUpdateParams,
+  UserGroups,
+} from './resources/user-groups';
 import {
   User,
   UserCreateParams,
-  UserCreateWithListParams,
-  UserLoginParams,
-  UserLoginResponse,
+  UserDeleteParams,
+  UserListParams,
+  UserListResponse,
+  UserRetrieveParams,
   UserUpdateParams,
   Users,
 } from './resources/users';
-import { Store, StoreListInventoryResponse } from './resources/store/store';
+import {
+  AutoBudgetPeriod,
+  AutoBudgetType,
+  BudgetCreateParams,
+  BudgetDeleteParams,
+  BudgetListAttachmentsParams,
+  BudgetListParams,
+  BudgetListResponse,
+  BudgetListTransactionsParams,
+  BudgetListTransactionsWithoutBudgetParams,
+  BudgetRead,
+  BudgetRetrieveParams,
+  BudgetSingle,
+  BudgetUpdateParams,
+  Budgets,
+} from './resources/budgets/budgets';
+import { Chart } from './resources/chart/chart';
+import {
+  Currencies,
+  CurrencyCreateParams,
+  CurrencyDeleteParams,
+  CurrencyDisableParams,
+  CurrencyEnableParams,
+  CurrencyListAccountsParams,
+  CurrencyListAvailableBudgetsParams,
+  CurrencyListBillsParams,
+  CurrencyListBudgetLimitsParams,
+  CurrencyListParams,
+  CurrencyListRecurrencesParams,
+  CurrencyListResponse,
+  CurrencyListRulesParams,
+  CurrencyListTransactionsParams,
+  CurrencyRead,
+  CurrencyRetrieveParams,
+  CurrencySingle,
+  CurrencyUpdateParams,
+} from './resources/currencies/currencies';
+import { Data, DataDestroyParams, DataPurgeParams } from './resources/data/data';
+import { Insight } from './resources/insight/insight';
+import {
+  Webhook,
+  WebhookCreateParams,
+  WebhookDeleteParams,
+  WebhookDelivery,
+  WebhookListParams,
+  WebhookListResponse,
+  WebhookResponse,
+  WebhookRetrieveParams,
+  WebhookSingle,
+  WebhookSubmitParams,
+  WebhookTrigger,
+  WebhookTriggerTransactionParams,
+  WebhookUpdateParams,
+  Webhooks,
+} from './resources/webhooks/webhooks';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -55,16 +399,31 @@ import {
 } from './internal/utils/log';
 import { isEmptyObj } from './internal/utils/values';
 
+const environments = {
+  production: 'https://demo.firefly-iii.org/api',
+  environment_1: 'http://firefly.sd.internal/api',
+};
+type Environment = keyof typeof environments;
+
 export interface ClientOptions {
   /**
-   * Defaults to process.env['PETSTORE_API_KEY'].
+   * Optional Bearer token flow
    */
-  apiKey?: string | undefined;
+  bearerToken?: string | null | undefined;
+
+  /**
+   * Specifies the environment to use for the API.
+   *
+   * Each environment maps to a different base URL:
+   * - `production` corresponds to `https://demo.firefly-iii.org/api`
+   * - `environment_1` corresponds to `http://firefly.sd.internal/api`
+   */
+  environment?: Environment | undefined;
 
   /**
    * Override the default base URL for the API, e.g., "https://api.example.com/v2/"
    *
-   * Defaults to process.env['MORE_CONFLICTING_BASE_URL'].
+   * Defaults to process.env['FIREFLY_BASE_URL'].
    */
   baseURL?: string | null | undefined;
 
@@ -118,7 +477,7 @@ export interface ClientOptions {
   /**
    * Set the log level.
    *
-   * Defaults to process.env['MORE_CONFLICTING_LOG'] or 'warn' if it isn't set.
+   * Defaults to process.env['FIREFLY_LOG'] or 'warn' if it isn't set.
    */
   logLevel?: LogLevel | undefined;
 
@@ -131,10 +490,10 @@ export interface ClientOptions {
 }
 
 /**
- * API Client for interfacing with the More Conflicting API.
+ * API Client for interfacing with the Firefly API.
  */
-export class MoreConflicting {
-  apiKey: string;
+export class Firefly {
+  bearerToken: string | null;
 
   baseURL: string;
   maxRetries: number;
@@ -149,10 +508,11 @@ export class MoreConflicting {
   private _options: ClientOptions;
 
   /**
-   * API Client for interfacing with the More Conflicting API.
+   * API Client for interfacing with the Firefly API.
    *
-   * @param {string | undefined} [opts.apiKey=process.env['PETSTORE_API_KEY'] ?? undefined]
-   * @param {string} [opts.baseURL=process.env['MORE_CONFLICTING_BASE_URL'] ?? https://petstore3.swagger.io/api/v3] - Override the default base URL for the API.
+   * @param {string | null | undefined} [opts.bearerToken=process.env['FIREFLY_BEARER_TOKEN'] ?? null]
+   * @param {Environment} [opts.environment=production] - Specifies the environment URL to use for the API.
+   * @param {string} [opts.baseURL=process.env['FIREFLY_BASE_URL'] ?? https://demo.firefly-iii.org/api] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -161,38 +521,39 @@ export class MoreConflicting {
    * @param {Record<string, string | undefined>} opts.defaultQuery - Default query parameters to include with every request to the API.
    */
   constructor({
-    baseURL = readEnv('MORE_CONFLICTING_BASE_URL'),
-    apiKey = readEnv('PETSTORE_API_KEY'),
+    baseURL = readEnv('FIREFLY_BASE_URL'),
+    bearerToken = readEnv('FIREFLY_BEARER_TOKEN') ?? null,
     ...opts
   }: ClientOptions = {}) {
-    if (apiKey === undefined) {
-      throw new Errors.MoreConflictingError(
-        "The PETSTORE_API_KEY environment variable is missing or empty; either provide it, or instantiate the MoreConflicting client with an apiKey option, like new MoreConflicting({ apiKey: 'My API Key' }).",
+    const options: ClientOptions = {
+      bearerToken,
+      ...opts,
+      baseURL,
+      environment: opts.environment ?? 'production',
+    };
+
+    if (baseURL && opts.environment) {
+      throw new Errors.FireflyError(
+        'Ambiguous URL; The `baseURL` option (or FIREFLY_BASE_URL env var) and the `environment` option are given. If you want to use the environment you must pass baseURL: null',
       );
     }
 
-    const options: ClientOptions = {
-      apiKey,
-      ...opts,
-      baseURL: baseURL || `https://petstore3.swagger.io/api/v3`,
-    };
-
-    this.baseURL = options.baseURL!;
-    this.timeout = options.timeout ?? MoreConflicting.DEFAULT_TIMEOUT /* 1 minute */;
+    this.baseURL = options.baseURL || environments[options.environment || 'production'];
+    this.timeout = options.timeout ?? Firefly.DEFAULT_TIMEOUT /* 1 minute */;
     this.logger = options.logger ?? console;
     const defaultLogLevel = 'warn';
     // Set default logLevel early so that we can log a warning in parseLogLevel.
     this.logLevel = defaultLogLevel;
     this.logLevel =
       parseLogLevel(options.logLevel, 'ClientOptions.logLevel', this) ??
-      parseLogLevel(readEnv('MORE_CONFLICTING_LOG'), "process.env['MORE_CONFLICTING_LOG']", this) ??
+      parseLogLevel(readEnv('FIREFLY_LOG'), "process.env['FIREFLY_LOG']", this) ??
       defaultLogLevel;
     this.fetchOptions = options.fetchOptions;
     this.maxRetries = options.maxRetries ?? 2;
     this.fetch = options.fetch ?? Shims.getDefaultFetch();
     this.#encoder = Opts.FallbackEncoder;
 
-    const customHeadersEnv = readEnv('MORE_CONFLICTING_CUSTOM_HEADERS');
+    const customHeadersEnv = readEnv('FIREFLY_CUSTOM_HEADERS');
     if (customHeadersEnv) {
       const parsed: Record<string, string> = {};
       for (const line of customHeadersEnv.split('\n')) {
@@ -206,7 +567,7 @@ export class MoreConflicting {
 
     this._options = options;
 
-    this.apiKey = apiKey;
+    this.bearerToken = bearerToken;
   }
 
   /**
@@ -215,14 +576,15 @@ export class MoreConflicting {
   withOptions(options: Partial<ClientOptions>): this {
     const client = new (this.constructor as any as new (props: ClientOptions) => typeof this)({
       ...this._options,
-      baseURL: this.baseURL,
+      environment: options.environment ? options.environment : undefined,
+      baseURL: options.environment ? undefined : this.baseURL,
       maxRetries: this.maxRetries,
       timeout: this.timeout,
       logger: this.logger,
       logLevel: this.logLevel,
       fetch: this.fetch,
       fetchOptions: this.fetchOptions,
-      apiKey: this.apiKey,
+      bearerToken: this.bearerToken,
       ...options,
     });
     return client;
@@ -232,7 +594,7 @@ export class MoreConflicting {
    * Check whether the base URL is set to its default.
    */
   #baseURLOverridden(): boolean {
-    return this.baseURL !== 'https://petstore3.swagger.io/api/v3';
+    return this.baseURL !== environments[this._options.environment || 'production'];
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
@@ -240,11 +602,23 @@ export class MoreConflicting {
   }
 
   protected validateHeaders({ values, nulls }: NullableHeaders) {
-    return;
+    if (this.bearerToken && values.get('authorization')) {
+      return;
+    }
+    if (nulls.has('authorization')) {
+      return;
+    }
+
+    throw new Error(
+      'Could not resolve authentication method. Expected the bearerToken to be set. Or for the "Authorization" headers to be explicitly omitted',
+    );
   }
 
   protected async authHeaders(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
-    return buildHeaders([{ api_key: this.apiKey }]);
+    if (this.bearerToken == null) {
+      return undefined;
+    }
+    return buildHeaders([{ Authorization: `Bearer ${this.bearerToken}` }]);
   }
 
   protected stringifyQuery(query: object | Record<string, unknown>): string {
@@ -732,10 +1106,10 @@ export class MoreConflicting {
     }
   }
 
-  static MoreConflicting = this;
+  static Firefly = this;
   static DEFAULT_TIMEOUT = 60000; // 1 minute
 
-  static MoreConflictingError = Errors.MoreConflictingError;
+  static FireflyError = Errors.FireflyError;
   static APIError = Errors.APIError;
   static APIConnectionError = Errors.APIConnectionError;
   static APIConnectionTimeoutError = Errors.APIConnectionTimeoutError;
@@ -752,53 +1126,580 @@ export class MoreConflicting {
   static toFile = Uploads.toFile;
 
   /**
-   * Everything about your Pets
+   * Auto-complete endpoints show basic information about Firefly III models, like the name and maybe some amounts. They all support a search query and can be used to autocomplete data in forms. Autocomplete return values always have a &quot;name&quot;-field.
    */
-  pets: API.Pets = new API.Pets(this);
+  autocomplete: API.Autocomplete = new API.Autocomplete(this);
+  chart: API.Chart = new API.Chart(this);
   /**
-   * Access to Petstore orders
+   * The &quot;data&quot;-endpoints manage generic Firefly III and user-specific data.
    */
-  store: API.Store = new API.Store(this);
+  data: API.Data = new API.Data(this);
+  insight: API.Insight = new API.Insight(this);
   /**
-   * Operations about user
+   * Endpoints that deliver all of the user&#039;s asset, expense and other accounts (and the metadata) together with related transactions, piggy banks and other objects. Also delivers endpoints for CRUD operations for accounts.
+   */
+  accounts: API.Accounts = new API.Accounts(this);
+  /**
+   * Endpoints to manage the attachments of the authenticated user, including up- and downloading of the files.
+   */
+  attachments: API.Attachments = new API.Attachments(this);
+  /**
+   * Endpoints to manage the total available amount that the user has made available to themselves. Used in periodic budgeting.
+   */
+  availableBudgets: API.AvailableBudgets = new API.AvailableBudgets(this);
+  /**
+   * Endpoints to manage a user&#039;s bills and all related objects.
+   */
+  bills: API.Bills = new API.Bills(this);
+  /**
+   * Endpoints to manage a user&#039;s budgets and get info on the related objects, like limits.
+   */
+  budgets: API.Budgets = new API.Budgets(this);
+  /**
+   * Endpoints to manage a user&#039;s categories and get information on transactions and other related objects.
+   */
+  categories: API.Categories = new API.Categories(this);
+  /**
+   * All currency exchange rates.
+   */
+  exchangeRates: API.ExchangeRates = new API.ExchangeRates(this);
+  /**
+   * Endpoints to manage links between transactions, and manage the type of links available.
+   */
+  linkTypes: API.LinkTypes = new API.LinkTypes(this);
+  /**
+   * Endpoints to manage links between transactions, and manage the type of links available.
+   */
+  transactionLinks: API.TransactionLinks = new API.TransactionLinks(this);
+  /**
+   * Endpoints to control and manage all of the user&#039;s object groups. Can only be created in conjunction with another object (for example a piggy bank) and will auto-delete when no other items are linked to it.
+   */
+  objectGroups: API.ObjectGroups = new API.ObjectGroups(this);
+  /**
+   * Endpoints to control and manage all of the user&#039;s piggy banks and related objects and information.
+   */
+  piggyBanks: API.PiggyBanks = new API.PiggyBanks(this);
+  /**
+   * Use these endpoints to manage the user&#039;s recurring transactions, trigger the creation of transactions and manage the settings.
+   */
+  recurrences: API.Recurrences = new API.Recurrences(this);
+  /**
+   * Manage all of the user&#039;s groups of rules and trigger the execution of entire groups.
+   */
+  ruleGroups: API.RuleGroups = new API.RuleGroups(this);
+  /**
+   * These endpoints can be used to manage all of the user&#039;s rules. Also includes triggers to execute or test rules and individual triggers.
+   */
+  rules: API.Rules = new API.Rules(this);
+  /**
+   * This endpoint manages all of the user&#039;s tags.
+   */
+  tags: API.Tags = new API.Tags(this);
+  /**
+   * Endpoints to manage the currencies in Firefly III. Depending on the user&#039;s role you can also disable and enable them, or add new ones.
+   */
+  currencies: API.Currencies = new API.Currencies(this);
+  /**
+   * The most-used endpoints in Firefly III, these endpoints are used to manage the user&#039;s transactions.
+   */
+  transactionJournals: API.TransactionJournals = new API.TransactionJournals(this);
+  /**
+   * The most-used endpoints in Firefly III, these endpoints are used to manage the user&#039;s transactions.
+   */
+  transactions: API.Transactions = new API.Transactions(this);
+  /**
+   * User groups are the objects around which &quot;financial administrations&quot; are built.
+   */
+  userGroups: API.UserGroups = new API.UserGroups(this);
+  /**
+   * Endpoints that allow you to search through the user&#039;s financial data. Different from the autocomplete endpoints, the search accepts more advanced arguments.
+   */
+  search: API.Search = new API.Search(this);
+  /**
+   * These endpoints deliver summaries, like sums, lists of numbers and other processed information. Mainly used for the main dashboard and pretty specific for Firefly III itself.
+   */
+  summary: API.Summary = new API.Summary(this);
+  /**
+   * These endpoints deliver general system information, version- and meta information.
+   */
+  about: API.About = new API.About(this);
+  /**
+   * These endpoints deliver general system information, version- and meta information.
+   */
+  batch: API.Batch = new API.Batch(this);
+  /**
+   * These endpoints allow you to manage and update the Firefly III configuration. You need to have the &quot;owner&quot; role to update configuration.
+   */
+  configuration: API.ConfigurationResource = new API.ConfigurationResource(this);
+  /**
+   * These endpoints deliver general system information, version- and meta information.
+   */
+  cron: API.Cron = new API.Cron(this);
+  /**
+   * Use these endpoints to manage the users registered within Firefly III. You need to have the &quot;owner&quot; role to access these endpoints.
    */
   users: API.Users = new API.Users(this);
+  /**
+   * These endpoints can be used to manage the user&#039;s preferences, including some hidden ones.
+   */
+  preferences: API.Preferences = new API.Preferences(this);
+  /**
+   * These endpoints can be used to manage the user&#039;s webhooks and triggers them if necessary.
+   */
+  webhooks: API.Webhooks = new API.Webhooks(this);
 }
 
-MoreConflicting.Pets = Pets;
-MoreConflicting.Store = Store;
-MoreConflicting.Users = Users;
+Firefly.Autocomplete = Autocomplete;
+Firefly.Chart = Chart;
+Firefly.Data = Data;
+Firefly.Insight = Insight;
+Firefly.Accounts = Accounts;
+Firefly.Attachments = Attachments;
+Firefly.AvailableBudgets = AvailableBudgets;
+Firefly.Bills = Bills;
+Firefly.Budgets = Budgets;
+Firefly.Categories = Categories;
+Firefly.ExchangeRates = ExchangeRates;
+Firefly.LinkTypes = LinkTypes;
+Firefly.TransactionLinks = TransactionLinks;
+Firefly.ObjectGroups = ObjectGroups;
+Firefly.PiggyBanks = PiggyBanks;
+Firefly.Recurrences = Recurrences;
+Firefly.RuleGroups = RuleGroups;
+Firefly.Rules = Rules;
+Firefly.Tags = Tags;
+Firefly.Currencies = Currencies;
+Firefly.TransactionJournals = TransactionJournals;
+Firefly.Transactions = Transactions;
+Firefly.UserGroups = UserGroups;
+Firefly.Search = Search;
+Firefly.Summary = Summary;
+Firefly.About = About;
+Firefly.Batch = Batch;
+Firefly.ConfigurationResource = ConfigurationResource;
+Firefly.Cron = Cron;
+Firefly.Users = Users;
+Firefly.Preferences = Preferences;
+Firefly.Webhooks = Webhooks;
 
-export declare namespace MoreConflicting {
+export declare namespace Firefly {
   export type RequestOptions = Opts.RequestOptions;
 
   export {
-    Pets as Pets,
-    type Category as Category,
-    type Pet as Pet,
-    type Tag as Tag,
-    type PetFindByStatusResponse as PetFindByStatusResponse,
-    type PetFindByTagsResponse as PetFindByTagsResponse,
-    type PetUploadImageResponse as PetUploadImageResponse,
-    type PetCreateParams as PetCreateParams,
-    type PetUpdateParams as PetUpdateParams,
-    type PetFindByStatusParams as PetFindByStatusParams,
-    type PetFindByTagsParams as PetFindByTagsParams,
-    type PetUpdateByIDParams as PetUpdateByIDParams,
-    type PetUploadImageParams as PetUploadImageParams,
+    Autocomplete as Autocomplete,
+    type AutocompleteBill as AutocompleteBill,
+    type AutocompleteListAccountsResponse as AutocompleteListAccountsResponse,
+    type AutocompleteListBillsResponse as AutocompleteListBillsResponse,
+    type AutocompleteListBudgetsResponse as AutocompleteListBudgetsResponse,
+    type AutocompleteListCategoriesResponse as AutocompleteListCategoriesResponse,
+    type AutocompleteListCurrenciesResponse as AutocompleteListCurrenciesResponse,
+    type AutocompleteListCurrenciesWithCodeResponse as AutocompleteListCurrenciesWithCodeResponse,
+    type AutocompleteListObjectGroupsResponse as AutocompleteListObjectGroupsResponse,
+    type AutocompleteListPiggyBanksResponse as AutocompleteListPiggyBanksResponse,
+    type AutocompleteListPiggyBanksWithBalanceResponse as AutocompleteListPiggyBanksWithBalanceResponse,
+    type AutocompleteListRecurringTransactionsResponse as AutocompleteListRecurringTransactionsResponse,
+    type AutocompleteListRuleGroupsResponse as AutocompleteListRuleGroupsResponse,
+    type AutocompleteListRulesResponse as AutocompleteListRulesResponse,
+    type AutocompleteListSubscriptionsResponse as AutocompleteListSubscriptionsResponse,
+    type AutocompleteListTagsResponse as AutocompleteListTagsResponse,
+    type AutocompleteListTransactionTypesResponse as AutocompleteListTransactionTypesResponse,
+    type AutocompleteListTransactionsResponse as AutocompleteListTransactionsResponse,
+    type AutocompleteListTransactionsWithIDResponse as AutocompleteListTransactionsWithIDResponse,
+    type AutocompleteListAccountsParams as AutocompleteListAccountsParams,
+    type AutocompleteListBillsParams as AutocompleteListBillsParams,
+    type AutocompleteListBudgetsParams as AutocompleteListBudgetsParams,
+    type AutocompleteListCategoriesParams as AutocompleteListCategoriesParams,
+    type AutocompleteListCurrenciesParams as AutocompleteListCurrenciesParams,
+    type AutocompleteListCurrenciesWithCodeParams as AutocompleteListCurrenciesWithCodeParams,
+    type AutocompleteListObjectGroupsParams as AutocompleteListObjectGroupsParams,
+    type AutocompleteListPiggyBanksParams as AutocompleteListPiggyBanksParams,
+    type AutocompleteListPiggyBanksWithBalanceParams as AutocompleteListPiggyBanksWithBalanceParams,
+    type AutocompleteListRecurringTransactionsParams as AutocompleteListRecurringTransactionsParams,
+    type AutocompleteListRuleGroupsParams as AutocompleteListRuleGroupsParams,
+    type AutocompleteListRulesParams as AutocompleteListRulesParams,
+    type AutocompleteListSubscriptionsParams as AutocompleteListSubscriptionsParams,
+    type AutocompleteListTagsParams as AutocompleteListTagsParams,
+    type AutocompleteListTransactionTypesParams as AutocompleteListTransactionTypesParams,
+    type AutocompleteListTransactionsParams as AutocompleteListTransactionsParams,
+    type AutocompleteListTransactionsWithIDParams as AutocompleteListTransactionsWithIDParams,
   };
 
-  export { Store as Store, type StoreListInventoryResponse as StoreListInventoryResponse };
+  export { Chart as Chart };
+
+  export {
+    Data as Data,
+    type DataDestroyParams as DataDestroyParams,
+    type DataPurgeParams as DataPurgeParams,
+  };
+
+  export { Insight as Insight };
+
+  export {
+    Accounts as Accounts,
+    type AccountArray as AccountArray,
+    type AccountRead as AccountRead,
+    type AccountRoleProperty as AccountRoleProperty,
+    type AccountSingle as AccountSingle,
+    type AccountTypeFilter as AccountTypeFilter,
+    type AttachmentArray as AttachmentArray,
+    type CreditCardTypeProperty as CreditCardTypeProperty,
+    type InterestPeriodProperty as InterestPeriodProperty,
+    type LiabilityDirectionProperty as LiabilityDirectionProperty,
+    type LiabilityTypeProperty as LiabilityTypeProperty,
+    type Meta as Meta,
+    type PageLink as PageLink,
+    type PiggyBankArray as PiggyBankArray,
+    type ShortAccountTypeProperty as ShortAccountTypeProperty,
+    type TransactionArray as TransactionArray,
+    type TransactionTypeFilter as TransactionTypeFilter,
+    type AccountCreateParams as AccountCreateParams,
+    type AccountRetrieveParams as AccountRetrieveParams,
+    type AccountUpdateParams as AccountUpdateParams,
+    type AccountListParams as AccountListParams,
+    type AccountDeleteParams as AccountDeleteParams,
+    type AccountListAttachmentsParams as AccountListAttachmentsParams,
+    type AccountListPiggyBanksParams as AccountListPiggyBanksParams,
+    type AccountListTransactionsParams as AccountListTransactionsParams,
+  };
+
+  export {
+    Attachments as Attachments,
+    type AttachableType as AttachableType,
+    type AttachmentRead as AttachmentRead,
+    type AttachmentSingle as AttachmentSingle,
+    type ObjectLink as ObjectLink,
+    type AttachmentCreateParams as AttachmentCreateParams,
+    type AttachmentRetrieveParams as AttachmentRetrieveParams,
+    type AttachmentUpdateParams as AttachmentUpdateParams,
+    type AttachmentListParams as AttachmentListParams,
+    type AttachmentDeleteParams as AttachmentDeleteParams,
+    type AttachmentDownloadParams as AttachmentDownloadParams,
+    type AttachmentUploadParams as AttachmentUploadParams,
+  };
+
+  export {
+    AvailableBudgets as AvailableBudgets,
+    type ArrayEntryWithCurrencyAndSum as ArrayEntryWithCurrencyAndSum,
+    type AvailableBudgetArray as AvailableBudgetArray,
+    type AvailableBudgetRead as AvailableBudgetRead,
+    type AvailableBudgetRetrieveResponse as AvailableBudgetRetrieveResponse,
+    type AvailableBudgetRetrieveParams as AvailableBudgetRetrieveParams,
+    type AvailableBudgetListParams as AvailableBudgetListParams,
+  };
+
+  export {
+    Bills as Bills,
+    type BillArray as BillArray,
+    type BillRead as BillRead,
+    type BillRepeatFrequency as BillRepeatFrequency,
+    type BillSingle as BillSingle,
+    type RuleArray as RuleArray,
+    type BillCreateParams as BillCreateParams,
+    type BillRetrieveParams as BillRetrieveParams,
+    type BillUpdateParams as BillUpdateParams,
+    type BillListParams as BillListParams,
+    type BillDeleteParams as BillDeleteParams,
+    type BillListAttachmentsParams as BillListAttachmentsParams,
+    type BillListRulesParams as BillListRulesParams,
+    type BillListTransactionsParams as BillListTransactionsParams,
+  };
+
+  export {
+    Budgets as Budgets,
+    type AutoBudgetPeriod as AutoBudgetPeriod,
+    type AutoBudgetType as AutoBudgetType,
+    type BudgetRead as BudgetRead,
+    type BudgetSingle as BudgetSingle,
+    type BudgetListResponse as BudgetListResponse,
+    type BudgetCreateParams as BudgetCreateParams,
+    type BudgetRetrieveParams as BudgetRetrieveParams,
+    type BudgetUpdateParams as BudgetUpdateParams,
+    type BudgetListParams as BudgetListParams,
+    type BudgetDeleteParams as BudgetDeleteParams,
+    type BudgetListAttachmentsParams as BudgetListAttachmentsParams,
+    type BudgetListTransactionsParams as BudgetListTransactionsParams,
+    type BudgetListTransactionsWithoutBudgetParams as BudgetListTransactionsWithoutBudgetParams,
+  };
+
+  export {
+    Categories as Categories,
+    type CategoryRead as CategoryRead,
+    type CategorySingle as CategorySingle,
+    type CategoryListResponse as CategoryListResponse,
+    type CategoryCreateParams as CategoryCreateParams,
+    type CategoryRetrieveParams as CategoryRetrieveParams,
+    type CategoryUpdateParams as CategoryUpdateParams,
+    type CategoryListParams as CategoryListParams,
+    type CategoryDeleteParams as CategoryDeleteParams,
+    type CategoryListAttachmentsParams as CategoryListAttachmentsParams,
+    type CategoryListTransactionsParams as CategoryListTransactionsParams,
+  };
+
+  export {
+    ExchangeRates as ExchangeRates,
+    type CurrencyExchangeRateArray as CurrencyExchangeRateArray,
+    type CurrencyExchangeRateRead as CurrencyExchangeRateRead,
+    type CurrencyExchangeRateSingle as CurrencyExchangeRateSingle,
+    type ExchangeRateCreateParams as ExchangeRateCreateParams,
+    type ExchangeRateRetrieveParams as ExchangeRateRetrieveParams,
+    type ExchangeRateUpdateParams as ExchangeRateUpdateParams,
+    type ExchangeRateListParams as ExchangeRateListParams,
+    type ExchangeRateDeleteParams as ExchangeRateDeleteParams,
+    type ExchangeRateCreateByCurrenciesParams as ExchangeRateCreateByCurrenciesParams,
+    type ExchangeRateCreateByDateParams as ExchangeRateCreateByDateParams,
+    type ExchangeRateDeleteAllByCurrenciesParams as ExchangeRateDeleteAllByCurrenciesParams,
+    type ExchangeRateDeleteByDateParams as ExchangeRateDeleteByDateParams,
+    type ExchangeRateListByCurrenciesParams as ExchangeRateListByCurrenciesParams,
+    type ExchangeRateRetrieveByDateParams as ExchangeRateRetrieveByDateParams,
+    type ExchangeRateUpdateByDateParams as ExchangeRateUpdateByDateParams,
+  };
+
+  export {
+    LinkTypes as LinkTypes,
+    type LinkType as LinkType,
+    type LinkTypeRead as LinkTypeRead,
+    type LinkTypeSingle as LinkTypeSingle,
+    type LinkTypeListResponse as LinkTypeListResponse,
+    type LinkTypeCreateParams as LinkTypeCreateParams,
+    type LinkTypeRetrieveParams as LinkTypeRetrieveParams,
+    type LinkTypeUpdateParams as LinkTypeUpdateParams,
+    type LinkTypeListParams as LinkTypeListParams,
+    type LinkTypeDeleteParams as LinkTypeDeleteParams,
+    type LinkTypeListTransactionsParams as LinkTypeListTransactionsParams,
+  };
+
+  export {
+    TransactionLinks as TransactionLinks,
+    type TransactionLinkArray as TransactionLinkArray,
+    type TransactionLinkRead as TransactionLinkRead,
+    type TransactionLinkSingle as TransactionLinkSingle,
+    type TransactionLinkCreateParams as TransactionLinkCreateParams,
+    type TransactionLinkRetrieveParams as TransactionLinkRetrieveParams,
+    type TransactionLinkUpdateParams as TransactionLinkUpdateParams,
+    type TransactionLinkListParams as TransactionLinkListParams,
+    type TransactionLinkDeleteParams as TransactionLinkDeleteParams,
+  };
+
+  export {
+    ObjectGroups as ObjectGroups,
+    type ObjectGroupRead as ObjectGroupRead,
+    type ObjectGroupSingle as ObjectGroupSingle,
+    type ObjectGroupListResponse as ObjectGroupListResponse,
+    type ObjectGroupRetrieveParams as ObjectGroupRetrieveParams,
+    type ObjectGroupUpdateParams as ObjectGroupUpdateParams,
+    type ObjectGroupListParams as ObjectGroupListParams,
+    type ObjectGroupDeleteParams as ObjectGroupDeleteParams,
+    type ObjectGroupListBillsParams as ObjectGroupListBillsParams,
+    type ObjectGroupListPiggyBanksParams as ObjectGroupListPiggyBanksParams,
+  };
+
+  export {
+    PiggyBanks as PiggyBanks,
+    type PiggyBankEventArray as PiggyBankEventArray,
+    type PiggyBankRead as PiggyBankRead,
+    type PiggyBankSingle as PiggyBankSingle,
+    type PiggyBankCreateParams as PiggyBankCreateParams,
+    type PiggyBankRetrieveParams as PiggyBankRetrieveParams,
+    type PiggyBankUpdateParams as PiggyBankUpdateParams,
+    type PiggyBankListParams as PiggyBankListParams,
+    type PiggyBankDeleteParams as PiggyBankDeleteParams,
+    type PiggyBankListAttachmentsParams as PiggyBankListAttachmentsParams,
+    type PiggyBankListEventsParams as PiggyBankListEventsParams,
+  };
+
+  export {
+    Recurrences as Recurrences,
+    type AccountTypeProperty as AccountTypeProperty,
+    type RecurrenceArray as RecurrenceArray,
+    type RecurrenceRead as RecurrenceRead,
+    type RecurrenceRepetitionType as RecurrenceRepetitionType,
+    type RecurrenceSingle as RecurrenceSingle,
+    type RecurrenceTransactionType as RecurrenceTransactionType,
+    type RecurrenceCreateParams as RecurrenceCreateParams,
+    type RecurrenceRetrieveParams as RecurrenceRetrieveParams,
+    type RecurrenceUpdateParams as RecurrenceUpdateParams,
+    type RecurrenceListParams as RecurrenceListParams,
+    type RecurrenceDeleteParams as RecurrenceDeleteParams,
+    type RecurrenceListTransactionsParams as RecurrenceListTransactionsParams,
+    type RecurrenceTriggerTransactionParams as RecurrenceTriggerTransactionParams,
+  };
+
+  export {
+    RuleGroups as RuleGroups,
+    type RuleGroupRead as RuleGroupRead,
+    type RuleGroupSingle as RuleGroupSingle,
+    type RuleGroupListAllResponse as RuleGroupListAllResponse,
+    type RuleGroupCreateParams as RuleGroupCreateParams,
+    type RuleGroupRetrieveParams as RuleGroupRetrieveParams,
+    type RuleGroupUpdateParams as RuleGroupUpdateParams,
+    type RuleGroupDeleteParams as RuleGroupDeleteParams,
+    type RuleGroupListAllParams as RuleGroupListAllParams,
+    type RuleGroupListRulesParams as RuleGroupListRulesParams,
+    type RuleGroupTestTransactionsParams as RuleGroupTestTransactionsParams,
+    type RuleGroupTriggerRulesParams as RuleGroupTriggerRulesParams,
+  };
+
+  export {
+    Rules as Rules,
+    type RuleActionKeyword as RuleActionKeyword,
+    type RuleRead as RuleRead,
+    type RuleSingle as RuleSingle,
+    type RuleTriggerKeyword as RuleTriggerKeyword,
+    type RuleTriggerType as RuleTriggerType,
+    type RuleCreateParams as RuleCreateParams,
+    type RuleRetrieveParams as RuleRetrieveParams,
+    type RuleUpdateParams as RuleUpdateParams,
+    type RuleListParams as RuleListParams,
+    type RuleDeleteParams as RuleDeleteParams,
+    type RuleTestParams as RuleTestParams,
+    type RuleTriggerParams as RuleTriggerParams,
+  };
+
+  export {
+    Tags as Tags,
+    type TagRead as TagRead,
+    type TagSingle as TagSingle,
+    type TagListResponse as TagListResponse,
+    type TagCreateParams as TagCreateParams,
+    type TagRetrieveParams as TagRetrieveParams,
+    type TagUpdateParams as TagUpdateParams,
+    type TagListParams as TagListParams,
+    type TagDeleteParams as TagDeleteParams,
+    type TagListAttachmentsParams as TagListAttachmentsParams,
+    type TagListTransactionsParams as TagListTransactionsParams,
+  };
+
+  export {
+    Currencies as Currencies,
+    type CurrencyRead as CurrencyRead,
+    type CurrencySingle as CurrencySingle,
+    type CurrencyListResponse as CurrencyListResponse,
+    type CurrencyCreateParams as CurrencyCreateParams,
+    type CurrencyRetrieveParams as CurrencyRetrieveParams,
+    type CurrencyUpdateParams as CurrencyUpdateParams,
+    type CurrencyListParams as CurrencyListParams,
+    type CurrencyDeleteParams as CurrencyDeleteParams,
+    type CurrencyDisableParams as CurrencyDisableParams,
+    type CurrencyEnableParams as CurrencyEnableParams,
+    type CurrencyListAccountsParams as CurrencyListAccountsParams,
+    type CurrencyListAvailableBudgetsParams as CurrencyListAvailableBudgetsParams,
+    type CurrencyListBillsParams as CurrencyListBillsParams,
+    type CurrencyListBudgetLimitsParams as CurrencyListBudgetLimitsParams,
+    type CurrencyListRecurrencesParams as CurrencyListRecurrencesParams,
+    type CurrencyListRulesParams as CurrencyListRulesParams,
+    type CurrencyListTransactionsParams as CurrencyListTransactionsParams,
+  };
+
+  export {
+    TransactionJournals as TransactionJournals,
+    type TransactionRead as TransactionRead,
+    type TransactionSingle as TransactionSingle,
+    type TransactionJournalRetrieveParams as TransactionJournalRetrieveParams,
+    type TransactionJournalDeleteParams as TransactionJournalDeleteParams,
+    type TransactionJournalListLinksParams as TransactionJournalListLinksParams,
+  };
+
+  export {
+    Transactions as Transactions,
+    type TransactionTypeProperty as TransactionTypeProperty,
+    type TransactionCreateParams as TransactionCreateParams,
+    type TransactionRetrieveParams as TransactionRetrieveParams,
+    type TransactionUpdateParams as TransactionUpdateParams,
+    type TransactionListParams as TransactionListParams,
+    type TransactionDeleteParams as TransactionDeleteParams,
+    type TransactionListAttachmentsParams as TransactionListAttachmentsParams,
+    type TransactionListPiggyBankEventsParams as TransactionListPiggyBankEventsParams,
+  };
+
+  export {
+    UserGroups as UserGroups,
+    type UserGroupRead as UserGroupRead,
+    type UserGroupSingle as UserGroupSingle,
+    type UserGroupListResponse as UserGroupListResponse,
+    type UserGroupRetrieveParams as UserGroupRetrieveParams,
+    type UserGroupUpdateParams as UserGroupUpdateParams,
+    type UserGroupListParams as UserGroupListParams,
+  };
+
+  export {
+    Search as Search,
+    type SearchAccountsParams as SearchAccountsParams,
+    type SearchTransactionsParams as SearchTransactionsParams,
+  };
+
+  export {
+    Summary as Summary,
+    type SummaryRetrieveBasicResponse as SummaryRetrieveBasicResponse,
+    type SummaryRetrieveBasicParams as SummaryRetrieveBasicParams,
+  };
+
+  export {
+    About as About,
+    type UserRead as UserRead,
+    type UserSingle as UserSingle,
+    type AboutRetrieveInfoResponse as AboutRetrieveInfoResponse,
+    type AboutRetrieveInfoParams as AboutRetrieveInfoParams,
+    type AboutRetrieveUserParams as AboutRetrieveUserParams,
+  };
+
+  export { Batch as Batch, type BatchFinishParams as BatchFinishParams };
+
+  export {
+    ConfigurationResource as ConfigurationResource,
+    type ConfigValueFilter as ConfigValueFilter,
+    type Configuration as Configuration,
+    type ConfigurationSingle as ConfigurationSingle,
+    type PolymorphicProperty as PolymorphicProperty,
+    type ConfigurationRetrieveResponse as ConfigurationRetrieveResponse,
+    type ConfigurationRetrieveParams as ConfigurationRetrieveParams,
+    type ConfigurationRetrieveValueParams as ConfigurationRetrieveValueParams,
+    type ConfigurationUpdateValueParams as ConfigurationUpdateValueParams,
+  };
+
+  export {
+    Cron as Cron,
+    type CronResultRow as CronResultRow,
+    type CronRunResponse as CronRunResponse,
+    type CronRunParams as CronRunParams,
+  };
 
   export {
     Users as Users,
     type User as User,
-    type UserLoginResponse as UserLoginResponse,
+    type UserListResponse as UserListResponse,
     type UserCreateParams as UserCreateParams,
+    type UserRetrieveParams as UserRetrieveParams,
     type UserUpdateParams as UserUpdateParams,
-    type UserCreateWithListParams as UserCreateWithListParams,
-    type UserLoginParams as UserLoginParams,
+    type UserListParams as UserListParams,
+    type UserDeleteParams as UserDeleteParams,
   };
 
-  export type Order = API.Order;
+  export {
+    Preferences as Preferences,
+    type Preference as Preference,
+    type PreferenceRead as PreferenceRead,
+    type PreferenceSingle as PreferenceSingle,
+    type PreferenceListResponse as PreferenceListResponse,
+    type PreferenceCreateParams as PreferenceCreateParams,
+    type PreferenceRetrieveParams as PreferenceRetrieveParams,
+    type PreferenceUpdateParams as PreferenceUpdateParams,
+    type PreferenceListParams as PreferenceListParams,
+  };
+
+  export {
+    Webhooks as Webhooks,
+    type Webhook as Webhook,
+    type WebhookDelivery as WebhookDelivery,
+    type WebhookResponse as WebhookResponse,
+    type WebhookSingle as WebhookSingle,
+    type WebhookTrigger as WebhookTrigger,
+    type WebhookListResponse as WebhookListResponse,
+    type WebhookCreateParams as WebhookCreateParams,
+    type WebhookRetrieveParams as WebhookRetrieveParams,
+    type WebhookUpdateParams as WebhookUpdateParams,
+    type WebhookListParams as WebhookListParams,
+    type WebhookDeleteParams as WebhookDeleteParams,
+    type WebhookSubmitParams as WebhookSubmitParams,
+    type WebhookTriggerTransactionParams as WebhookTriggerTransactionParams,
+  };
 }

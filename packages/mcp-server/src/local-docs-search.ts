@@ -106,6 +106,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 pets update \\\n  --api-key 'My API Key' \\\n  --name doggie \\\n  --photo-url string",
       },
+      php: {
+        method: 'pets->update',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pet = $client->pets->update(\n  name: 'doggie',\n  photoURLs: ['string'],\n  id: 10,\n  category: ['id' => 1, 'name' => 'Dogs'],\n  status: 'available',\n  tags: [['id' => 0, 'name' => 'name']],\n);\n\nvar_dump($pet);",
+      },
       csharp: {
         method: 'Pets.Update',
         example:
@@ -173,6 +178,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 pets create \\\n  --api-key 'My API Key' \\\n  --name doggie \\\n  --photo-url string",
       },
+      php: {
+        method: 'pets->create',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pet = $client->pets->create(\n  name: 'doggie',\n  photoURLs: ['string'],\n  id: 10,\n  category: ['id' => 1, 'name' => 'Dogs'],\n  status: 'available',\n  tags: [['id' => 0, 'name' => 'name']],\n);\n\nvar_dump($pet);",
+      },
       csharp: {
         method: 'Pets.Create',
         example:
@@ -231,6 +241,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'pets find_by_status',
         example: "emcees-prod-testing-5 pets find-by-status \\\n  --api-key 'My API Key'",
+      },
+      php: {
+        method: 'pets->findByStatus',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pets = $client->pets->findByStatus(status: 'available');\n\nvar_dump($pets);",
       },
       csharp: {
         method: 'Pets.FindByStatus',
@@ -292,6 +307,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'pets find_by_tags',
         example: "emcees-prod-testing-5 pets find-by-tags \\\n  --api-key 'My API Key'",
       },
+      php: {
+        method: 'pets->findByTags',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pets = $client->pets->findByTags(tags: ['string']);\n\nvar_dump($pets);",
+      },
       csharp: {
         method: 'Pets.FindByTags',
         example:
@@ -351,6 +371,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'pets retrieve',
         example: "emcees-prod-testing-5 pets retrieve \\\n  --api-key 'My API Key' \\\n  --pet-id 0",
       },
+      php: {
+        method: 'pets->retrieve',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pet = $client->pets->retrieve(0);\n\nvar_dump($pet);",
+      },
       csharp: {
         method: 'Pets.Retrieve',
         example:
@@ -408,6 +433,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'pets update_by_id',
         example: "emcees-prod-testing-5 pets update-by-id \\\n  --api-key 'My API Key' \\\n  --pet-id 0",
       },
+      php: {
+        method: 'pets->updateByID',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$result = $client->pets->updateByID(0, name: 'name', status: 'status');\n\nvar_dump($result);",
+      },
       csharp: {
         method: 'Pets.UpdateByID',
         example:
@@ -464,6 +494,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'pets delete',
         example: "emcees-prod-testing-5 pets delete \\\n  --api-key 'My API Key' \\\n  --pet-id 0",
+      },
+      php: {
+        method: 'pets->delete',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$result = $client->pets->delete(0);\n\nvar_dump($result);",
       },
       csharp: {
         method: 'Pets.Delete',
@@ -523,6 +558,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 pets upload-image \\\n  --api-key 'My API Key' \\\n  --pet-id 0 \\\n  --image 'Example data'",
       },
+      php: {
+        method: 'pets->uploadImage',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$response = $client->pets->uploadImage(\n  0,\n  FileParam::fromString('Example data', filename: uniqid('file-upload-', true)),\n);\n\nvar_dump($response);",
+      },
       csharp: {
         method: 'Pets.UploadImage',
         example:
@@ -579,6 +619,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'store list_inventory',
         example: "emcees-prod-testing-5 store list-inventory \\\n  --api-key 'My API Key'",
+      },
+      php: {
+        method: 'store->listInventory',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$response = $client->store->listInventory();\n\nvar_dump($response);",
       },
       csharp: {
         method: 'Store.ListInventory',
@@ -646,6 +691,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'orders create',
         example: "emcees-prod-testing-5 store:orders create \\\n  --api-key 'My API Key'",
       },
+      php: {
+        method: 'store->orders->create',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$order = $client->store->orders->create(\n  id: 10,\n  complete: true,\n  petID: 198772,\n  quantity: 7,\n  shipDate: new \\DateTimeImmutable('2019-12-27T18:11:19.117Z'),\n  status: 'approved',\n);\n\nvar_dump($order);",
+      },
       csharp: {
         method: 'Store.Orders.Create',
         example:
@@ -707,6 +757,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 store:orders retrieve \\\n  --api-key 'My API Key' \\\n  --order-id 0",
       },
+      php: {
+        method: 'store->orders->retrieve',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$order = $client->store->orders->retrieve(0);\n\nvar_dump($order);",
+      },
       csharp: {
         method: 'Store.Orders.Retrieve',
         example:
@@ -764,6 +819,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'orders delete',
         example: "emcees-prod-testing-5 store:orders delete \\\n  --api-key 'My API Key' \\\n  --order-id 0",
+      },
+      php: {
+        method: 'store->orders->delete',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$result = $client->store->orders->delete(0);\n\nvar_dump($result);",
       },
       csharp: {
         method: 'Store.Orders.Delete',
@@ -833,6 +893,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users create',
         example: "emcees-prod-testing-5 users create \\\n  --api-key 'My API Key'",
       },
+      php: {
+        method: 'users->create',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$user = $client->users->create(\n  id: 10,\n  email: 'john@email.com',\n  firstName: 'John',\n  lastName: 'James',\n  password: '12345',\n  phone: '12345',\n  username: 'theUser',\n  userStatus: 1,\n);\n\nvar_dump($user);",
+      },
       csharp: {
         method: 'Users.Create',
         example:
@@ -894,6 +959,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users create_with_list',
         example: "emcees-prod-testing-5 users create-with-list \\\n  --api-key 'My API Key'",
       },
+      php: {
+        method: 'users->createWithList',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$user = $client->users->createWithList(\n  items: [\n    [\n      'id' => 10,\n      'email' => 'john@email.com',\n      'firstName' => 'John',\n      'lastName' => 'James',\n      'password' => '12345',\n      'phone' => '12345',\n      'username' => 'theUser',\n      'userStatus' => 1,\n    ],\n  ],\n);\n\nvar_dump($user);",
+      },
       csharp: {
         method: 'Users.CreateWithList',
         example:
@@ -952,6 +1022,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users login',
         example: "emcees-prod-testing-5 users login \\\n  --api-key 'My API Key'",
       },
+      php: {
+        method: 'users->login',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$response = $client->users->login(password: 'password', username: 'username');\n\nvar_dump($response);",
+      },
       csharp: {
         method: 'Users.Login',
         example:
@@ -1007,6 +1082,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'users logout',
         example: "emcees-prod-testing-5 users logout \\\n  --api-key 'My API Key'",
+      },
+      php: {
+        method: 'users->logout',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$result = $client->users->logout();\n\nvar_dump($result);",
       },
       csharp: {
         method: 'Users.Logout',
@@ -1066,6 +1146,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users retrieve',
         example:
           "emcees-prod-testing-5 users retrieve \\\n  --api-key 'My API Key' \\\n  --username username",
+      },
+      php: {
+        method: 'users->retrieve',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$user = $client->users->retrieve('username');\n\nvar_dump($user);",
       },
       csharp: {
         method: 'Users.Retrieve',
@@ -1135,6 +1220,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 users update \\\n  --api-key 'My API Key' \\\n  --existing-username username",
       },
+      php: {
+        method: 'users->update',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$result = $client->users->update(\n  'username',\n  id: 10,\n  email: 'john@email.com',\n  firstName: 'John',\n  lastName: 'James',\n  password: '12345',\n  phone: '12345',\n  username: 'theUser',\n  userStatus: 1,\n);\n\nvar_dump($result);",
+      },
       csharp: {
         method: 'Users.Update',
         example:
@@ -1192,6 +1282,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users delete',
         example: "emcees-prod-testing-5 users delete \\\n  --api-key 'My API Key' \\\n  --username username",
       },
+      php: {
+        method: 'users->delete',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$result = $client->users->delete('username');\n\nvar_dump($result);",
+      },
       csharp: {
         method: 'Users.Delete',
         example:
@@ -1230,6 +1325,11 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
     language: 'kotlin',
     content:
       '# More Conflicting Kotlin API Library\n\n\n[![Maven Central](https://img.shields.io/maven-central/v/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin)](https://central.sonatype.com/artifact/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1)\n[![javadoc](https://javadoc.io/badge2/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1)\n\n\nThe More Conflicting Kotlin SDK provides convenient access to the More Conflicting REST API   from applications written in Kotlin.\n\n\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the More Conflicting MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=emcees-prod-testing-5-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImVtY2Vlcy1wcm9kLXRlc3RpbmctNS1tY3AiXSwiZW52Ijp7IlBFVFNUT1JFX0FQSV9LRVkiOiJNeSBBUEkgS2V5In19)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22emcees-prod-testing-5-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22emcees-prod-testing-5-mcp%22%5D%2C%22env%22%3A%7B%22PETSTORE_API_KEY%22%3A%22My%20API%20Key%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\nKDocs are available on [javadoc.io](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1).\n\n## Installation\n\n### Gradle\n\n~~~kotlin\nimplementation("com.CONFIGURE_ME_emcees_prod_testing_5.api:more-conflicting-kotlin:0.0.1")\n~~~\n\n### Maven\n\n~~~xml\n<dependency>\n  <groupId>com.CONFIGURE_ME_emcees_prod_testing_5.api</groupId>\n  <artifactId>more-conflicting-kotlin</artifactId>\n  <version>0.0.1</version>\n</dependency>\n~~~\n\n## Requirements\n\nThis library requires Java 8 or later.\n\n## Usage\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport com.configure_me_emcees_prod_testing_5.api.models.Order\nimport com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams\n\n// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties\n// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.fromEnv()\n\nval order: Order = client.store().orders().create()\n```\n\n## Client configuration\n\nConfigure the client using system properties or environment variables:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\n\n// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties\n// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.fromEnv()\n```\n\nOr manually:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .apiKey("My API Key")\n    .build()\n```\n\nOr using a combination of the two approaches:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    // Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties\n    // Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables\n    .fromEnv()\n    .apiKey("My API Key")\n    .build()\n```\n\nSee this table for the available options:\n\n| Setter    | System property                  | Environment variable        | Required | Default value                           |\n| --------- | -------------------------------- | --------------------------- | -------- | --------------------------------------- |\n| `apiKey`  | `moreconflicting.petstoreApiKey` | `PETSTORE_API_KEY`          | true     | -                                       |\n| `baseUrl` | `moreconflicting.baseUrl`        | `MORE_CONFLICTING_BASE_URL` | true     | `"https://petstore3.swagger.io/api/v3"` |\n\nSystem properties take precedence over environment variables.\n\n> [!TIP]\n> Don\'t create more than one client in the same application. Each client has a connection pool and\n> thread pools, which are more efficient to share between requests.\n\n### Modifying configuration\n\nTo temporarily use a modified client configuration, while reusing the same connection and thread       pools, call `withOptions()` on any client or service:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\n\nval clientWithOptions: MoreConflictingClient = client.withOptions {\n    it.baseUrl("https://example.com")\n    it.maxRetries(42)\n}\n```\n\nThe `withOptions()` method does not affect the original client or service.\n\n## Requests and responses\n\nTo send a request to the More Conflicting API, build an instance of some `Params` class and pass it to the     corresponding client method. When the response is received, it will be deserialized into an instance of     a Kotlin class.\n\nFor example, `client.store().orders().create(...)` should be called with an instance of `OrderCreateParams`, and it     will return an instance of `Order`.\n\n## Immutability\n\nEach class in the SDK has an associated   [builder](https://blogs.oracle.com/javamagazine/post/exploring-joshua-blochs-builder-design-pattern-in-java)   or factory method for constructing it.\n\nEach class is [immutable](https://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html)   once constructed. If the class has an associated builder, then it has a `toBuilder()` method, which can   be used to convert it back to a builder for making a modified copy.\n\nBecause each class is immutable, builder modification will _never_ affect already built class instances.\n\n## Asynchronous execution\n\nThe default client is synchronous. To switch to asynchronous execution, call the `async()` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport com.configure_me_emcees_prod_testing_5.api.models.Order\nimport com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams\n\n// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties\n// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.fromEnv()\n\nval order: Order = client.async().store().orders().create()\n```\n\nOr create an asynchronous client from the beginning:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClientAsync\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClientAsync\nimport com.configure_me_emcees_prod_testing_5.api.models.Order\nimport com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams\n\n// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties\n// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables\nval client: MoreConflictingClientAsync = MoreConflictingOkHttpClientAsync.fromEnv()\n\nval order: Order = client.store().orders().create()\n```\n\nThe asynchronous client supports the same options as the synchronous one, except most methods are [suspending](https://kotlinlang.org/docs/coroutines-guide.html).\n\n\n\n\n\n\n\n## Raw responses\n\nThe SDK defines methods that deserialize responses into instances of Kotlin classes.       However, these methods don\'t provide access to the response headers, status code, or the raw response       body.\n\nTo access this data, prefix any HTTP method call on a client or service with `withRawResponse()`:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.core.http.Headers\nimport com.configure_me_emcees_prod_testing_5.api.core.http.HttpResponseFor\nimport com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryParams\nimport com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryResponse\n\nval response: HttpResponseFor<StoreListInventoryResponse> = client.store().withRawResponse().listInventory()\n\nval statusCode: Int = response.statusCode()\nval headers: Headers = response.headers()\n```\n\nYou can still deserialize the response into an instance of a Kotlin class if needed:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryResponse\n\nval parsedResponse: StoreListInventoryResponse = response.parse()\n```\n\n## Error handling\n\nThe SDK throws custom unchecked exception types:\n\n- [`MoreConflictingServiceException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingServiceException.kt): Base class for HTTP errors. See this table for which exception       subclass is thrown for each HTTP status code:\n\n  | Status | Exception                                          |\n  | ------ | -------------------------------------------------- |\n  | 400    | [`BadRequestException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/BadRequestException.kt)           |\n  | 401    | [`UnauthorizedException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnauthorizedException.kt)         |\n  | 403    | [`PermissionDeniedException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/PermissionDeniedException.kt)     |\n  | 404    | [`NotFoundException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/NotFoundException.kt)             |\n  | 422    | [`UnprocessableEntityException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnprocessableEntityException.kt)  |\n  | 429    | [`RateLimitException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/RateLimitException.kt)            |\n  | 5xx    | [`InternalServerException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/InternalServerException.kt)       |\n  | others | [`UnexpectedStatusCodeException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnexpectedStatusCodeException.kt) |\n\n- [`MoreConflictingIoException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingIoException.kt): I/O networking errors.\n\n- [`MoreConflictingRetryableException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingRetryableException.kt): Generic error indicating a failure that could be retried by the client.\n\n- [`MoreConflictingInvalidDataException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingInvalidDataException.kt): Failure to interpret successfully parsed data. For example,       when accessing a property that\'s supposed to be required, but the API unexpectedly omitted it from the       response.\n\n- [`MoreConflictingException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingException.kt): Base class for all exceptions. Most errors will result in one of the       previously mentioned ones, but completely generic errors may be thrown using the base class.\n\n\n\n## Logging\n\nEnable logging by setting the `MORE_CONFLICTING_LOG` environment variable to   `info`:\n\n```sh\nexport MORE_CONFLICTING_LOG=info\n```\n\nOr to `debug` for more verbose logging:\n\n```sh\nexport MORE_CONFLICTING_LOG=debug\n```\n\nOr configure the client manually using the `logLevel` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport com.configure_me_emcees_prod_testing_5.api.core.LogLevel\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    .logLevel(LogLevel.INFO)\n    .build()\n```\n\n## ProGuard and R8\n\nAlthough the SDK uses reflection, it is still usable with     [ProGuard](https://github.com/Guardsquare/proguard) and     [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because     `more-conflicting-kotlin-core` is published with a     [configuration file](more-conflicting-kotlin-core/src/main/resources/META-INF/proguard/more-conflicting-kotlin-core.pro) containing     [keep rules](https://www.guardsquare.com/manual/configuration/usage).\n\nProGuard and R8 should automatically detect and use the published rules, but you can also manually copy     the keep rules if necessary.\n\n\n\n\n\n## Jackson\n\nThe SDK depends on [Jackson](https://github.com/FasterXML/jackson) for JSON     serialization/deserialization. It is compatible with version 2.13.4 or higher,     but depends on version 2.18.2 by default.\n\nThe SDK throws an exception if it detects an incompatible Jackson version at runtime (e.g. if the     default version was overridden in your Maven or Gradle config).\n\nIf the SDK threw an exception, but you\'re _certain_ the version is compatible, then disable the version     check using the `checkJacksonVersionCompatibility` on [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) or     [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt).\n\n> [!CAUTION]\n> We make no guarantee that the SDK works correctly when the Jackson version check is disabled.\n\nAlso note that there are bugs in older Jackson versions that can affect the SDK. We don\'t work around all     Jackson bugs ([example](https://github.com/FasterXML/jackson-databind/issues/3240)) and expect users to     upgrade Jackson for those instead.\n\n## Network options\n\n### Retries\n\nThe SDK automatically retries 2 times by default, with a short exponential backoff between requests.\n\nOnly the following error types are retried:\n- Connection errors (for example, due to a network connectivity problem)\n- 408 Request Timeout\n- 409 Conflict\n- 429 Rate Limit\n- 5xx Internal\n\nThe API may also explicitly instruct the SDK to retry or not retry a request.\n\nTo set a custom number of retries, configure the client using the `maxRetries` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    .maxRetries(4)\n    .build()\n```\n\n### Timeouts\n\nRequests time out after 1 minute by default.\n\nTo set a custom timeout, configure the method call using the `timeout` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryResponse\n\nval response: StoreListInventoryResponse = client.store().listInventory(RequestOptions.builder().timeout(Duration.ofSeconds(30)).build())\n```\n\nOr configure the default for all method calls at the client level:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport java.time.Duration\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    .timeout(Duration.ofSeconds(30))\n    .build()\n```\n\n### Proxies\n\nTo route requests through a proxy, configure the client using the `proxy` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport java.net.InetSocketAddress\nimport java.net.Proxy\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    .proxy(Proxy(\n      Proxy.Type.HTTP, InetSocketAddress(\n        "https://example.com", 8080\n      )\n    ))\n    .build()\n```\n\nIf the proxy responds with `407 Proxy Authentication Required`, supply credentials by also   configuring `proxyAuthenticator`:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport com.configure_me_emcees_prod_testing_5.api.core.http.ProxyAuthenticator\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    .proxy(...)\n    // Or a custom implementation of `ProxyAuthenticator`.\n    .proxyAuthenticator(ProxyAuthenticator.basic("username", "password"))\n    .build()\n```\n\n### Connection pooling\n\nTo customize the underlying OkHttp connection pool, configure the client using the   `maxIdleConnections` and `keepAliveDuration` methods:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\nimport java.time.Duration\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    // If `maxIdleConnections` is set, then `keepAliveDuration` must be set, and vice versa.\n    .maxIdleConnections(10)\n    .keepAliveDuration(Duration.ofMinutes(2))\n    .build()\n```\n\nIf both options are unset, OkHttp\'s default connection pool settings are used.\n\n### HTTPS\n\n> [!NOTE]\n> Most applications should not call these methods, and instead use the system defaults. The defaults include\n> special optimizations that can be lost if the implementations are modified.\n\nTo configure how HTTPS connections are secured, configure the client using the `sslSocketFactory`,   `trustManager`, and `hostnameVerifier` methods:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    // If `sslSocketFactory` is set, then `trustManager` must be set, and vice versa.\n    .sslSocketFactory(yourSSLSocketFactory)\n    .trustManager(yourTrustManager)\n    .hostnameVerifier(yourHostnameVerifier)\n    .build()\n```\n\n\n\n### Custom HTTP client\n\nThe SDK consists of three artifacts:\n- `more-conflicting-kotlin-core`\n  - Contains core SDK logic\n  - Does not depend on [OkHttp](https://square.github.io/okhttp)\n  - Exposes [`MoreConflictingClient`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClient.kt), [`MoreConflictingClientAsync`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsync.kt),             [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt), and [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), all of which can             work with any HTTP client\n- `more-conflicting-kotlin-client-okhttp`\n  - Depends on [OkHttp](https://square.github.io/okhttp)\n  - Exposes [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) and [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt), which             provide a way to construct [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt) and             [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), respectively, using OkHttp\n- `more-conflicting-kotlin`\n  - Depends on and exposes the APIs of both `more-conflicting-kotlin-core` and `more-conflicting-kotlin-client-okhttp`\n  - Does not have its own logic\n\nThis structure allows replacing the SDK\'s default HTTP client without pulling in unnecessary dependencies.\n\n#### Customized [`OkHttpClient`](https://square.github.io/okhttp/3.x/okhttp/okhttp3/OkHttpClient.html)\n\n> [!TIP]\n> Try the available [network options](#network-options) before replacing the default client.\n\nTo use a customized `OkHttpClient`:\n\n1. Replace your [`more-conflicting-kotlin` dependency](#installation) with `more-conflicting-kotlin-core`\n2. Copy `more-conflicting-kotlin-client-okhttp`\'s [`OkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/OkHttpClient.kt) class into your code and        customize it\n3. Construct [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt) or [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), similarly to        [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) or [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt), using your        customized client\n\n### Completely custom HTTP client\n\nTo use a completely custom HTTP client:\n\n1. Replace your [`more-conflicting-kotlin` dependency](#installation) with `more-conflicting-kotlin-core`\n2. Write a class that implements the [`HttpClient`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/http/HttpClient.kt) interface\n3. Construct [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt) or [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), similarly to        [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) or [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt), using your new        client class\n\n## Undocumented API functionality\n\nThe SDK is typed for convenient usage of the documented API. However, it also supports working with undocumented or not yet supported parts of the API.\n\n### Parameters\n\nTo set undocumented parameters, call the `putAdditionalHeader`, `putAdditionalQueryParam`, or       `putAdditionalBodyProperty` methods on any `Params` class:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonValue\nimport com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams\n\nval params: OrderCreateParams = OrderCreateParams.builder()\n    .putAdditionalHeader("Secret-Header", "42")\n    .putAdditionalQueryParam("secret_query_param", "42")\n    .putAdditionalBodyProperty("secretProperty", JsonValue.from("42"))\n    .build()\n```\n\nThese can be accessed on the built object later using the `_additionalHeaders()`,       `_additionalQueryParams()`, and `_additionalBodyProperties()` methods.\n\nTo set a documented parameter or property to an undocumented or not yet supported _value_, pass a       [`JsonValue`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) object to its setter:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams\n\nval params: OrderCreateParams = OrderCreateParams.builder().build()\n```\n\nThe most straightforward way to create a [`JsonValue`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) is using its       `from(...)` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonValue\n\n// Create primitive JSON values\nval nullValue: JsonValue = JsonValue.from(null)\nval booleanValue: JsonValue = JsonValue.from(true)\nval numberValue: JsonValue = JsonValue.from(42)\nval stringValue: JsonValue = JsonValue.from("Hello World!")\n\n// Create a JSON array value equivalent to `["Hello", "World"]`\nval arrayValue: JsonValue = JsonValue.from(listOf(\n  "Hello", "World"\n))\n\n// Create a JSON object value equivalent to `{ "a": 1, "b": 2 }`\nval objectValue: JsonValue = JsonValue.from(mapOf(\n  "a" to 1, "b" to 2\n))\n\n// Create an arbitrarily nested JSON equivalent to:\n// {\n//   "a": [1, 2],\n//   "b": [3, 4]\n// }\nval complexValue: JsonValue = JsonValue.from(mapOf(\n  "a" to listOf(\n    1, 2\n  ), "b" to listOf(\n    3, 4\n  )\n))\n```\n\nNormally a `Builder` class\'s `build` method will throw         [`IllegalStateException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html)         if any required parameter or property is unset.\n\nTo forcibly omit a required parameter or property, pass [`JsonMissing`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt):\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonMissing\nimport com.configure_me_emcees_prod_testing_5.api.models.pets.Pet\nimport com.configure_me_emcees_prod_testing_5.api.models.pets.PetCreateParams\nimport com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams\n\nval params: OrderCreateParams = PetCreateParams.builder()\n    .pet(Pet.builder()\n        .name("doggie")\n        .addPhotoUrl("string")\n        .build())\n    .name(JsonMissing.of())\n    .build()\n```\n\n### Response properties\n\nTo access undocumented response properties, call the `_additionalProperties()` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonBoolean\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonNull\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonNumber\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonValue\n\nval additionalProperties: Map<String, JsonValue> = client.store().orders().create(params)._additionalProperties()\nval secretPropertyValue: JsonValue = additionalProperties.get("secretProperty")\n\nval result = when (secretPropertyValue) {\n    is JsonNull -> "It\'s null!"\n    is JsonBoolean -> "It\'s a boolean!"\n    is JsonNumber -> "It\'s a number!"\n    // Other types include `JsonMissing`, `JsonString`, `JsonArray`, and `JsonObject`\n    else -> "It\'s something else!"\n}\n```\n\nTo access a property\'s raw JSON value, which may be undocumented, call its `_` prefixed method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.core.JsonField\n\nval field: JsonField<Any> = client.store().orders().create(params)._field()\n\nif (field.isMissing()) {\n  // The property is absent from the JSON response\n} else if (field.isNull()) {\n  // The property was set to literal null\n} else {\n  // Check if value was provided as a string\n  // Other methods include `asNumber()`, `asBoolean()`, etc.\n  val jsonString: String? = field.asString();\n\n  // Try to deserialize into a custom type\n  val myObject: MyClass = field.asUnknown()!!.convert(MyClass::class.java)\n}\n```\n\n### Response validation\n\nIn rare cases, the API may return a response that doesn\'t match the expected type. For example, the SDK     may expect a property to contain a `String`, but the API could return something else.\n\nBy default, the SDK will not throw an exception in this case. It will throw     [`MoreConflictingInvalidDataException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingInvalidDataException.kt) only if you directly access the property.\n\nValidating the response is _not_ forwards compatible with new types from the API for existing fields.\n\nIf you would still prefer to check that the response is completely well-typed upfront, then either call     `validate()`:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.models.Order\n\nval order: Order = client.store().orders().create(params).validate()\n```\n\nOr configure the method call to validate the response using the `responseValidation` method:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.models.Order\n\nval order: Order = client.store().orders().create(RequestOptions.builder().responseValidation(true).build())\n```\n\nOr configure the default for all method calls at the client level:\n\n```kotlin\nimport com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient\nimport com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient\n\nval client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()\n    .fromEnv()\n    .responseValidation(true)\n    .build()\n```\n\n## FAQ\n\n### Why don\'t you use plain `enum` classes?\n\nKotlin `enum` classes are not trivially   [forwards compatible](https://www.stainless.com/blog/making-java-enums-forwards-compatible). Using them in   the SDK could cause runtime exceptions if the API is updated to respond with a new enum value.\n\n### Why do you represent fields using `JsonField<T>` instead of just plain `T`?\n\nUsing `JsonField<T>` enables a few features:\n\n- Allowing usage of [undocumented API functionality](#undocumented-api-functionality)\n- Lazily [validating the API response against the expected shape](#response-validation)\n- Representing absent vs explicitly null values\n\n### Why don\'t you use [`data` classes](https://kotlinlang.org/docs/data-classes.html)?\n\nIt is not [backwards compatible to add new fields to a data class](https://kotlinlang.org/docs/api-guidelines-backward-compatibility.html#avoid-using-data-classes-in-your-api)   and we don\'t want to introduce a breaking change every time we add a field to a class.\n\n### Why don\'t you use checked exceptions?\n\nChecked exceptions are widely considered a mistake in the Java programming language. In fact, they were   omitted from Kotlin for this reason.\n\nChecked exceptions:\n\n- Are verbose to handle\n- Encourage error handling at the wrong level of abstraction, where nothing can be done about the error\n- Are tedious to propagate due to the [function coloring problem](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function)\n- Don\'t play well with lambdas (also due to the function coloring problem)\n\n## Semantic versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n2. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/emcees-prod-testing-5-kotlin/issues) with questions, bugs, or suggestions.\n',
+  },
+  {
+    language: 'php',
+    content:
+      '# More Conflicting PHP API Library\n\nThe More Conflicting PHP library provides convenient access to the More Conflicting REST API from any PHP 8.1.0+ application.\n\n## Installation\n\nTo use this package, install via Composer by adding the following to your application\'s `composer.json`:\n\n```json\n{\n  "repositories": [\n    {\n      "type": "vcs",\n      "url": "git@github.com:stainless-sdks/emcees-prod-testing-5-php.git"\n    }\n  ],\n  "require": {\n    "org-placeholder/emcees-prod-testing-5": "dev-main"\n  }\n}\n```\n\n## Usage\n\n```php\n<?php\n\n$client = new Client(apiKey: getenv(\'PETSTORE_API_KEY\') ?: \'My API Key\');\n\n$order = $client->store->orders->create(\n  petID: 1, quantity: 1, status: \'placed\'\n);\n\nvar_dump($order->id);\n```',
   },
   {
     language: 'python',

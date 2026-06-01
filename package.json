@@ -1,8 +1,8 @@
 {
   "name": "emcees-prod-testing-5",
   "version": "0.0.1",
-  "description": "The official TypeScript library for the More Conflicting API",
-  "author": "More Conflicting <>",
+  "description": "The official TypeScript library for the Emcees Prod Testing 5 API",
+  "author": "Emcees Prod Testing 5 <james@firefly-iii.org>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",

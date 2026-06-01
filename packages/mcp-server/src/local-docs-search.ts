@@ -106,6 +106,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 pets update \\\n  --api-key 'My API Key' \\\n  --name doggie \\\n  --photo-url string",
       },
+      csharp: {
+        method: 'Pets.Update',
+        example:
+          'PetUpdateParams parameters = new()\n{\n    Name = "doggie",\n    PhotoUrls =\n    [\n        "string"\n    ],\n};\n\nvar pet = await client.Pets.Update(parameters);\n\nConsole.WriteLine(pet);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/pet \\\n    -X PUT \\\n    -H \'Content-Type: application/json\' \\\n    -H "api_key: $PETSTORE_API_KEY" \\\n    -d \'{\n          "name": "doggie",\n          "photoUrls": [\n            "string"\n          ],\n          "id": 10\n        }\'',
@@ -168,6 +173,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 pets create \\\n  --api-key 'My API Key' \\\n  --name doggie \\\n  --photo-url string",
       },
+      csharp: {
+        method: 'Pets.Create',
+        example:
+          'PetCreateParams parameters = new()\n{\n    Name = "doggie",\n    PhotoUrls =\n    [\n        "string"\n    ],\n};\n\nvar pet = await client.Pets.Create(parameters);\n\nConsole.WriteLine(pet);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/pet \\\n    -H \'Content-Type: application/json\' \\\n    -H "api_key: $PETSTORE_API_KEY" \\\n    -d \'{\n          "name": "doggie",\n          "photoUrls": [\n            "string"\n          ],\n          "id": 10\n        }\'',
@@ -221,6 +231,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'pets find_by_status',
         example: "emcees-prod-testing-5 pets find-by-status \\\n  --api-key 'My API Key'",
+      },
+      csharp: {
+        method: 'Pets.FindByStatus',
+        example:
+          'PetFindByStatusParams parameters = new();\n\nvar pets = await client.Pets.FindByStatus(parameters);\n\nConsole.WriteLine(pets);',
       },
       http: {
         example:
@@ -277,6 +292,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'pets find_by_tags',
         example: "emcees-prod-testing-5 pets find-by-tags \\\n  --api-key 'My API Key'",
       },
+      csharp: {
+        method: 'Pets.FindByTags',
+        example:
+          'PetFindByTagsParams parameters = new();\n\nvar pets = await client.Pets.FindByTags(parameters);\n\nConsole.WriteLine(pets);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/pet/findByTags \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -331,6 +351,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'pets retrieve',
         example: "emcees-prod-testing-5 pets retrieve \\\n  --api-key 'My API Key' \\\n  --pet-id 0",
       },
+      csharp: {
+        method: 'Pets.Retrieve',
+        example:
+          'PetRetrieveParams parameters = new() { PetID = 0 };\n\nvar pet = await client.Pets.Retrieve(parameters);\n\nConsole.WriteLine(pet);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/pet/$PET_ID \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -383,6 +408,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'pets update_by_id',
         example: "emcees-prod-testing-5 pets update-by-id \\\n  --api-key 'My API Key' \\\n  --pet-id 0",
       },
+      csharp: {
+        method: 'Pets.UpdateByID',
+        example:
+          'PetUpdateByIDParams parameters = new() { PetID = 0 };\n\nawait client.Pets.UpdateByID(parameters);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/pet/$PET_ID \\\n    -X POST \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -434,6 +464,10 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'pets delete',
         example: "emcees-prod-testing-5 pets delete \\\n  --api-key 'My API Key' \\\n  --pet-id 0",
+      },
+      csharp: {
+        method: 'Pets.Delete',
+        example: 'PetDeleteParams parameters = new() { PetID = 0 };\n\nawait client.Pets.Delete(parameters);',
       },
       http: {
         example:
@@ -489,6 +523,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 pets upload-image \\\n  --api-key 'My API Key' \\\n  --pet-id 0 \\\n  --image 'Example data'",
       },
+      csharp: {
+        method: 'Pets.UploadImage',
+        example:
+          'PetUploadImageParams parameters = new()\n{\n    PetID = 0,\n    Image = Encoding.UTF8.GetBytes("Example data"),\n};\n\nvar response = await client.Pets.UploadImage(parameters);\n\nConsole.WriteLine(response);',
+      },
       http: {
         example:
           "curl https://petstore3.swagger.io/api/v3/pet/$PET_ID/uploadImage \\\n    -H 'Content-Type: application/octet-stream' \\\n    -H \"api_key: $PETSTORE_API_KEY\" \\\n    -F 'image=@/path/to/image'",
@@ -540,6 +579,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'store list_inventory',
         example: "emcees-prod-testing-5 store list-inventory \\\n  --api-key 'My API Key'",
+      },
+      csharp: {
+        method: 'Store.ListInventory',
+        example:
+          'StoreListInventoryParams parameters = new();\n\nvar response = await client.Store.ListInventory(parameters);\n\nConsole.WriteLine(response);',
       },
       http: {
         example:
@@ -602,6 +646,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'orders create',
         example: "emcees-prod-testing-5 store:orders create \\\n  --api-key 'My API Key'",
       },
+      csharp: {
+        method: 'Store.Orders.Create',
+        example:
+          'OrderCreateParams parameters = new();\n\nvar order = await client.Store.Orders.Create(parameters);\n\nConsole.WriteLine(order);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/store/order \\\n    -X POST \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -658,6 +707,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 store:orders retrieve \\\n  --api-key 'My API Key' \\\n  --order-id 0",
       },
+      csharp: {
+        method: 'Store.Orders.Retrieve',
+        example:
+          'OrderRetrieveParams parameters = new() { OrderID = 0 };\n\nvar order = await client.Store.Orders.Retrieve(parameters);\n\nConsole.WriteLine(order);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/store/order/$ORDER_ID \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -710,6 +764,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'orders delete',
         example: "emcees-prod-testing-5 store:orders delete \\\n  --api-key 'My API Key' \\\n  --order-id 0",
+      },
+      csharp: {
+        method: 'Store.Orders.Delete',
+        example:
+          'OrderDeleteParams parameters = new() { OrderID = 0 };\n\nawait client.Store.Orders.Delete(parameters);',
       },
       http: {
         example:
@@ -774,6 +833,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users create',
         example: "emcees-prod-testing-5 users create \\\n  --api-key 'My API Key'",
       },
+      csharp: {
+        method: 'Users.Create',
+        example:
+          'UserCreateParams parameters = new();\n\nvar user = await client.Users.Create(parameters);\n\nConsole.WriteLine(user);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/user \\\n    -X POST \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -830,6 +894,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users create_with_list',
         example: "emcees-prod-testing-5 users create-with-list \\\n  --api-key 'My API Key'",
       },
+      csharp: {
+        method: 'Users.CreateWithList',
+        example:
+          'UserCreateWithListParams parameters = new();\n\nvar user = await client.Users.CreateWithList(parameters);\n\nConsole.WriteLine(user);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/user/createWithList \\\n    -X POST \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -883,6 +952,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users login',
         example: "emcees-prod-testing-5 users login \\\n  --api-key 'My API Key'",
       },
+      csharp: {
+        method: 'Users.Login',
+        example:
+          'UserLoginParams parameters = new();\n\nvar response = await client.Users.Login(parameters);\n\nConsole.WriteLine(response);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/user/login \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -933,6 +1007,10 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       cli: {
         method: 'users logout',
         example: "emcees-prod-testing-5 users logout \\\n  --api-key 'My API Key'",
+      },
+      csharp: {
+        method: 'Users.Logout',
+        example: 'UserLogoutParams parameters = new();\n\nawait client.Users.Logout(parameters);',
       },
       http: {
         example:
@@ -988,6 +1066,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users retrieve',
         example:
           "emcees-prod-testing-5 users retrieve \\\n  --api-key 'My API Key' \\\n  --username username",
+      },
+      csharp: {
+        method: 'Users.Retrieve',
+        example:
+          'UserRetrieveParams parameters = new() { Username = "username" };\n\nvar user = await client.Users.Retrieve(parameters);\n\nConsole.WriteLine(user);',
       },
       http: {
         example:
@@ -1052,6 +1135,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           "emcees-prod-testing-5 users update \\\n  --api-key 'My API Key' \\\n  --existing-username username",
       },
+      csharp: {
+        method: 'Users.Update',
+        example:
+          'UserUpdateParams parameters = new() { ExistingUsername = "username" };\n\nawait client.Users.Update(parameters);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/user/$EXISTING_USERNAME \\\n    -X PUT \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -1104,6 +1192,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         method: 'users delete',
         example: "emcees-prod-testing-5 users delete \\\n  --api-key 'My API Key' \\\n  --username username",
       },
+      csharp: {
+        method: 'Users.Delete',
+        example:
+          'UserDeleteParams parameters = new() { Username = "username" };\n\nawait client.Users.Delete(parameters);',
+      },
       http: {
         example:
           'curl https://petstore3.swagger.io/api/v3/user/$USERNAME \\\n    -X DELETE \\\n    -H "api_key: $PETSTORE_API_KEY"',
@@ -1117,6 +1210,11 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
     language: 'cli',
     content:
       "# More Conflicting CLI\n\nThe official CLI for the More Conflicting REST API.\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## Installation\n\n### Installing with Go\n\nTo test or install the CLI locally, you need [Go](https://go.dev/doc/install) version 1.22 or later installed.\n\n~~~sh\ngo install 'github.com/stainless-sdks/emcees-prod-testing-5-cli/cmd/emcees-prod-testing-5@latest'\n~~~\n\nOnce you have run `go install`, the binary is placed in your Go bin directory:\n\n- **Default location**: `$HOME/go/bin` (or `$GOPATH/bin` if GOPATH is set)\n- **Check your path**: Run `go env GOPATH` to see the base directory\n\nIf commands aren't found after installation, add the Go bin directory to your PATH:\n\n~~~sh\n# Add to your shell profile (.zshrc, .bashrc, etc.)\nexport PATH=\"$PATH:$(go env GOPATH)/bin\"\n~~~\n\n### Running Locally\n\nAfter cloning the git repository for this project, you can use the\n`scripts/run` script to run the tool locally:\n\n~~~sh\n./scripts/run args...\n~~~\n\n## Usage\n\nThe CLI follows a resource-based command structure:\n\n~~~sh\nemcees-prod-testing-5 [resource] <command> [flags...]\n~~~\n\n~~~sh\nemcees-prod-testing-5 store:orders create \\\n  --api-key 'My API Key' \\\n  --pet-id 1 \\\n  --quantity 1 \\\n  --status placed\n~~~\n\nFor details about specific commands, use the `--help` flag.\n\n### Environment variables\n\n| Environment variable | Required |\n| -------------------- | -------- |\n| `PETSTORE_API_KEY`   | yes      |\n\n### Global flags\n\n- `--api-key` (can also be set with `PETSTORE_API_KEY` env var)\n- `--help` - Show command line usage\n- `--debug` - Enable debug logging (includes HTTP request/response details)\n- `--version`, `-v` - Show the CLI version\n- `--base-url` - Use a custom API backend URL\n- `--format` - Change the output format (`auto`, `explore`, `json`, `jsonl`, `pretty`, `raw`, `yaml`)\n- `--format-error` - Change the output format for errors (`auto`, `explore`, `json`, `jsonl`, `pretty`, `raw`, `yaml`)\n- `--transform` - Transform the data output using [GJSON syntax](https://github.com/tidwall/gjson/blob/master/SYNTAX.md)\n- `--transform-error` - Transform the error output using [GJSON syntax](https://github.com/tidwall/gjson/blob/master/SYNTAX.md)\n\n### Passing files as arguments\n\nTo pass files to your API, you can use the `@myfile.ext` syntax:\n\n~~~bash\nemcees-prod-testing-5 <command> --arg @abe.jpg\n~~~\n\nFiles can also be passed inside JSON or YAML blobs:\n\n~~~bash\nemcees-prod-testing-5 <command> --arg '{image: \"@abe.jpg\"}'\n# Equivalent:\nemcees-prod-testing-5 <command> <<YAML\narg:\n  image: \"@abe.jpg\"\nYAML\n~~~\n\nIf you need to pass a string literal that begins with an `@` sign, you can\nescape the `@` sign to avoid accidentally passing a file.\n\n~~~bash\nemcees-prod-testing-5 <command> --username '\\@abe'\n~~~\n\n#### Explicit encoding\n\nFor JSON endpoints, the CLI tool does filetype sniffing to determine whether the\nfile contents should be sent as a string literal (for plain text files) or as a\nbase64-encoded string literal (for binary files). If you need to explicitly send\nthe file as either plain text or base64-encoded data, you can use\n`@file://myfile.txt` (for string encoding) or `@data://myfile.dat` (for\nbase64-encoding). Note that absolute paths will begin with `@file://` or\n`@data://`, followed by a third `/` (for example, `@file:///tmp/file.txt`).\n\n~~~bash\nemcees-prod-testing-5 <command> --arg @data://file.txt\n~~~\n\n## Linking different Go SDK versions\n\nYou can link the CLI against a different version of the More Conflicting Go SDK\nfor development purposes using the `./scripts/link` script.\n\nTo link to a specific version from a repository (version can be a branch,\ngit tag, or commit hash):\n\n~~~bash\n./scripts/link github.com/org/repo@version\n~~~\n\nTo link to a local copy of the SDK:\n\n~~~bash\n./scripts/link ../path/to/emceesprodtesting5-go\n~~~\n\nIf you run the link script without any arguments, it will default to `../emceesprodtesting5-go`.\n",
+  },
+  {
+    language: 'csharp',
+    content:
+      '# More Conflicting C# API Library\n\nThe More Conflicting C# SDK provides convenient access to the More Conflicting REST API from applications written in   C#.\n\n## Installation\n\n```bash\ngit clone git@github.com:stainless-sdks/emcees-prod-testing-5-csharp.git\ndotnet add reference emcees-prod-testing-5-csharp/src/EmceesProdTesting5\n```\n\n## Requirements\n\nThis library requires .NET Standard 2.0 or later.\n\n## Usage\n\nSee the [`examples`](examples) directory for complete and runnable examples.\n\n```csharp\nMoreConflictingClient client = new();\n\nOrderCreateParams parameters = new()\n{\n    PetID = 1,\n    Quantity = 1,\n    Status = Status.Placed,\n};\n\nvar order = await client.Store.Orders.Create(parameters);\n\nConsole.WriteLine(order);\n```',
   },
   {
     language: 'go',

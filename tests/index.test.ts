@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'firefly/core/api-promise';
+import { APIPromise } from 'firefly-iii-api/core/api-promise';
 
 import util from 'node:util';
-import Firefly from 'firefly';
-import { APIUserAbortError } from 'firefly';
+import Firefly from 'firefly-iii-api';
+import { APIUserAbortError } from 'firefly-iii-api';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

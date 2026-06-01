@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'firefly/internal/uploads';
-import { toFile } from 'firefly/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'firefly-iii-api/internal/uploads';
+import { toFile } from 'firefly-iii-api/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

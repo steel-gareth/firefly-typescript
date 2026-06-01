@@ -7,8 +7,8 @@ import {
   ListToolsRequestSchema,
   SetLevelRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js';
-import { ClientOptions } from 'firefly';
-import Firefly from 'firefly';
+import { ClientOptions } from 'firefly-iii-api';
+import Firefly from 'firefly-iii-api';
 import { codeTool } from './code-tool';
 import docsSearchTool from './docs-search-tool';
 import { setLocalSearch } from './docs-search-tool';
@@ -28,8 +28,8 @@ export const newMcpServer = async ({
 }) =>
   new McpServer(
     {
-      name: 'firefly_api',
-      version: '0.0.1',
+      name: 'firefly_iii_api_api',
+      version: '0.1.0',
     },
     {
       instructions: await getInstructions({ stainlessApiKey, customInstructionsPath }),

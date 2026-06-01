@@ -97,7 +97,7 @@ importers:
       express:
         specifier: ^5.1.0
         version: 5.2.1
-      firefly:
+      firefly-iii-api:
         specifier: workspace:*
         version: link:../..
       fuse.js:

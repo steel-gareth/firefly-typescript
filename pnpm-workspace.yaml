@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - emcees-prod-testing-5
+  - firefly

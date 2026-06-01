@@ -1,8 +1,8 @@
-# Emcees Prod Testing 5 TypeScript API Library
+# Firefly TypeScript API Library
 
-[![NPM version](<https://img.shields.io/npm/v/emcees-prod-testing-5.svg?label=npm%20(stable)>)](https://npmjs.org/package/emcees-prod-testing-5) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/emcees-prod-testing-5)
+[![NPM version](<https://img.shields.io/npm/v/firefly.svg?label=npm%20(stable)>)](https://npmjs.org/package/firefly) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/firefly)
 
-This library provides convenient access to the Emcees Prod Testing 5 REST API from server-side TypeScript or JavaScript.
+This library provides convenient access to the Firefly REST API from server-side TypeScript or JavaScript.
 
 The REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). The full API of this library can be found in [api.md](api.md).
 
@@ -15,7 +15,7 @@ npm install git+ssh://git@github.com:stainless-sdks/emcees-prod-testing-5-typesc
 ```
 
 > [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install emcees-prod-testing-5`
+> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install firefly`
 
 ## Usage
 
@@ -23,9 +23,9 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   environment: 'environment_1', // defaults to 'production'
 });
 
@@ -38,14 +38,13 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   environment: 'environment_1', // defaults to 'production'
 });
 
-const response: EmceesProdTesting5.AutocompleteListAccountsResponse =
-  await client.autocomplete.listAccounts();
+const response: Firefly.AutocompleteListAccountsResponse = await client.autocomplete.listAccounts();
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -59,7 +58,7 @@ a subclass of `APIError` will be thrown:
 <!-- prettier-ignore -->
 ```ts
 const response = await client.autocomplete.listAccounts().catch(async (err) => {
-  if (err instanceof EmceesProdTesting5.APIError) {
+  if (err instanceof Firefly.APIError) {
     console.log(err.status); // 400
     console.log(err.name); // BadRequestError
     console.log(err.headers); // {server: 'nginx', ...}
@@ -93,7 +92,7 @@ You can use the `maxRetries` option to configure or disable this:
 <!-- prettier-ignore -->
 ```js
 // Configure the default for all requests:
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   maxRetries: 0, // default is 2
 });
 
@@ -110,7 +109,7 @@ Requests time out after 1 minute by default. You can configure this with a `time
 <!-- prettier-ignore -->
 ```ts
 // Configure the default for all requests:
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   timeout: 20 * 1000, // 20 seconds (default is 1 minute)
 });
 
@@ -136,7 +135,7 @@ Unlike `.asResponse()` this method consumes the body, returning once it is parse
 
 <!-- prettier-ignore -->
 ```ts
-const client = new EmceesProdTesting5();
+const client = new Firefly();
 
 const response = await client.autocomplete.listAccounts().asResponse();
 console.log(response.headers.get('X-My-Header'));
@@ -157,13 +156,13 @@ console.log(response);
 
 The log level can be configured in two ways:
 
-1. Via the `EMCEES_PROD_TESTING_5_LOG` environment variable
+1. Via the `FIREFLY_LOG` environment variable
 2. Using the `logLevel` client option (overrides the environment variable if set)
 
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   logLevel: 'debug', // Show all log messages
 });
 ```
@@ -189,13 +188,13 @@ When providing a custom logger, the `logLevel` option still controls which messa
 below the configured level will not be sent to your logger.
 
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 import pino from 'pino';
 
 const logger = pino();
 
-const client = new EmceesProdTesting5({
-  logger: logger.child({ name: 'EmceesProdTesting5' }),
+const client = new Firefly({
+  logger: logger.child({ name: 'Firefly' }),
   logLevel: 'debug', // Send all messages to pino, allowing it to filter
 });
 ```
@@ -258,10 +257,10 @@ globalThis.fetch = fetch;
 Or pass it to the client:
 
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 import fetch from 'my-fetch';
 
-const client = new EmceesProdTesting5({ fetch });
+const client = new Firefly({ fetch });
 ```
 
 ### Fetch options
@@ -269,9 +268,9 @@ const client = new EmceesProdTesting5({ fetch });
 If you want to set custom `fetch` options without overriding the `fetch` function, you can provide a `fetchOptions` object when instantiating the client or making a request. (Request-specific options override client options.)
 
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   fetchOptions: {
     // `RequestInit` options
   },
@@ -286,11 +285,11 @@ options to requests:
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/node.svg" align="top" width="18" height="21"> **Node** <sup>[[docs](https://github.com/nodejs/undici/blob/main/docs/docs/api/ProxyAgent.md#example---proxyagent-with-fetch)]</sup>
 
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 import * as undici from 'undici';
 
 const proxyAgent = new undici.ProxyAgent('http://localhost:8888');
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   fetchOptions: {
     dispatcher: proxyAgent,
   },
@@ -300,9 +299,9 @@ const client = new EmceesProdTesting5({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/bun.svg" align="top" width="18" height="21"> **Bun** <sup>[[docs](https://bun.sh/guides/http/proxy)]</sup>
 
 ```ts
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   fetchOptions: {
     proxy: 'http://localhost:8888',
   },
@@ -312,10 +311,10 @@ const client = new EmceesProdTesting5({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/deno.svg" align="top" width="18" height="21"> **Deno** <sup>[[docs](https://docs.deno.com/api/deno/~/Deno.createHttpClient)]</sup>
 
 ```ts
-import EmceesProdTesting5 from 'npm:emcees-prod-testing-5';
+import Firefly from 'npm:firefly';
 
 const httpClient = Deno.createHttpClient({ proxy: { url: 'http://localhost:8888' } });
-const client = new EmceesProdTesting5({
+const client = new Firefly({
   fetchOptions: {
     client: httpClient,
   },

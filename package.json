@@ -1,8 +1,8 @@
 {
-  "name": "emcees-prod-testing-5",
+  "name": "firefly",
   "version": "0.0.1",
-  "description": "The official TypeScript library for the Emcees Prod Testing 5 API",
-  "author": "Emcees Prod Testing 5 <james@firefly-iii.org>",
+  "description": "The official TypeScript library for the Firefly API",
+  "author": "Firefly <james@firefly-iii.org>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",

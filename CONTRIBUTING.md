@@ -55,12 +55,12 @@ $ cd emcees-prod-testing-5-typescript
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link emcees-prod-testing-5
+$ yarn link firefly
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link --global emcees-prod-testing-5
+$ pnpm link --global firefly
 ```
 
 ## Running tests

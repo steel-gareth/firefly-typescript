@@ -1,10 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import EmceesProdTesting5 from 'emcees-prod-testing-5';
+import Firefly from 'firefly';
 
-const client = new EmceesProdTesting5({
-  baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
-});
+const client = new Firefly({ baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010' });
 
 describe('resource exchangeRates', () => {
   // Mock server tests are disabled
@@ -61,7 +59,7 @@ describe('resource exchangeRates', () => {
         },
         { path: '/_stainless_unknown_path' },
       ),
-    ).rejects.toThrow(EmceesProdTesting5.NotFoundError);
+    ).rejects.toThrow(Firefly.NotFoundError);
   });
 
   // Mock server tests are disabled
@@ -111,7 +109,7 @@ describe('resource exchangeRates', () => {
         },
         { path: '/_stainless_unknown_path' },
       ),
-    ).rejects.toThrow(EmceesProdTesting5.NotFoundError);
+    ).rejects.toThrow(Firefly.NotFoundError);
   });
 
   // Mock server tests are disabled
@@ -135,7 +133,7 @@ describe('resource exchangeRates', () => {
         { 'X-Trace-Id': '40c71bbb-c676-4f24-83cf-cc725d7d7a00' },
         { path: '/_stainless_unknown_path' },
       ),
-    ).rejects.toThrow(EmceesProdTesting5.NotFoundError);
+    ).rejects.toThrow(Firefly.NotFoundError);
   });
 
   // Mock server tests are disabled

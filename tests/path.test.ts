@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'emcees-prod-testing-5/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'firefly/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 

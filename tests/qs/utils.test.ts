@@ -1,4 +1,4 @@
-import { combine, merge, is_buffer, assign_single_source } from 'emcees-prod-testing-5/internal/qs/utils';
+import { combine, merge, is_buffer, assign_single_source } from 'firefly/internal/qs/utils';
 
 describe('merge()', function () {
   // t.deepEqual(merge(null, true), [null, true], 'merges true into null');

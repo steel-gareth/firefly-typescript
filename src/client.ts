@@ -423,7 +423,7 @@ export interface ClientOptions {
   /**
    * Override the default base URL for the API, e.g., "https://api.example.com/v2/"
    *
-   * Defaults to process.env['EMCEES_PROD_TESTING_5_BASE_URL'].
+   * Defaults to process.env['FIREFLY_BASE_URL'].
    */
   baseURL?: string | null | undefined;
 
@@ -477,7 +477,7 @@ export interface ClientOptions {
   /**
    * Set the log level.
    *
-   * Defaults to process.env['EMCEES_PROD_TESTING_5_LOG'] or 'warn' if it isn't set.
+   * Defaults to process.env['FIREFLY_LOG'] or 'warn' if it isn't set.
    */
   logLevel?: LogLevel | undefined;
 
@@ -490,9 +490,9 @@ export interface ClientOptions {
 }
 
 /**
- * API Client for interfacing with the Emcees Prod Testing 5 API.
+ * API Client for interfacing with the Firefly API.
  */
-export class EmceesProdTesting5 {
+export class Firefly {
   bearerToken: string | null;
 
   baseURL: string;
@@ -508,11 +508,11 @@ export class EmceesProdTesting5 {
   private _options: ClientOptions;
 
   /**
-   * API Client for interfacing with the Emcees Prod Testing 5 API.
+   * API Client for interfacing with the Firefly API.
    *
-   * @param {string | null | undefined} [opts.bearerToken=process.env['EMCEES_PROD_TESTING_5_BEARER_TOKEN'] ?? null]
+   * @param {string | null | undefined} [opts.bearerToken=process.env['FIREFLY_BEARER_TOKEN'] ?? null]
    * @param {Environment} [opts.environment=production] - Specifies the environment URL to use for the API.
-   * @param {string} [opts.baseURL=process.env['EMCEES_PROD_TESTING_5_BASE_URL'] ?? https://demo.firefly-iii.org/api] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['FIREFLY_BASE_URL'] ?? https://demo.firefly-iii.org/api] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -521,8 +521,8 @@ export class EmceesProdTesting5 {
    * @param {Record<string, string | undefined>} opts.defaultQuery - Default query parameters to include with every request to the API.
    */
   constructor({
-    baseURL = readEnv('EMCEES_PROD_TESTING_5_BASE_URL'),
-    bearerToken = readEnv('EMCEES_PROD_TESTING_5_BEARER_TOKEN') ?? null,
+    baseURL = readEnv('FIREFLY_BASE_URL'),
+    bearerToken = readEnv('FIREFLY_BEARER_TOKEN') ?? null,
     ...opts
   }: ClientOptions = {}) {
     const options: ClientOptions = {
@@ -533,27 +533,27 @@ export class EmceesProdTesting5 {
     };
 
     if (baseURL && opts.environment) {
-      throw new Errors.EmceesProdTesting5Error(
-        'Ambiguous URL; The `baseURL` option (or EMCEES_PROD_TESTING_5_BASE_URL env var) and the `environment` option are given. If you want to use the environment you must pass baseURL: null',
+      throw new Errors.FireflyError(
+        'Ambiguous URL; The `baseURL` option (or FIREFLY_BASE_URL env var) and the `environment` option are given. If you want to use the environment you must pass baseURL: null',
       );
     }
 
     this.baseURL = options.baseURL || environments[options.environment || 'production'];
-    this.timeout = options.timeout ?? EmceesProdTesting5.DEFAULT_TIMEOUT /* 1 minute */;
+    this.timeout = options.timeout ?? Firefly.DEFAULT_TIMEOUT /* 1 minute */;
     this.logger = options.logger ?? console;
     const defaultLogLevel = 'warn';
     // Set default logLevel early so that we can log a warning in parseLogLevel.
     this.logLevel = defaultLogLevel;
     this.logLevel =
       parseLogLevel(options.logLevel, 'ClientOptions.logLevel', this) ??
-      parseLogLevel(readEnv('EMCEES_PROD_TESTING_5_LOG'), "process.env['EMCEES_PROD_TESTING_5_LOG']", this) ??
+      parseLogLevel(readEnv('FIREFLY_LOG'), "process.env['FIREFLY_LOG']", this) ??
       defaultLogLevel;
     this.fetchOptions = options.fetchOptions;
     this.maxRetries = options.maxRetries ?? 2;
     this.fetch = options.fetch ?? Shims.getDefaultFetch();
     this.#encoder = Opts.FallbackEncoder;
 
-    const customHeadersEnv = readEnv('EMCEES_PROD_TESTING_5_CUSTOM_HEADERS');
+    const customHeadersEnv = readEnv('FIREFLY_CUSTOM_HEADERS');
     if (customHeadersEnv) {
       const parsed: Record<string, string> = {};
       for (const line of customHeadersEnv.split('\n')) {
@@ -1106,10 +1106,10 @@ export class EmceesProdTesting5 {
     }
   }
 
-  static EmceesProdTesting5 = this;
+  static Firefly = this;
   static DEFAULT_TIMEOUT = 60000; // 1 minute
 
-  static EmceesProdTesting5Error = Errors.EmceesProdTesting5Error;
+  static FireflyError = Errors.FireflyError;
   static APIError = Errors.APIError;
   static APIConnectionError = Errors.APIConnectionError;
   static APIConnectionTimeoutError = Errors.APIConnectionTimeoutError;
@@ -1249,40 +1249,40 @@ export class EmceesProdTesting5 {
   webhooks: API.Webhooks = new API.Webhooks(this);
 }
 
-EmceesProdTesting5.Autocomplete = Autocomplete;
-EmceesProdTesting5.Chart = Chart;
-EmceesProdTesting5.Data = Data;
-EmceesProdTesting5.Insight = Insight;
-EmceesProdTesting5.Accounts = Accounts;
-EmceesProdTesting5.Attachments = Attachments;
-EmceesProdTesting5.AvailableBudgets = AvailableBudgets;
-EmceesProdTesting5.Bills = Bills;
-EmceesProdTesting5.Budgets = Budgets;
-EmceesProdTesting5.Categories = Categories;
-EmceesProdTesting5.ExchangeRates = ExchangeRates;
-EmceesProdTesting5.LinkTypes = LinkTypes;
-EmceesProdTesting5.TransactionLinks = TransactionLinks;
-EmceesProdTesting5.ObjectGroups = ObjectGroups;
-EmceesProdTesting5.PiggyBanks = PiggyBanks;
-EmceesProdTesting5.Recurrences = Recurrences;
-EmceesProdTesting5.RuleGroups = RuleGroups;
-EmceesProdTesting5.Rules = Rules;
-EmceesProdTesting5.Tags = Tags;
-EmceesProdTesting5.Currencies = Currencies;
-EmceesProdTesting5.TransactionJournals = TransactionJournals;
-EmceesProdTesting5.Transactions = Transactions;
-EmceesProdTesting5.UserGroups = UserGroups;
-EmceesProdTesting5.Search = Search;
-EmceesProdTesting5.Summary = Summary;
-EmceesProdTesting5.About = About;
-EmceesProdTesting5.Batch = Batch;
-EmceesProdTesting5.ConfigurationResource = ConfigurationResource;
-EmceesProdTesting5.Cron = Cron;
-EmceesProdTesting5.Users = Users;
-EmceesProdTesting5.Preferences = Preferences;
-EmceesProdTesting5.Webhooks = Webhooks;
+Firefly.Autocomplete = Autocomplete;
+Firefly.Chart = Chart;
+Firefly.Data = Data;
+Firefly.Insight = Insight;
+Firefly.Accounts = Accounts;
+Firefly.Attachments = Attachments;
+Firefly.AvailableBudgets = AvailableBudgets;
+Firefly.Bills = Bills;
+Firefly.Budgets = Budgets;
+Firefly.Categories = Categories;
+Firefly.ExchangeRates = ExchangeRates;
+Firefly.LinkTypes = LinkTypes;
+Firefly.TransactionLinks = TransactionLinks;
+Firefly.ObjectGroups = ObjectGroups;
+Firefly.PiggyBanks = PiggyBanks;
+Firefly.Recurrences = Recurrences;
+Firefly.RuleGroups = RuleGroups;
+Firefly.Rules = Rules;
+Firefly.Tags = Tags;
+Firefly.Currencies = Currencies;
+Firefly.TransactionJournals = TransactionJournals;
+Firefly.Transactions = Transactions;
+Firefly.UserGroups = UserGroups;
+Firefly.Search = Search;
+Firefly.Summary = Summary;
+Firefly.About = About;
+Firefly.Batch = Batch;
+Firefly.ConfigurationResource = ConfigurationResource;
+Firefly.Cron = Cron;
+Firefly.Users = Users;
+Firefly.Preferences = Preferences;
+Firefly.Webhooks = Webhooks;
 
-export declare namespace EmceesProdTesting5 {
+export declare namespace Firefly {
   export type RequestOptions = Opts.RequestOptions;
 
   export {

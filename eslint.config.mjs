@@ -22,7 +22,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^emcees-prod-testing-5(/.*)?',
+              regex: '^firefly(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

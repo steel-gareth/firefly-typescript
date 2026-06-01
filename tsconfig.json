@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "emcees-prod-testing-5/*": ["./src/*"],
-      "emcees-prod-testing-5": ["./src/index.ts"]
+      "firefly/*": ["./src/*"],
+      "firefly": ["./src/index.ts"]
     },
     "noEmit": true,
 

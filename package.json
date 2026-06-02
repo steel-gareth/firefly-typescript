@@ -1,6 +1,6 @@
 {
   "name": "firefly-iii-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The startlingly unofficial TypeScript library for the Firefly API",
   "author": "Firefly <james@firefly-iii.org>",
   "types": "dist/index.d.ts",

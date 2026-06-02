@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.1 (2026-06-02)
+
+Full Changelog: [v0.1.0...v0.1.1](https://github.com/steel-gareth/firefly-typescript/compare/v0.1.0...v0.1.1)
+
+### Chores
+
+* reword package description to "startlingly unofficial" ([dbe18cc](https://github.com/steel-gareth/firefly-typescript/commit/dbe18cc226daf2d9ce6b27223511001faeb33bb4))
+* update SDK settings ([03e64aa](https://github.com/steel-gareth/firefly-typescript/commit/03e64aa083a4b20d9be1c64841c627dff24a0fd9))
+* update SDK settings ([7ce8c1c](https://github.com/steel-gareth/firefly-typescript/commit/7ce8c1cc19a0e78680bf22580791413074330a33))
+* update SDK settings ([bd33952](https://github.com/steel-gareth/firefly-typescript/commit/bd339525bb3094699e9b6a14770e0ef97141093e))
+* update SDK settings ([794599b](https://github.com/steel-gareth/firefly-typescript/commit/794599b0f3b107ac8f54a0d75ba9b00bc504c98e))
+* update SDK settings ([298f909](https://github.com/steel-gareth/firefly-typescript/commit/298f90936dfc85850e5a58393f06d0ca2dd24885))
+
 ## 0.1.0 (2026-06-01)
 
 Full Changelog: [v0.0.1...v0.1.0](https://github.com/steel-gareth/firefly-typescript/compare/v0.0.1...v0.1.0)

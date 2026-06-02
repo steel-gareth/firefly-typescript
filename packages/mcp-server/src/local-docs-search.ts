@@ -15150,7 +15150,7 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
   {
     language: 'csharp',
     content:
-      '# Firefly C# API Library\n\nThe Firefly C# SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org) from applications written in   C#.\n\n## Installation\n\n```bash\ngit clone git@github.com:stainless-sdks/emcees-prod-testing-5-csharp.git\ndotnet add reference emcees-prod-testing-5-csharp/src/Firefly\n```\n\n## Requirements\n\nThis library requires .NET Standard 2.0 or later.\n\n## Usage\n\nSee the [`examples`](examples) directory for complete and runnable examples.\n\n```csharp\nFireflyClient client = new();\n\nAutocompleteListAccountsParams parameters = new();\n\nvar response = await client.Autocomplete.ListAccounts(parameters);\n\nConsole.WriteLine(response);\n```',
+      '# Firefly C# API Library\n\nThe Firefly C# SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org) from applications written in   C#.\n\n## Installation\n\n```bash\ngit clone git@github.com:steel-gareth/firefly-csharp.git\ndotnet add reference firefly-csharp/src/Firefly\n```\n\n## Requirements\n\nThis library requires .NET Standard 2.0 or later.\n\n## Usage\n\nSee the [`examples`](examples) directory for complete and runnable examples.\n\n```csharp\nFireflyClient client = new();\n\nAutocompleteListAccountsParams parameters = new();\n\nvar response = await client.Autocomplete.ListAccounts(parameters);\n\nConsole.WriteLine(response);\n```',
   },
   {
     language: 'go',

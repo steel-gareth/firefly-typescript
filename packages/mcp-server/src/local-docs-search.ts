@@ -93,7 +93,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListAccounts',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListAccounts(context.TODO(), firefly.AutocompleteListAccountsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListAccounts(context.TODO(), firefly.AutocompleteListAccountsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_accounts',
@@ -155,7 +155,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListBills',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tautocompleteBills, err := client.Autocomplete.ListBills(context.TODO(), firefly.AutocompleteListBillsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", autocompleteBills)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tautocompleteBills, err := client.Autocomplete.ListBills(context.TODO(), firefly.AutocompleteListBillsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", autocompleteBills)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_bills',
@@ -217,7 +217,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListBudgets',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListBudgets(context.TODO(), firefly.AutocompleteListBudgetsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListBudgets(context.TODO(), firefly.AutocompleteListBudgetsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_budgets',
@@ -279,7 +279,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListCategories',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListCategories(context.TODO(), firefly.AutocompleteListCategoriesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListCategories(context.TODO(), firefly.AutocompleteListCategoriesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_categories',
@@ -341,7 +341,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListCurrencies',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListCurrencies(context.TODO(), firefly.AutocompleteListCurrenciesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListCurrencies(context.TODO(), firefly.AutocompleteListCurrenciesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_currencies',
@@ -405,7 +405,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListCurrenciesWithCode',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListCurrenciesWithCode(context.TODO(), firefly.AutocompleteListCurrenciesWithCodeParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListCurrenciesWithCode(context.TODO(), firefly.AutocompleteListCurrenciesWithCodeParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_currencies_with_code',
@@ -467,7 +467,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListObjectGroups',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListObjectGroups(context.TODO(), firefly.AutocompleteListObjectGroupsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListObjectGroups(context.TODO(), firefly.AutocompleteListObjectGroupsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_object_groups',
@@ -530,7 +530,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListPiggyBanks',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListPiggyBanks(context.TODO(), firefly.AutocompleteListPiggyBanksParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListPiggyBanks(context.TODO(), firefly.AutocompleteListPiggyBanksParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_piggy_banks',
@@ -593,7 +593,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListPiggyBanksWithBalance',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListPiggyBanksWithBalance(context.TODO(), firefly.AutocompleteListPiggyBanksWithBalanceParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListPiggyBanksWithBalance(context.TODO(), firefly.AutocompleteListPiggyBanksWithBalanceParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_piggy_banks_with_balance',
@@ -655,7 +655,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListRecurringTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListRecurringTransactions(context.TODO(), firefly.AutocompleteListRecurringTransactionsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListRecurringTransactions(context.TODO(), firefly.AutocompleteListRecurringTransactionsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_recurring_transactions',
@@ -717,7 +717,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListRuleGroups',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListRuleGroups(context.TODO(), firefly.AutocompleteListRuleGroupsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListRuleGroups(context.TODO(), firefly.AutocompleteListRuleGroupsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_rule_groups',
@@ -779,7 +779,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListRules',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListRules(context.TODO(), firefly.AutocompleteListRulesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListRules(context.TODO(), firefly.AutocompleteListRulesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_rules',
@@ -841,7 +841,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListSubscriptions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tautocompleteBills, err := client.Autocomplete.ListSubscriptions(context.TODO(), firefly.AutocompleteListSubscriptionsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", autocompleteBills)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tautocompleteBills, err := client.Autocomplete.ListSubscriptions(context.TODO(), firefly.AutocompleteListSubscriptionsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", autocompleteBills)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_subscriptions',
@@ -903,7 +903,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListTags',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTags(context.TODO(), firefly.AutocompleteListTagsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTags(context.TODO(), firefly.AutocompleteListTagsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_tags',
@@ -965,7 +965,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListTransactionTypes',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTransactionTypes(context.TODO(), firefly.AutocompleteListTransactionTypesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTransactionTypes(context.TODO(), firefly.AutocompleteListTransactionTypesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_transaction_types',
@@ -1027,7 +1027,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTransactions(context.TODO(), firefly.AutocompleteListTransactionsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTransactions(context.TODO(), firefly.AutocompleteListTransactionsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_transactions',
@@ -1091,7 +1091,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Autocomplete.ListTransactionsWithID',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTransactionsWithID(context.TODO(), firefly.AutocompleteListTransactionsWithIDParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Autocomplete.ListTransactionsWithID(context.TODO(), firefly.AutocompleteListTransactionsWithIDParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'autocomplete.list_transactions_with_id',
@@ -1161,7 +1161,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Chart.Account.GetOverview',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Account.GetOverview(context.TODO(), firefly.ChartAccountGetOverviewParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Account.GetOverview(context.TODO(), firefly.ChartAccountGetOverviewParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
       },
       ruby: {
         method: 'chart.account.retrieve_overview',
@@ -1232,7 +1232,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Chart.Balance.GetBalance',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Balance.GetBalance(context.TODO(), firefly.ChartBalanceGetBalanceParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Balance.GetBalance(context.TODO(), firefly.ChartBalanceGetBalanceParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
       },
       ruby: {
         method: 'chart.balance.retrieve_balance',
@@ -1297,7 +1297,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Chart.Budget.GetOverview',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Budget.GetOverview(context.TODO(), firefly.ChartBudgetGetOverviewParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Budget.GetOverview(context.TODO(), firefly.ChartBudgetGetOverviewParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
       },
       ruby: {
         method: 'chart.budget.retrieve_overview',
@@ -1362,7 +1362,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Chart.Category.GetOverview',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Category.GetOverview(context.TODO(), firefly.ChartCategoryGetOverviewParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tchartDataSets, err := client.Chart.Category.GetOverview(context.TODO(), firefly.ChartCategoryGetOverviewParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", chartDataSets)\n}\n',
       },
       ruby: {
         method: 'chart.category.retrieve_overview',
@@ -1425,7 +1425,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Destroy',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Data.Destroy(context.TODO(), firefly.DataDestroyParams{\n\t\tObjects: firefly.DataDestroyParamsObjectsNotAssetsLiabilities,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Data.Destroy(context.TODO(), firefly.DataDestroyParams{\n\t\tObjects: firefly.DataDestroyParamsObjectsNotAssetsLiabilities,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'data.destroy',
@@ -1486,7 +1486,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Purge',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Data.Purge(context.TODO(), firefly.DataPurgeParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Data.Purge(context.TODO(), firefly.DataPurgeParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'data.purge',
@@ -1547,7 +1547,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Bulk.UpdateTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Data.Bulk.UpdateTransactions(context.TODO(), firefly.DataBulkUpdateTransactionsParams{\n\t\tQuery: "query",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Data.Bulk.UpdateTransactions(context.TODO(), firefly.DataBulkUpdateTransactionsParams{\n\t\tQuery: "query",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'data.bulk.update_transactions',
@@ -1610,7 +1610,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportAccounts',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportAccounts(context.TODO(), firefly.DataExportExportAccountsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportAccounts(context.TODO(), firefly.DataExportExportAccountsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_accounts',
@@ -1673,7 +1673,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportBills',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportBills(context.TODO(), firefly.DataExportExportBillsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportBills(context.TODO(), firefly.DataExportExportBillsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_bills',
@@ -1736,7 +1736,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportBudgets',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportBudgets(context.TODO(), firefly.DataExportExportBudgetsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportBudgets(context.TODO(), firefly.DataExportExportBudgetsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_budgets',
@@ -1799,7 +1799,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportCategories',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportCategories(context.TODO(), firefly.DataExportExportCategoriesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportCategories(context.TODO(), firefly.DataExportExportCategoriesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_categories',
@@ -1862,7 +1862,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportPiggyBanks',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportPiggyBanks(context.TODO(), firefly.DataExportExportPiggyBanksParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportPiggyBanks(context.TODO(), firefly.DataExportExportPiggyBanksParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_piggy_banks',
@@ -1925,7 +1925,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportRecurring',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportRecurring(context.TODO(), firefly.DataExportExportRecurringParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportRecurring(context.TODO(), firefly.DataExportExportRecurringParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_recurring',
@@ -1988,7 +1988,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportRules',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportRules(context.TODO(), firefly.DataExportExportRulesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportRules(context.TODO(), firefly.DataExportExportRulesParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_rules',
@@ -2051,7 +2051,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportTags',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportTags(context.TODO(), firefly.DataExportExportTagsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportTags(context.TODO(), firefly.DataExportExportTagsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_tags',
@@ -2114,7 +2114,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Data.Export.ExportTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportTransactions(context.TODO(), firefly.DataExportExportTransactionsParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Data.Export.ExportTransactions(context.TODO(), firefly.DataExportExportTransactionsParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'data.export.export_transactions',
@@ -2179,7 +2179,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListByExpenseAccount',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByExpenseAccount(context.TODO(), firefly.InsightExpenseListByExpenseAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByExpenseAccount(context.TODO(), firefly.InsightExpenseListByExpenseAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_by_expense_account',
@@ -2244,7 +2244,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListByAssetAccount',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByAssetAccount(context.TODO(), firefly.InsightExpenseListByAssetAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByAssetAccount(context.TODO(), firefly.InsightExpenseListByAssetAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_by_asset_account',
@@ -2314,7 +2314,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListByBill',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByBill(context.TODO(), firefly.InsightExpenseListByBillParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByBill(context.TODO(), firefly.InsightExpenseListByBillParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_by_bill',
@@ -2379,7 +2379,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListWithoutBill',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutBill(context.TODO(), firefly.InsightExpenseListWithoutBillParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutBill(context.TODO(), firefly.InsightExpenseListWithoutBillParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_without_bill',
@@ -2449,7 +2449,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListByBudget',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByBudget(context.TODO(), firefly.InsightExpenseListByBudgetParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByBudget(context.TODO(), firefly.InsightExpenseListByBudgetParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_by_budget',
@@ -2514,7 +2514,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListWithoutBudget',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutBudget(context.TODO(), firefly.InsightExpenseListWithoutBudgetParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutBudget(context.TODO(), firefly.InsightExpenseListWithoutBudgetParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_without_budget',
@@ -2585,7 +2585,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListByCategory',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByCategory(context.TODO(), firefly.InsightExpenseListByCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByCategory(context.TODO(), firefly.InsightExpenseListByCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_by_category',
@@ -2650,7 +2650,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListWithoutCategory',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutCategory(context.TODO(), firefly.InsightExpenseListWithoutCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutCategory(context.TODO(), firefly.InsightExpenseListWithoutCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_without_category',
@@ -2720,7 +2720,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListByTag',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByTag(context.TODO(), firefly.InsightExpenseListByTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Expense.ListByTag(context.TODO(), firefly.InsightExpenseListByTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_by_tag',
@@ -2785,7 +2785,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.ListWithoutTag',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutTag(context.TODO(), firefly.InsightExpenseListWithoutTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.ListWithoutTag(context.TODO(), firefly.InsightExpenseListWithoutTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.list_without_tag',
@@ -2849,7 +2849,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Expense.GetTotal',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.GetTotal(context.TODO(), firefly.InsightExpenseGetTotalParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Expense.GetTotal(context.TODO(), firefly.InsightExpenseGetTotalParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.expense.get_total',
@@ -2914,7 +2914,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.ListByRevenueAccount',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByRevenueAccount(context.TODO(), firefly.InsightIncomeListByRevenueAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByRevenueAccount(context.TODO(), firefly.InsightIncomeListByRevenueAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.list_by_revenue_account',
@@ -2979,7 +2979,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.ListByAssetAccount',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByAssetAccount(context.TODO(), firefly.InsightIncomeListByAssetAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByAssetAccount(context.TODO(), firefly.InsightIncomeListByAssetAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.list_by_asset_account',
@@ -3050,7 +3050,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.ListByCategory',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByCategory(context.TODO(), firefly.InsightIncomeListByCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByCategory(context.TODO(), firefly.InsightIncomeListByCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.list_by_category',
@@ -3115,7 +3115,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.ListWithoutCategory',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Income.ListWithoutCategory(context.TODO(), firefly.InsightIncomeListWithoutCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Income.ListWithoutCategory(context.TODO(), firefly.InsightIncomeListWithoutCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.list_without_category',
@@ -3185,7 +3185,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.ListByTag',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByTag(context.TODO(), firefly.InsightIncomeListByTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Income.ListByTag(context.TODO(), firefly.InsightIncomeListByTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.list_by_tag',
@@ -3250,7 +3250,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.ListWithoutTag',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Income.ListWithoutTag(context.TODO(), firefly.InsightIncomeListWithoutTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Income.ListWithoutTag(context.TODO(), firefly.InsightIncomeListWithoutTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.list_without_tag',
@@ -3314,7 +3314,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Income.GetTotal',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Income.GetTotal(context.TODO(), firefly.InsightIncomeGetTotalParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Income.GetTotal(context.TODO(), firefly.InsightIncomeGetTotalParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.income.get_total',
@@ -3379,7 +3379,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Transfer.ListByAssetAccount',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Insight.Transfer.ListByAssetAccount(context.TODO(), firefly.InsightTransferListByAssetAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Insight.Transfer.ListByAssetAccount(context.TODO(), firefly.InsightTransferListByAssetAccountParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'insight.transfer.list_by_asset_account',
@@ -3450,7 +3450,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Transfer.ListByCategory',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Transfer.ListByCategory(context.TODO(), firefly.InsightTransferListByCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Transfer.ListByCategory(context.TODO(), firefly.InsightTransferListByCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.transfer.list_by_category',
@@ -3515,7 +3515,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Transfer.ListWithoutCategory',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Transfer.ListWithoutCategory(context.TODO(), firefly.InsightTransferListWithoutCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Transfer.ListWithoutCategory(context.TODO(), firefly.InsightTransferListWithoutCategoryParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.transfer.list_without_category',
@@ -3586,7 +3586,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Transfer.ListByTag',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Transfer.ListByTag(context.TODO(), firefly.InsightTransferListByTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightGroupEntries, err := client.Insight.Transfer.ListByTag(context.TODO(), firefly.InsightTransferListByTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightGroupEntries)\n}\n',
       },
       ruby: {
         method: 'insight.transfer.list_by_tag',
@@ -3651,7 +3651,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Transfer.ListWithoutTag',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Transfer.ListWithoutTag(context.TODO(), firefly.InsightTransferListWithoutTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Transfer.ListWithoutTag(context.TODO(), firefly.InsightTransferListWithoutTagParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.transfer.list_without_tag',
@@ -3715,7 +3715,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Insight.Transfer.GetTotal',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Transfer.GetTotal(context.TODO(), firefly.InsightTransferGetTotalParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tinsightTotalEntries, err := client.Insight.Transfer.GetTotal(context.TODO(), firefly.InsightTransferGetTotalParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", insightTotalEntries)\n}\n',
       },
       ruby: {
         method: 'insight.transfer.get_total',
@@ -3787,7 +3787,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Accounts.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Accounts.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.list_transactions',
@@ -3850,7 +3850,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Accounts.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Accounts.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.list_attachments',
@@ -3913,7 +3913,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.ListPiggyBanks',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankArray, err := client.Accounts.ListPiggyBanks(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountListPiggyBanksParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankArray, err := client.Accounts.ListPiggyBanks(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountListPiggyBanksParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankArray.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.list_piggy_banks',
@@ -3984,7 +3984,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountArray, err := client.Accounts.List(context.TODO(), firefly.AccountListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountArray, err := client.Accounts.List(context.TODO(), firefly.AccountListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountArray.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.list',
@@ -4073,7 +4073,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountSingle, err := client.Accounts.New(context.TODO(), firefly.AccountNewParams{\n\t\tName: "My checking account",\n\t\tType: firefly.ShortAccountTypePropertyAsset,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountSingle, err := client.Accounts.New(context.TODO(), firefly.AccountNewParams{\n\t\tName: "My checking account",\n\t\tType: firefly.ShortAccountTypePropertyAsset,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountSingle.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.create',
@@ -4136,7 +4136,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountSingle, err := client.Accounts.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountSingle, err := client.Accounts.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountSingle.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.retrieve',
@@ -4225,7 +4225,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountSingle, err := client.Accounts.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountUpdateParams{\n\t\t\tName: "My checking account",\n\t\t\tType: map[string]any{},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountSingle, err := client.Accounts.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountUpdateParams{\n\t\t\tName: "My checking account",\n\t\t\tType: map[string]any{},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountSingle.Data)\n}\n',
       },
       ruby: {
         method: 'accounts.update',
@@ -4289,7 +4289,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Accounts.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Accounts.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Accounts.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AccountDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'accounts.delete',
@@ -4352,7 +4352,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Attachments.List(context.TODO(), firefly.AttachmentListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Attachments.List(context.TODO(), firefly.AttachmentListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'attachments.list',
@@ -4422,7 +4422,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentSingle, err := client.Attachments.New(context.TODO(), firefly.AttachmentNewParams{\n\t\tAttachableID:   "134",\n\t\tAttachableType: firefly.AttachableTypeBill,\n\t\tFilename:       "file.pdf",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentSingle, err := client.Attachments.New(context.TODO(), firefly.AttachmentNewParams{\n\t\tAttachableID:   "134",\n\t\tAttachableType: firefly.AttachableTypeBill,\n\t\tFilename:       "file.pdf",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentSingle.Data)\n}\n',
       },
       ruby: {
         method: 'attachments.create',
@@ -4487,7 +4487,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentSingle, err := client.Attachments.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentSingle, err := client.Attachments.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentSingle.Data)\n}\n',
       },
       ruby: {
         method: 'attachments.retrieve',
@@ -4556,7 +4556,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentSingle, err := client.Attachments.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentSingle, err := client.Attachments.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentSingle.Data)\n}\n',
       },
       ruby: {
         method: 'attachments.update',
@@ -4618,7 +4618,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Attachments.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Attachments.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'attachments.delete',
@@ -4681,7 +4681,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.Download',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Attachments.Download(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentDownloadParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Attachments.Download(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AttachmentDownloadParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'attachments.download',
@@ -4743,7 +4743,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Attachments.Upload',
         example:
-          'package main\n\nimport (\n\t"bytes"\n\t"context"\n\t"io"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Attachments.Upload(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tio.Reader(bytes.NewBuffer([]byte("Example data"))),\n\t\tfirefly.AttachmentUploadParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"bytes"\n\t"context"\n\t"io"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Attachments.Upload(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tio.Reader(bytes.NewBuffer([]byte("Example data"))),\n\t\tfirefly.AttachmentUploadParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'attachments.upload',
@@ -4807,7 +4807,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.AvailableBudgets.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tavailableBudgetArray, err := client.AvailableBudgets.List(context.TODO(), firefly.AvailableBudgetListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", availableBudgetArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tavailableBudgetArray, err := client.AvailableBudgets.List(context.TODO(), firefly.AvailableBudgetListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", availableBudgetArray.Data)\n}\n',
       },
       ruby: {
         method: 'available_budgets.list',
@@ -4869,7 +4869,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.AvailableBudgets.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tavailableBudget, err := client.AvailableBudgets.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AvailableBudgetGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", availableBudget.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tavailableBudget, err := client.AvailableBudgets.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.AvailableBudgetGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", availableBudget.Data)\n}\n',
       },
       ruby: {
         method: 'available_budgets.retrieve',
@@ -4932,7 +4932,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Bills.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Bills.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'bills.list_attachments',
@@ -4995,7 +4995,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.ListRules',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.Bills.ListRules(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillListRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.Bills.ListRules(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillListRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
       },
       ruby: {
         method: 'bills.list_rules',
@@ -5066,7 +5066,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Bills.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Bills.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'bills.list_transactions',
@@ -5129,7 +5129,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillArray, err := client.Bills.List(context.TODO(), firefly.BillListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillArray, err := client.Bills.List(context.TODO(), firefly.BillListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billArray.Data)\n}\n',
       },
       ruby: {
         method: 'bills.list',
@@ -5208,7 +5208,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillSingle, err := client.Bills.New(context.TODO(), firefly.BillNewParams{\n\t\tAmountMax:  "123.45",\n\t\tAmountMin:  "123.45",\n\t\tDate:       time.Now(),\n\t\tName:       "Rent",\n\t\tRepeatFreq: firefly.BillRepeatFrequencyMonthly,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillSingle, err := client.Bills.New(context.TODO(), firefly.BillNewParams{\n\t\tAmountMax:  "123.45",\n\t\tAmountMin:  "123.45",\n\t\tDate:       time.Now(),\n\t\tName:       "Rent",\n\t\tRepeatFreq: firefly.BillRepeatFrequencyMonthly,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billSingle.Data)\n}\n',
       },
       ruby: {
         method: 'bills.create',
@@ -5272,7 +5272,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillSingle, err := client.Bills.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillSingle, err := client.Bills.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billSingle.Data)\n}\n',
       },
       ruby: {
         method: 'bills.retrieve',
@@ -5351,7 +5351,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillSingle, err := client.Bills.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillUpdateParams{\n\t\t\tName: "Rent",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillSingle, err := client.Bills.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillUpdateParams{\n\t\t\tName: "Rent",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billSingle.Data)\n}\n',
       },
       ruby: {
         method: 'bills.update',
@@ -5413,7 +5413,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Bills.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Bills.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Bills.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BillDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'bills.delete',
@@ -5484,7 +5484,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Budgets.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Budgets.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.list_transactions',
@@ -5547,7 +5547,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Budgets.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Budgets.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.list_attachments',
@@ -5610,7 +5610,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.ListTransactionsWithoutBudget',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Budgets.ListTransactionsWithoutBudget(context.TODO(), firefly.BudgetListTransactionsWithoutBudgetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Budgets.ListTransactionsWithoutBudget(context.TODO(), firefly.BudgetListTransactionsWithoutBudgetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.list_transactions_without_budget',
@@ -5674,7 +5674,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgets, err := client.Budgets.List(context.TODO(), firefly.BudgetListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgets.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgets, err := client.Budgets.List(context.TODO(), firefly.BudgetListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgets.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.list',
@@ -5748,7 +5748,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetSingle, err := client.Budgets.New(context.TODO(), firefly.BudgetNewParams{\n\t\tName: "Bills",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetSingle, err := client.Budgets.New(context.TODO(), firefly.BudgetNewParams{\n\t\tName: "Bills",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetSingle.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.create',
@@ -5812,7 +5812,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetSingle, err := client.Budgets.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetSingle, err := client.Budgets.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetSingle.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.retrieve',
@@ -5887,7 +5887,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetSingle, err := client.Budgets.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetUpdateParams{\n\t\t\tName: "Bills",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetSingle, err := client.Budgets.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetUpdateParams{\n\t\t\tName: "Bills",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetSingle.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.update',
@@ -5949,7 +5949,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Budgets.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Budgets.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'budgets.delete',
@@ -6020,7 +6020,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Budgets.Limits.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitListTransactionsParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Budgets.Limits.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitListTransactionsParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.limits.list_transactions',
@@ -6084,7 +6084,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.List0',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitArray, err := client.Budgets.Limits.List0(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitList0Params{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitArray, err := client.Budgets.Limits.List0(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitList0Params{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitArray.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.limits.list_0',
@@ -6147,7 +6147,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.List1',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitArray, err := client.Budgets.Limits.List1(context.TODO(), firefly.BudgetLimitList1Params{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitArray, err := client.Budgets.Limits.List1(context.TODO(), firefly.BudgetLimitList1Params{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitArray.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.limits.list_1',
@@ -6219,7 +6219,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitSingle, err := client.Budgets.Limits.New(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitNewParams{\n\t\t\tAmount: "123.45",\n\t\t\tEnd:    time.Now(),\n\t\t\tStart:  time.Now(),\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitSingle, err := client.Budgets.Limits.New(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitNewParams{\n\t\t\tAmount: "123.45",\n\t\t\tEnd:    time.Now(),\n\t\t\tStart:  time.Now(),\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitSingle.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.limits.create',
@@ -6283,7 +6283,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitSingle, err := client.Budgets.Limits.Get(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.BudgetLimitGetParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitSingle, err := client.Budgets.Limits.Get(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.BudgetLimitGetParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitSingle.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.limits.retrieve',
@@ -6357,7 +6357,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitSingle, err := client.Budgets.Limits.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitUpdateParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitSingle, err := client.Budgets.Limits.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitUpdateParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitSingle.Data)\n}\n',
       },
       ruby: {
         method: 'budgets.limits.update',
@@ -6419,7 +6419,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Budgets.Limits.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Budgets.Limits.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitDeleteParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Budgets.Limits.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.BudgetLimitDeleteParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'budgets.limits.delete',
@@ -6490,7 +6490,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Categories.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Categories.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'categories.list_transactions',
@@ -6553,7 +6553,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Categories.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Categories.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'categories.list_attachments',
@@ -6616,7 +6616,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategories, err := client.Categories.List(context.TODO(), firefly.CategoryListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categories.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategories, err := client.Categories.List(context.TODO(), firefly.CategoryListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categories.Data)\n}\n',
       },
       ruby: {
         method: 'categories.list',
@@ -6679,7 +6679,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategorySingle, err := client.Categories.New(context.TODO(), firefly.CategoryNewParams{\n\t\tName: "Lunch",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categorySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategorySingle, err := client.Categories.New(context.TODO(), firefly.CategoryNewParams{\n\t\tName: "Lunch",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categorySingle.Data)\n}\n',
       },
       ruby: {
         method: 'categories.create',
@@ -6742,7 +6742,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategorySingle, err := client.Categories.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categorySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategorySingle, err := client.Categories.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categorySingle.Data)\n}\n',
       },
       ruby: {
         method: 'categories.retrieve',
@@ -6804,7 +6804,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategorySingle, err := client.Categories.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryUpdateParams{\n\t\t\tName: "Lunch",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categorySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcategorySingle, err := client.Categories.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryUpdateParams{\n\t\t\tName: "Lunch",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", categorySingle.Data)\n}\n',
       },
       ruby: {
         method: 'categories.update',
@@ -6866,7 +6866,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Categories.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Categories.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Categories.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.CategoryDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'categories.delete',
@@ -6929,7 +6929,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.List(context.TODO(), firefly.ExchangeRateListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.List(context.TODO(), firefly.ExchangeRateListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.list',
@@ -6999,7 +6999,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.New(context.TODO(), firefly.ExchangeRateNewParams{\n\t\tDate:  time.Now(),\n\t\tFrom:  "USD",\n\t\tRates: map[string]any{},\n\t\tTo:    "EUR",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.New(context.TODO(), firefly.ExchangeRateNewParams{\n\t\tDate:  time.Now(),\n\t\tFrom:  "USD",\n\t\tRates: map[string]any{},\n\t\tTo:    "EUR",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.create',
@@ -7063,7 +7063,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ExchangeRateGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ExchangeRateGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.retrieve',
@@ -7124,7 +7124,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ExchangeRates.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ExchangeRateDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ExchangeRates.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ExchangeRateDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'exchange_rates.delete',
@@ -7194,7 +7194,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ExchangeRateUpdateParams{\n\t\t\tDate: time.Now(),\n\t\t\tRate: "2.3456",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ExchangeRateUpdateParams{\n\t\t\tDate: time.Now(),\n\t\t\tRate: "2.3456",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.update',
@@ -7259,7 +7259,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.ListByCurrencies',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.ListByCurrencies(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.ExchangeRateListByCurrenciesParams{\n\t\t\tFrom: "EUR",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.ListByCurrencies(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.ExchangeRateListByCurrenciesParams{\n\t\t\tFrom: "EUR",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.list_by_currencies',
@@ -7321,7 +7321,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.DeleteAllByCurrencies',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ExchangeRates.DeleteAllByCurrencies(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.ExchangeRateDeleteAllByCurrenciesParams{\n\t\t\tFrom: "EUR",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ExchangeRates.DeleteAllByCurrencies(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.ExchangeRateDeleteAllByCurrenciesParams{\n\t\t\tFrom: "EUR",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'exchange_rates.delete_all_by_currencies',
@@ -7391,7 +7391,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.GetByDate',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.GetByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateGetByDateParams{\n\t\t\tFrom: "EUR",\n\t\t\tTo:   "USD",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.GetByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateGetByDateParams{\n\t\t\tFrom: "EUR",\n\t\t\tTo:   "USD",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.retrieve_by_date',
@@ -7454,7 +7454,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.DeleteByDate',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ExchangeRates.DeleteByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateDeleteByDateParams{\n\t\t\tFrom: "EUR",\n\t\t\tTo:   "USD",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ExchangeRates.DeleteByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateDeleteByDateParams{\n\t\t\tFrom: "EUR",\n\t\t\tTo:   "USD",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'exchange_rates.delete_by_date',
@@ -7517,7 +7517,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.UpdateByDate',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.UpdateByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateUpdateByDateParams{\n\t\t\tFrom: "EUR",\n\t\t\tTo:   "USD",\n\t\t\tRate: "2.3456",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateSingle, err := client.ExchangeRates.UpdateByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateUpdateByDateParams{\n\t\t\tFrom: "EUR",\n\t\t\tTo:   "USD",\n\t\t\tRate: "2.3456",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateSingle.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.update_by_date',
@@ -7583,7 +7583,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.NewByDate',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.NewByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateNewByDateParams{\n\t\t\tDate: map[string]any{},\n\t\t\tFrom: "EUR",\n\t\t\tRates: map[string]string{\n\t\t\t\t"USD": "1.2345",\n\t\t\t\t"GBP": "6.3456",\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.NewByDate(\n\t\tcontext.TODO(),\n\t\t"2026-04-01",\n\t\tfirefly.ExchangeRateNewByDateParams{\n\t\t\tDate: map[string]any{},\n\t\t\tFrom: "EUR",\n\t\t\tRates: map[string]string{\n\t\t\t\t"USD": "1.2345",\n\t\t\t\t"GBP": "6.3456",\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.create_by_date',
@@ -7649,7 +7649,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ExchangeRates.NewByCurrencies',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.NewByCurrencies(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.ExchangeRateNewByCurrenciesParams{\n\t\t\tFrom: "EUR",\n\t\t\tBody: map[string]string{\n\t\t\t\t"2025-08-01": "1.2345",\n\t\t\t\t"2025-08-02": "6.3456",\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencyExchangeRateArray, err := client.ExchangeRates.NewByCurrencies(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.ExchangeRateNewByCurrenciesParams{\n\t\t\tFrom: "EUR",\n\t\t\tBody: map[string]string{\n\t\t\t\t"2025-08-01": "1.2345",\n\t\t\t\t"2025-08-02": "6.3456",\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencyExchangeRateArray.Data)\n}\n',
       },
       ruby: {
         method: 'exchange_rates.create_by_currencies',
@@ -7722,7 +7722,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.LinkTypes.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.LinkTypes.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.LinkTypes.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'link_types.list_transactions',
@@ -7786,7 +7786,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.LinkTypes.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypes, err := client.LinkTypes.List(context.TODO(), firefly.LinkTypeListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypes.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypes, err := client.LinkTypes.List(context.TODO(), firefly.LinkTypeListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypes.Data)\n}\n',
       },
       ruby: {
         method: 'link_types.list',
@@ -7849,7 +7849,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.LinkTypes.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypeSingle, err := client.LinkTypes.New(context.TODO(), firefly.LinkTypeNewParams{\n\t\tLinkType: firefly.LinkTypeParam{\n\t\t\tInward:  "is (partially) paid for by",\n\t\t\tName:    "Paid",\n\t\t\tOutward: "(partially) pays for",\n\t\t},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypeSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypeSingle, err := client.LinkTypes.New(context.TODO(), firefly.LinkTypeNewParams{\n\t\tLinkType: firefly.LinkTypeParam{\n\t\t\tInward:  "is (partially) paid for by",\n\t\t\tName:    "Paid",\n\t\t\tOutward: "(partially) pays for",\n\t\t},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypeSingle.Data)\n}\n',
       },
       ruby: {
         method: 'link_types.create',
@@ -7913,7 +7913,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.LinkTypes.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypeSingle, err := client.LinkTypes.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypeSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypeSingle, err := client.LinkTypes.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypeSingle.Data)\n}\n',
       },
       ruby: {
         method: 'link_types.retrieve',
@@ -7982,7 +7982,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.LinkTypes.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypeSingle, err := client.LinkTypes.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypeSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tlinkTypeSingle, err := client.LinkTypes.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", linkTypeSingle.Data)\n}\n',
       },
       ruby: {
         method: 'link_types.update',
@@ -8045,7 +8045,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.LinkTypes.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.LinkTypes.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.LinkTypes.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.LinkTypeDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'link_types.delete',
@@ -8108,7 +8108,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionLinks.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkArray, err := client.TransactionLinks.List(context.TODO(), firefly.TransactionLinkListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkArray, err := client.TransactionLinks.List(context.TODO(), firefly.TransactionLinkListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkArray.Data)\n}\n',
       },
       ruby: {
         method: 'transaction_links.list',
@@ -8178,7 +8178,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionLinks.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkSingle, err := client.TransactionLinks.New(context.TODO(), firefly.TransactionLinkNewParams{\n\t\tInwardID:   "131",\n\t\tLinkTypeID: "5",\n\t\tOutwardID:  "131",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkSingle, err := client.TransactionLinks.New(context.TODO(), firefly.TransactionLinkNewParams{\n\t\tInwardID:   "131",\n\t\tLinkTypeID: "5",\n\t\tOutwardID:  "131",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transaction_links.create',
@@ -8242,7 +8242,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionLinks.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkSingle, err := client.TransactionLinks.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionLinkGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkSingle, err := client.TransactionLinks.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionLinkGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transaction_links.retrieve',
@@ -8303,7 +8303,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionLinks.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.TransactionLinks.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionLinkDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.TransactionLinks.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionLinkDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'transaction_links.delete',
@@ -8373,7 +8373,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionLinks.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkSingle, err := client.TransactionLinks.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionLinkUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkSingle, err := client.TransactionLinks.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionLinkUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transaction_links.update',
@@ -8437,7 +8437,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ObjectGroups.ListPiggyBanks',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankArray, err := client.ObjectGroups.ListPiggyBanks(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupListPiggyBanksParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankArray, err := client.ObjectGroups.ListPiggyBanks(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupListPiggyBanksParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankArray.Data)\n}\n',
       },
       ruby: {
         method: 'object_groups.list_piggy_banks',
@@ -8500,7 +8500,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ObjectGroups.ListBills',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillArray, err := client.ObjectGroups.ListBills(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupListBillsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillArray, err := client.ObjectGroups.ListBills(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupListBillsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billArray.Data)\n}\n',
       },
       ruby: {
         method: 'object_groups.list_bills',
@@ -8563,7 +8563,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ObjectGroups.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tobjectGroups, err := client.ObjectGroups.List(context.TODO(), firefly.ObjectGroupListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", objectGroups.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tobjectGroups, err := client.ObjectGroups.List(context.TODO(), firefly.ObjectGroupListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", objectGroups.Data)\n}\n',
       },
       ruby: {
         method: 'object_groups.list',
@@ -8625,7 +8625,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ObjectGroups.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tobjectGroupSingle, err := client.ObjectGroups.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", objectGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tobjectGroupSingle, err := client.ObjectGroups.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", objectGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'object_groups.retrieve',
@@ -8687,7 +8687,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ObjectGroups.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tobjectGroupSingle, err := client.ObjectGroups.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupUpdateParams{\n\t\t\tTitle: "My object group",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", objectGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tobjectGroupSingle, err := client.ObjectGroups.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupUpdateParams{\n\t\t\tTitle: "My object group",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", objectGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'object_groups.update',
@@ -8749,7 +8749,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.ObjectGroups.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ObjectGroups.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.ObjectGroups.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.ObjectGroupDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'object_groups.delete',
@@ -8812,7 +8812,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.ListEvents',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankEventArray, err := client.PiggyBanks.ListEvents(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankListEventsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankEventArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankEventArray, err := client.PiggyBanks.ListEvents(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankListEventsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankEventArray.Data)\n}\n',
       },
       ruby: {
         method: 'piggy_banks.list_events',
@@ -8875,7 +8875,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.PiggyBanks.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.PiggyBanks.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'piggy_banks.list_attachments',
@@ -8938,7 +8938,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankArray, err := client.PiggyBanks.List(context.TODO(), firefly.PiggyBankListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankArray, err := client.PiggyBanks.List(context.TODO(), firefly.PiggyBankListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankArray.Data)\n}\n',
       },
       ruby: {
         method: 'piggy_banks.list',
@@ -9014,7 +9014,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankSingle, err := client.PiggyBanks.New(context.TODO(), firefly.PiggyBankNewParams{\n\t\tAccountID:    map[string]any{},\n\t\tName:         "New digital camera",\n\t\tStartDate:    time.Now(),\n\t\tTargetAmount: firefly.String("123.45"),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankSingle, err := client.PiggyBanks.New(context.TODO(), firefly.PiggyBankNewParams{\n\t\tAccountID:    map[string]any{},\n\t\tName:         "New digital camera",\n\t\tStartDate:    time.Now(),\n\t\tTargetAmount: firefly.String("123.45"),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankSingle.Data)\n}\n',
       },
       ruby: {
         method: 'piggy_banks.create',
@@ -9078,7 +9078,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankSingle, err := client.PiggyBanks.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankSingle, err := client.PiggyBanks.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankSingle.Data)\n}\n',
       },
       ruby: {
         method: 'piggy_banks.retrieve',
@@ -9152,7 +9152,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankSingle, err := client.PiggyBanks.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankSingle, err := client.PiggyBanks.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankSingle.Data)\n}\n',
       },
       ruby: {
         method: 'piggy_banks.update',
@@ -9214,7 +9214,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.PiggyBanks.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.PiggyBanks.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.PiggyBanks.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.PiggyBankDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'piggy_banks.delete',
@@ -9286,7 +9286,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Recurrences.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Recurrences.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'recurrences.list_transactions',
@@ -9349,7 +9349,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceArray, err := client.Recurrences.List(context.TODO(), firefly.RecurrenceListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceArray, err := client.Recurrences.List(context.TODO(), firefly.RecurrenceListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceArray.Data)\n}\n',
       },
       ruby: {
         method: 'recurrences.list',
@@ -9425,7 +9425,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceSingle, err := client.Recurrences.New(context.TODO(), firefly.RecurrenceNewParams{\n\t\tFirstDate:   time.Now(),\n\t\tRepeatUntil: firefly.Time(time.Now()),\n\t\tRepetitions: []firefly.RecurrenceNewParamsRepetition{{\n\t\t\tMoment: "3",\n\t\t\tType:   firefly.RecurrenceRepetitionTypeWeekly,\n\t\t}},\n\t\tTitle: "Rent",\n\t\tTransactions: []firefly.RecurrenceNewParamsTransaction{{\n\t\t\tAmount:        "123.45",\n\t\t\tDescription:   "Rent for the current month",\n\t\t\tDestinationID: "258",\n\t\t\tSourceID:      "913",\n\t\t}},\n\t\tType: firefly.RecurrenceTransactionTypeWithdrawal,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceSingle, err := client.Recurrences.New(context.TODO(), firefly.RecurrenceNewParams{\n\t\tFirstDate:   time.Now(),\n\t\tRepeatUntil: firefly.Time(time.Now()),\n\t\tRepetitions: []firefly.RecurrenceNewParamsRepetition{{\n\t\t\tMoment: "3",\n\t\t\tType:   firefly.RecurrenceRepetitionTypeWeekly,\n\t\t}},\n\t\tTitle: "Rent",\n\t\tTransactions: []firefly.RecurrenceNewParamsTransaction{{\n\t\t\tAmount:        "123.45",\n\t\t\tDescription:   "Rent for the current month",\n\t\t\tDestinationID: "258",\n\t\t\tSourceID:      "913",\n\t\t}},\n\t\tType: firefly.RecurrenceTransactionTypeWithdrawal,\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceSingle.Data)\n}\n',
       },
       ruby: {
         method: 'recurrences.create',
@@ -9489,7 +9489,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceSingle, err := client.Recurrences.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceSingle, err := client.Recurrences.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceSingle.Data)\n}\n',
       },
       ruby: {
         method: 'recurrences.retrieve',
@@ -9564,7 +9564,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceSingle, err := client.Recurrences.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceSingle, err := client.Recurrences.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceSingle.Data)\n}\n',
       },
       ruby: {
         method: 'recurrences.update',
@@ -9627,7 +9627,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Recurrences.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Recurrences.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'recurrences.delete',
@@ -9691,7 +9691,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Recurrences.TriggerTransaction',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Recurrences.TriggerTransaction(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceTriggerTransactionParams{\n\t\t\tDate: time.Now(),\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Recurrences.TriggerTransaction(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RecurrenceTriggerTransactionParams{\n\t\t\tDate: time.Now(),\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'recurrences.trigger_transaction',
@@ -9754,7 +9754,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.ListRules',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.RuleGroups.ListRules(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupListRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.RuleGroups.ListRules(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupListRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
       },
       ruby: {
         method: 'rule_groups.list_rules',
@@ -9828,7 +9828,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.TestTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.RuleGroups.TestTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupTestTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.RuleGroups.TestTransactions(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupTestTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'rule_groups.test_transactions',
@@ -9896,7 +9896,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.TriggerRules',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.RuleGroups.TriggerRules(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupTriggerRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.RuleGroups.TriggerRules(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupTriggerRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'rule_groups.trigger_rules',
@@ -9959,7 +9959,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.ListAll',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.RuleGroups.ListAll(context.TODO(), firefly.RuleGroupListAllParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.RuleGroups.ListAll(context.TODO(), firefly.RuleGroupListAllParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.Data)\n}\n',
       },
       ruby: {
         method: 'rule_groups.list_all',
@@ -10028,7 +10028,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleGroupSingle, err := client.RuleGroups.New(context.TODO(), firefly.RuleGroupNewParams{\n\t\tTitle: "Default rule group",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleGroupSingle, err := client.RuleGroups.New(context.TODO(), firefly.RuleGroupNewParams{\n\t\tTitle: "Default rule group",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'rule_groups.create',
@@ -10091,7 +10091,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleGroupSingle, err := client.RuleGroups.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleGroupSingle, err := client.RuleGroups.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'rule_groups.retrieve',
@@ -10160,7 +10160,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleGroupSingle, err := client.RuleGroups.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleGroupSingle, err := client.RuleGroups.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'rule_groups.update',
@@ -10222,7 +10222,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.RuleGroups.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.RuleGroups.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.RuleGroups.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGroupDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'rule_groups.delete',
@@ -10292,7 +10292,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.Test',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Rules.Test(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleTestParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Rules.Test(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleTestParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'rules.test_',
@@ -10359,7 +10359,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.Trigger',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Rules.Trigger(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleTriggerParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Rules.Trigger(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleTriggerParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'rules.trigger',
@@ -10422,7 +10422,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.Rules.List(context.TODO(), firefly.RuleListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.Rules.List(context.TODO(), firefly.RuleListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
       },
       ruby: {
         method: 'rules.list',
@@ -10498,7 +10498,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleSingle, err := client.Rules.New(context.TODO(), firefly.RuleNewParams{\n\t\tActions: []firefly.RuleNewParamsAction{{\n\t\t\tType:  firefly.RuleActionKeywordSetCategory,\n\t\t\tValue: firefly.String("Daily groceries"),\n\t\t}},\n\t\tRuleGroupID: "81",\n\t\tTitle:       "First rule title.",\n\t\tTrigger:     firefly.RuleTriggerTypeStoreJournal,\n\t\tTriggers: []firefly.RuleNewParamsTrigger{{\n\t\t\tType:  firefly.RuleTriggerKeywordFromAccountStarts,\n\t\t\tValue: "tag1",\n\t\t}},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleSingle, err := client.Rules.New(context.TODO(), firefly.RuleNewParams{\n\t\tActions: []firefly.RuleNewParamsAction{{\n\t\t\tType:  firefly.RuleActionKeywordSetCategory,\n\t\t\tValue: firefly.String("Daily groceries"),\n\t\t}},\n\t\tRuleGroupID: "81",\n\t\tTitle:       "First rule title.",\n\t\tTrigger:     firefly.RuleTriggerTypeStoreJournal,\n\t\tTriggers: []firefly.RuleNewParamsTrigger{{\n\t\t\tType:  firefly.RuleTriggerKeywordFromAccountStarts,\n\t\t\tValue: "tag1",\n\t\t}},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleSingle.Data)\n}\n',
       },
       ruby: {
         method: 'rules.create',
@@ -10562,7 +10562,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleSingle, err := client.Rules.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleSingle, err := client.Rules.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleSingle.Data)\n}\n',
       },
       ruby: {
         method: 'rules.retrieve',
@@ -10637,7 +10637,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleSingle, err := client.Rules.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleSingle, err := client.Rules.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleSingle.Data)\n}\n',
       },
       ruby: {
         method: 'rules.update',
@@ -10698,7 +10698,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Rules.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Rules.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Rules.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.RuleDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'rules.delete',
@@ -10761,7 +10761,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Tags.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Tags.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'tags.list_attachments',
@@ -10832,7 +10832,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Tags.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Tags.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'tags.list_transactions',
@@ -10895,7 +10895,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttags, err := client.Tags.List(context.TODO(), firefly.TagListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tags.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttags, err := client.Tags.List(context.TODO(), firefly.TagListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tags.Data)\n}\n',
       },
       ruby: {
         method: 'tags.list',
@@ -10966,7 +10966,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttagSingle, err := client.Tags.New(context.TODO(), firefly.TagNewParams{\n\t\tTag: "expensive",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tagSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttagSingle, err := client.Tags.New(context.TODO(), firefly.TagNewParams{\n\t\tTag: "expensive",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tagSingle.Data)\n}\n',
       },
       ruby: {
         method: 'tags.create',
@@ -11029,7 +11029,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttagSingle, err := client.Tags.Get(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tagSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttagSingle, err := client.Tags.Get(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tagSingle.Data)\n}\n',
       },
       ruby: {
         method: 'tags.retrieve',
@@ -11100,7 +11100,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttagSingle, err := client.Tags.Update(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tagSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttagSingle, err := client.Tags.Update(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", tagSingle.Data)\n}\n',
       },
       ruby: {
         method: 'tags.update',
@@ -11162,7 +11162,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Tags.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Tags.Delete(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Tags.Delete(\n\t\tcontext.TODO(),\n\t\t"groceries",\n\t\tfirefly.TagDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'tags.delete',
@@ -11232,7 +11232,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListAccounts',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountArray, err := client.Currencies.ListAccounts(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListAccountsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountArray, err := client.Currencies.ListAccounts(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListAccountsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_accounts',
@@ -11295,7 +11295,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListAvailableBudgets',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tavailableBudgetArray, err := client.Currencies.ListAvailableBudgets(\n\t\tcontext.TODO(),\n\t\t"EUR",\n\t\tfirefly.CurrencyListAvailableBudgetsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", availableBudgetArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tavailableBudgetArray, err := client.Currencies.ListAvailableBudgets(\n\t\tcontext.TODO(),\n\t\t"EUR",\n\t\tfirefly.CurrencyListAvailableBudgetsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", availableBudgetArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_available_budgets',
@@ -11358,7 +11358,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListBills',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillArray, err := client.Currencies.ListBills(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListBillsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbillArray, err := client.Currencies.ListBills(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListBillsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", billArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_bills',
@@ -11428,7 +11428,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListBudgetLimits',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitArray, err := client.Currencies.ListBudgetLimits(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListBudgetLimitsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tbudgetLimitArray, err := client.Currencies.ListBudgetLimits(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListBudgetLimitsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", budgetLimitArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_budget_limits',
@@ -11491,7 +11491,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListRecurrences',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceArray, err := client.Currencies.ListRecurrences(\n\t\tcontext.TODO(),\n\t\t"EUR",\n\t\tfirefly.CurrencyListRecurrencesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\trecurrenceArray, err := client.Currencies.ListRecurrences(\n\t\tcontext.TODO(),\n\t\t"EUR",\n\t\tfirefly.CurrencyListRecurrencesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", recurrenceArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_recurrences',
@@ -11554,7 +11554,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListRules',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.Currencies.ListRules(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\truleArray, err := client.Currencies.ListRules(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListRulesParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", ruleArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_rules',
@@ -11625,7 +11625,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.ListTransactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Currencies.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Currencies.ListTransactions(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyListTransactionsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list_transactions',
@@ -11688,7 +11688,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencies, err := client.Currencies.List(context.TODO(), firefly.CurrencyListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencies.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencies, err := client.Currencies.List(context.TODO(), firefly.CurrencyListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencies.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.list',
@@ -11759,7 +11759,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.New(context.TODO(), firefly.CurrencyNewParams{\n\t\tCode:   "AMS",\n\t\tName:   "Ankh-Morpork dollar",\n\t\tSymbol: "AM$",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.New(context.TODO(), firefly.CurrencyNewParams{\n\t\tCode:   "AMS",\n\t\tName:   "Ankh-Morpork dollar",\n\t\tSymbol: "AM$",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.create',
@@ -11823,7 +11823,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Enable',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Enable(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyEnableParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Enable(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyEnableParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.enable',
@@ -11885,7 +11885,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Disable',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Disable(\n\t\tcontext.TODO(),\n\t\t"GBP",\n\t\tfirefly.CurrencyDisableParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Disable(\n\t\tcontext.TODO(),\n\t\t"GBP",\n\t\tfirefly.CurrencyDisableParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.disable',
@@ -11947,7 +11947,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Get(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Get(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.retrieve',
@@ -12018,7 +12018,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Update(\n\t\tcontext.TODO(),\n\t\t"EUR",\n\t\tfirefly.CurrencyUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Update(\n\t\tcontext.TODO(),\n\t\t"EUR",\n\t\tfirefly.CurrencyUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.update',
@@ -12080,7 +12080,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Currencies.Delete(\n\t\tcontext.TODO(),\n\t\t"GBP",\n\t\tfirefly.CurrencyDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Currencies.Delete(\n\t\tcontext.TODO(),\n\t\t"GBP",\n\t\tfirefly.CurrencyDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'currencies.delete',
@@ -12143,7 +12143,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Primary.MakePrimary',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Primary.MakePrimary(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyPrimaryMakePrimaryParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Primary.MakePrimary(\n\t\tcontext.TODO(),\n\t\t"USD",\n\t\tfirefly.CurrencyPrimaryMakePrimaryParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.primary.make_primary',
@@ -12206,7 +12206,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Currencies.Primary.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Primary.Get(context.TODO(), firefly.CurrencyPrimaryGetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tcurrencySingle, err := client.Currencies.Primary.Get(context.TODO(), firefly.CurrencyPrimaryGetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", currencySingle.Data)\n}\n',
       },
       ruby: {
         method: 'currencies.primary.retrieve',
@@ -12270,7 +12270,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionJournals.ListLinks',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkArray, err := client.TransactionJournals.ListLinks(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionJournalListLinksParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionLinkArray, err := client.TransactionJournals.ListLinks(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionJournalListLinksParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionLinkArray.Data)\n}\n',
       },
       ruby: {
         method: 'transaction_journals.list_links',
@@ -12333,7 +12333,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionJournals.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.TransactionJournals.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionJournalGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.TransactionJournals.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionJournalGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transaction_journals.retrieve',
@@ -12394,7 +12394,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.TransactionJournals.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.TransactionJournals.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionJournalDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.TransactionJournals.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionJournalDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'transaction_journals.delete',
@@ -12457,7 +12457,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.ListAttachments',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Transactions.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattachmentArray, err := client.Transactions.ListAttachments(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionListAttachmentsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attachmentArray.Data)\n}\n',
       },
       ruby: {
         method: 'transactions.list_attachments',
@@ -12520,7 +12520,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.ListPiggyBankEvents',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankEventArray, err := client.Transactions.ListPiggyBankEvents(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionListPiggyBankEventsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankEventArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpiggyBankEventArray, err := client.Transactions.ListPiggyBankEvents(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionListPiggyBankEventsParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", piggyBankEventArray.Data)\n}\n',
       },
       ruby: {
         method: 'transactions.list_piggy_bank_events',
@@ -12590,7 +12590,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Transactions.List(context.TODO(), firefly.TransactionListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Transactions.List(context.TODO(), firefly.TransactionListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'transactions.list',
@@ -12660,7 +12660,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.Transactions.New(context.TODO(), firefly.TransactionNewParams{\n\t\tTransactions: []firefly.TransactionNewParamsTransaction{{\n\t\t\tAmount:      "123.45",\n\t\t\tDate:        time.Now(),\n\t\t\tDescription: "Vegetables",\n\t\t\tType:        firefly.TransactionTypePropertyWithdrawal,\n\t\t}},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.Transactions.New(context.TODO(), firefly.TransactionNewParams{\n\t\tTransactions: []firefly.TransactionNewParamsTransaction{{\n\t\t\tAmount:      "123.45",\n\t\t\tDate:        time.Now(),\n\t\t\tDescription: "Vegetables",\n\t\t\tType:        firefly.TransactionTypePropertyWithdrawal,\n\t\t}},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transactions.create',
@@ -12724,7 +12724,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.Transactions.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.Transactions.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transactions.retrieve',
@@ -12794,7 +12794,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.Transactions.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionSingle, err := client.Transactions.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionSingle.Data)\n}\n',
       },
       ruby: {
         method: 'transactions.update',
@@ -12856,7 +12856,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Transactions.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Transactions.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Transactions.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.TransactionDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'transactions.delete',
@@ -12920,7 +12920,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.UserGroups.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserGroups, err := client.UserGroups.List(context.TODO(), firefly.UserGroupListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userGroups.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserGroups, err := client.UserGroups.List(context.TODO(), firefly.UserGroupListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userGroups.Data)\n}\n',
       },
       ruby: {
         method: 'user_groups.list',
@@ -12982,7 +12982,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.UserGroups.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserGroupSingle, err := client.UserGroups.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserGroupGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserGroupSingle, err := client.UserGroups.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserGroupGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'user_groups.retrieve',
@@ -13050,7 +13050,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.UserGroups.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserGroupSingle, err := client.UserGroups.Update(\n\t\tcontext.TODO(),\n\t\t"1",\n\t\tfirefly.UserGroupUpdateParams{\n\t\t\tTitle: "New user group title",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userGroupSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserGroupSingle, err := client.UserGroups.Update(\n\t\tcontext.TODO(),\n\t\t"1",\n\t\tfirefly.UserGroupUpdateParams{\n\t\t\tTitle: "New user group title",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userGroupSingle.Data)\n}\n',
       },
       ruby: {
         method: 'user_groups.update',
@@ -13121,7 +13121,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Search.Accounts',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountArray, err := client.Search.Accounts(context.TODO(), firefly.SearchAccountsParams{\n\t\tField: firefly.SearchAccountsParamsFieldAll,\n\t\tQuery: "checking",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\taccountArray, err := client.Search.Accounts(context.TODO(), firefly.SearchAccountsParams{\n\t\tField: firefly.SearchAccountsParamsFieldAll,\n\t\tQuery: "checking",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", accountArray.Data)\n}\n',
       },
       ruby: {
         method: 'search.accounts',
@@ -13184,7 +13184,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Search.Transactions',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Search.Transactions(context.TODO(), firefly.SearchTransactionsParams{\n\t\tQuery: "groceries",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\ttransactionArray, err := client.Search.Transactions(context.TODO(), firefly.SearchTransactionsParams{\n\t\tQuery: "groceries",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", transactionArray.Data)\n}\n',
       },
       ruby: {
         method: 'search.transactions',
@@ -13247,7 +13247,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Summary.GetBasic',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Summary.GetBasic(context.TODO(), firefly.SummaryGetBasicParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\t"time"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Summary.GetBasic(context.TODO(), firefly.SummaryGetBasicParams{\n\t\tEnd:   time.Now(),\n\t\tStart: time.Now(),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n',
       },
       ruby: {
         method: 'summary.retrieve_basic',
@@ -13310,7 +13310,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.About.GetInfo',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.About.GetInfo(context.TODO(), firefly.AboutGetInfoParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.About.GetInfo(context.TODO(), firefly.AboutGetInfoParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.Data)\n}\n',
       },
       ruby: {
         method: 'about.retrieve_info',
@@ -13372,7 +13372,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.About.GetUser',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.About.GetUser(context.TODO(), firefly.AboutGetUserParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.About.GetUser(context.TODO(), firefly.AboutGetUserParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
       },
       ruby: {
         method: 'about.retrieve_user',
@@ -13432,7 +13432,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Batch.Finish',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Batch.Finish(context.TODO(), firefly.BatchFinishParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Batch.Finish(context.TODO(), firefly.BatchFinishParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'batch.finish',
@@ -13494,7 +13494,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Configuration.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tconfigurations, err := client.Configuration.Get(context.TODO(), firefly.ConfigurationGetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", configurations)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tconfigurations, err := client.Configuration.Get(context.TODO(), firefly.ConfigurationGetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", configurations)\n}\n',
       },
       ruby: {
         method: 'configuration.retrieve',
@@ -13556,7 +13556,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Configuration.GetValue',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tconfigurationSingle, err := client.Configuration.GetValue(\n\t\tcontext.TODO(),\n\t\tfirefly.ConfigValueFilterConfigurationIsDemoSite,\n\t\tfirefly.ConfigurationGetValueParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", configurationSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tconfigurationSingle, err := client.Configuration.GetValue(\n\t\tcontext.TODO(),\n\t\tfirefly.ConfigValueFilterConfigurationIsDemoSite,\n\t\tfirefly.ConfigurationGetValueParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", configurationSingle.Data)\n}\n',
       },
       ruby: {
         method: 'configuration.retrieve_value',
@@ -13619,7 +13619,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Configuration.UpdateValue',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tconfigurationSingle, err := client.Configuration.UpdateValue(\n\t\tcontext.TODO(),\n\t\tfirefly.ConfigurationUpdateValueParamsNameConfigurationIsDemoSite,\n\t\tfirefly.ConfigurationUpdateValueParams{\n\t\t\tValue: firefly.PolymorphicPropertyUnionParam{\n\t\t\t\tOfBool: firefly.Bool(true),\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", configurationSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tconfigurationSingle, err := client.Configuration.UpdateValue(\n\t\tcontext.TODO(),\n\t\tfirefly.ConfigurationUpdateValueParamsNameConfigurationIsDemoSite,\n\t\tfirefly.ConfigurationUpdateValueParams{\n\t\t\tValue: firefly.PolymorphicPropertyUnionParam{\n\t\t\t\tOfBool: firefly.Bool(true),\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", configurationSingle.Data)\n}\n',
       },
       ruby: {
         method: 'configuration.update_value',
@@ -13685,7 +13685,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Cron.Run',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Cron.Run(\n\t\tcontext.TODO(),\n\t\t"d5ea6b5fb774618dd6ad6ba6e0a7f55c",\n\t\tfirefly.CronRunParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.AutoBudgets)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tresponse, err := client.Cron.Run(\n\t\tcontext.TODO(),\n\t\t"d5ea6b5fb774618dd6ad6ba6e0a7f55c",\n\t\tfirefly.CronRunParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.AutoBudgets)\n}\n',
       },
       ruby: {
         method: 'cron.run',
@@ -13748,7 +13748,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Users.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tusers, err := client.Users.List(context.TODO(), firefly.UserListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", users.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tusers, err := client.Users.List(context.TODO(), firefly.UserListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", users.Data)\n}\n',
       },
       ruby: {
         method: 'users.list',
@@ -13817,7 +13817,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Users.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.Users.New(context.TODO(), firefly.UserNewParams{\n\t\tUser: firefly.UserParam{\n\t\t\tEmail: "james@firefly-iii.org",\n\t\t},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.Users.New(context.TODO(), firefly.UserNewParams{\n\t\tUser: firefly.UserParam{\n\t\t\tEmail: "james@firefly-iii.org",\n\t\t},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
       },
       ruby: {
         method: 'users.create',
@@ -13880,7 +13880,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Users.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.Users.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.Users.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
       },
       ruby: {
         method: 'users.retrieve',
@@ -13949,7 +13949,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Users.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.Users.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserUpdateParams{\n\t\t\tUser: firefly.UserParam{\n\t\t\t\tEmail: "james@firefly-iii.org",\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tuserSingle, err := client.Users.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserUpdateParams{\n\t\t\tUser: firefly.UserParam{\n\t\t\t\tEmail: "james@firefly-iii.org",\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", userSingle.Data)\n}\n',
       },
       ruby: {
         method: 'users.update',
@@ -14011,7 +14011,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Users.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Users.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Users.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.UserDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'users.delete',
@@ -14074,7 +14074,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Preferences.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferences, err := client.Preferences.List(context.TODO(), firefly.PreferenceListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferences.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferences, err := client.Preferences.List(context.TODO(), firefly.PreferenceListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferences.Data)\n}\n',
       },
       ruby: {
         method: 'preferences.list',
@@ -14137,7 +14137,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Preferences.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferenceSingle, err := client.Preferences.New(context.TODO(), firefly.PreferenceNewParams{\n\t\tPreference: firefly.PreferenceParam{\n\t\t\tData: firefly.PolymorphicPropertyUnionParam{\n\t\t\t\tOfBool: firefly.Bool(true),\n\t\t\t},\n\t\t\tName: "currencyPreference",\n\t\t},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferenceSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferenceSingle, err := client.Preferences.New(context.TODO(), firefly.PreferenceNewParams{\n\t\tPreference: firefly.PreferenceParam{\n\t\t\tData: firefly.PolymorphicPropertyUnionParam{\n\t\t\t\tOfBool: firefly.Bool(true),\n\t\t\t},\n\t\t\tName: "currencyPreference",\n\t\t},\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferenceSingle.Data)\n}\n',
       },
       ruby: {
         method: 'preferences.create',
@@ -14200,7 +14200,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Preferences.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferenceSingle, err := client.Preferences.Get(\n\t\tcontext.TODO(),\n\t\t"currencyPreference",\n\t\tfirefly.PreferenceGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferenceSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferenceSingle, err := client.Preferences.Get(\n\t\tcontext.TODO(),\n\t\t"currencyPreference",\n\t\tfirefly.PreferenceGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferenceSingle.Data)\n}\n',
       },
       ruby: {
         method: 'preferences.retrieve',
@@ -14262,7 +14262,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Preferences.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferenceSingle, err := client.Preferences.Update(\n\t\tcontext.TODO(),\n\t\t"currencyPreference",\n\t\tfirefly.PreferenceUpdateParams{\n\t\t\tData: firefly.PolymorphicPropertyUnionParam{\n\t\t\t\tOfBool: firefly.Bool(true),\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferenceSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tpreferenceSingle, err := client.Preferences.Update(\n\t\tcontext.TODO(),\n\t\t"currencyPreference",\n\t\tfirefly.PreferenceUpdateParams{\n\t\t\tData: firefly.PolymorphicPropertyUnionParam{\n\t\t\t\tOfBool: firefly.Bool(true),\n\t\t\t},\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", preferenceSingle.Data)\n}\n',
       },
       ruby: {
         method: 'preferences.update',
@@ -14325,7 +14325,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Submit',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Submit(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookSubmitParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Submit(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookSubmitParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'webhooks.submit',
@@ -14387,7 +14387,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.TriggerTransaction',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.TriggerTransaction(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookTriggerTransactionParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.TriggerTransaction(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookTriggerTransactionParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'webhooks.trigger_transaction',
@@ -14451,7 +14451,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhooks, err := client.Webhooks.List(context.TODO(), firefly.WebhookListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhooks.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhooks, err := client.Webhooks.List(context.TODO(), firefly.WebhookListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhooks.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.list',
@@ -14525,7 +14525,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.New',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhookSingle, err := client.Webhooks.New(context.TODO(), firefly.WebhookNewParams{\n\t\tDelivery: map[string]any{},\n\t\tResponse: map[string]any{},\n\t\tTitle:    "Update magic mirror on new transaction",\n\t\tTrigger:  map[string]any{},\n\t\tURL:      "https://example.com",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhookSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhookSingle, err := client.Webhooks.New(context.TODO(), firefly.WebhookNewParams{\n\t\tDelivery: map[string]any{},\n\t\tResponse: map[string]any{},\n\t\tTitle:    "Update magic mirror on new transaction",\n\t\tTrigger:  map[string]any{},\n\t\tURL:      "https://example.com",\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhookSingle.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.create',
@@ -14589,7 +14589,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhookSingle, err := client.Webhooks.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhookSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhookSingle, err := client.Webhooks.Get(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookGetParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhookSingle.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.retrieve',
@@ -14662,7 +14662,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Update',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhookSingle, err := client.Webhooks.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhookSingle.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\twebhookSingle, err := client.Webhooks.Update(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookUpdateParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", webhookSingle.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.update',
@@ -14724,7 +14724,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Delete(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookDeleteParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'webhooks.delete',
@@ -14788,7 +14788,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Messages.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tmessages, err := client.Webhooks.Messages.List(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookMessageListParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", messages.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tmessages, err := client.Webhooks.Messages.List(\n\t\tcontext.TODO(),\n\t\t"123",\n\t\tfirefly.WebhookMessageListParams{},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", messages.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.messages.list',
@@ -14851,7 +14851,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Messages.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tmessage, err := client.Webhooks.Messages.Get(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageGetParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", message.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tmessage, err := client.Webhooks.Messages.Get(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageGetParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", message.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.messages.retrieve',
@@ -14913,7 +14913,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Messages.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Messages.Delete(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageDeleteParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Messages.Delete(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageDeleteParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'webhooks.messages.delete',
@@ -14984,7 +14984,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Messages.Attempts.List',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattempts, err := client.Webhooks.Messages.Attempts.List(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageAttemptListParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attempts.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattempts, err := client.Webhooks.Messages.Attempts.List(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageAttemptListParams{\n\t\t\tID: "123",\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attempts.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.messages.attempts.list',
@@ -15047,7 +15047,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Messages.Attempts.Get',
         example:
-          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattempt, err := client.Webhooks.Messages.Attempts.Get(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageAttemptGetParams{\n\t\t\tID:        "123",\n\t\t\tMessageID: 1,\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attempt.Data)\n}\n',
+          'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\tattempt, err := client.Webhooks.Messages.Attempts.Get(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageAttemptGetParams{\n\t\t\tID:        "123",\n\t\t\tMessageID: 1,\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", attempt.Data)\n}\n',
       },
       ruby: {
         method: 'webhooks.messages.attempts.retrieve',
@@ -15111,7 +15111,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       go: {
         method: 'client.Webhooks.Messages.Attempts.Delete',
         example:
-          'package main\n\nimport (\n\t"context"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Messages.Attempts.Delete(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageAttemptDeleteParams{\n\t\t\tID:        "123",\n\t\t\tMessageID: 1,\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
+          'package main\n\nimport (\n\t"context"\n\n\t"github.com/steel-gareth/firefly-go"\n)\n\nfunc main() {\n\tclient := firefly.NewClient()\n\terr := client.Webhooks.Messages.Attempts.Delete(\n\t\tcontext.TODO(),\n\t\t1,\n\t\tfirefly.WebhookMessageAttemptDeleteParams{\n\t\t\tID:        "123",\n\t\t\tMessageID: 1,\n\t\t},\n\t)\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n}\n',
       },
       ruby: {
         method: 'webhooks.messages.attempts.delete',
@@ -15150,12 +15150,12 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
   {
     language: 'csharp',
     content:
-      '# Firefly C# API Library\n\nThe Firefly C# SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org) from applications written in   C#.\n\n## Installation\n\n```bash\ngit clone git@github.com:stainless-sdks/emcees-prod-testing-5-csharp.git\ndotnet add reference emcees-prod-testing-5-csharp/src/Firefly\n```\n\n## Requirements\n\nThis library requires .NET Standard 2.0 or later.\n\n## Usage\n\nSee the [`examples`](examples) directory for complete and runnable examples.\n\n```csharp\nFireflyClient client = new();\n\nAutocompleteListAccountsParams parameters = new();\n\nvar response = await client.Autocomplete.ListAccounts(parameters);\n\nConsole.WriteLine(response);\n```',
+      '# Firefly C# API Library\n\nThe Firefly C# SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org) from applications written in   C#.\n\n## Installation\n\n```bash\ngit clone git@github.com:steel-gareth/firefly-csharp.git\ndotnet add reference firefly-csharp/src/Firefly\n```\n\n## Requirements\n\nThis library requires .NET Standard 2.0 or later.\n\n## Usage\n\nSee the [`examples`](examples) directory for complete and runnable examples.\n\n```csharp\nFireflyClient client = new();\n\nAutocompleteListAccountsParams parameters = new();\n\nvar response = await client.Autocomplete.ListAccounts(parameters);\n\nConsole.WriteLine(response);\n```',
   },
   {
     language: 'go',
     content:
-      '# Firefly Go API Library\n\n<a href="https://pkg.go.dev/github.com/stainless-sdks/emcees-prod-testing-5-go"><img src="https://pkg.go.dev/badge/github.com/stainless-sdks/emcees-prod-testing-5-go.svg" alt="Go Reference"></a>\n\nThe Firefly Go library provides convenient access to the [Firefly REST API](https://firefly-iii.org)\nfrom applications written in Go.\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the Firefly MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\n## Installation\n\n\n\n```go\nimport (\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go" // imported as SDK_PackageName\n)\n```\n\n\n\nOr to pin the version:\n\n\n\n```sh\ngo get -u \'github.com/stainless-sdks/emcees-prod-testing-5-go@v0.0.1\'\n```\n\n\n\n## Requirements\n\nThis library requires Go 1.22+.\n\n## Usage\n\nThe full API of this library can be found in [api.md](api.md).\n\n```go\npackage main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go"\n\t"github.com/stainless-sdks/emcees-prod-testing-5-go/option"\n)\n\nfunc main() {\n\tclient := firefly.NewClient(\n\t\toption.WithEnvironmentEnvironment1(), // defaults to option.WithEnvironmentProduction()\n\t)\n\tresponse, err := client.Autocomplete.ListAccounts(context.TODO(), firefly.AutocompleteListAccountsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n\n```\n\n### Request fields\n\nAll request parameters are wrapped in a generic `Field` type,\nwhich we use to distinguish zero values from null or omitted fields.\n\nThis prevents accidentally sending a zero value if you forget a required parameter,\nand enables explicitly sending `null`, `false`, `\'\'`, or `0` on optional parameters.\nAny field not specified is not sent.\n\nTo construct fields with values, use the helpers `String()`, `Int()`, `Float()`, or most commonly, the generic `F[T]()`.\nTo send a null, use `Null[T]()`, and to send a nonconforming value, use `Raw[T](any)`. For example:\n\n```go\nparams := FooParams{\n\tName: SDK_PackageName.F("hello"),\n\n\t// Explicitly send `"description": null`\n\tDescription: SDK_PackageName.Null[string](),\n\n\tPoint: SDK_PackageName.F(SDK_PackageName.Point{\n\t\tX: SDK_PackageName.Int(0),\n\t\tY: SDK_PackageName.Int(1),\n\n\t\t// In cases where the API specifies a given type,\n\t\t// but you want to send something else, use `Raw`:\n\t\tZ: SDK_PackageName.Raw[int64](0.01), // sends a float\n\t}),\n}\n```\n\n### Response objects\n\nAll fields in response structs are value types (not pointers or wrappers).\n\nIf a given field is `null`, not present, or invalid, the corresponding field\nwill simply be its zero value.\n\nAll response structs also include a special `JSON` field, containing more detailed\ninformation about each property, which you can use like so:\n\n```go\nif res.Name == "" {\n\t// true if `"name"` is either not present or explicitly null\n\tres.JSON.Name.IsNull()\n\n\t// true if the `"name"` key was not present in the response JSON at all\n\tres.JSON.Name.IsMissing()\n\n\t// When the API returns data that cannot be coerced to the expected type:\n\tif res.JSON.Name.IsInvalid() {\n\t\traw := res.JSON.Name.Raw()\n\n\t\tlegacyName := struct{\n\t\t\tFirst string `json:"first"`\n\t\t\tLast  string `json:"last"`\n\t\t}{}\n\t\tjson.Unmarshal([]byte(raw), &legacyName)\n\t\tname = legacyName.First + " " + legacyName.Last\n\t}\n}\n```\n\nThese `.JSON` structs also include an `Extras` map containing\nany properties in the json response that were not specified\nin the struct. This can be useful for API features not yet\npresent in the SDK.\n\n```go\nbody := res.JSON.ExtraFields["my_unexpected_field"].Raw()\n```\n\n### RequestOptions\n\nThis library uses the functional options pattern. Functions defined in the\n`SDK_PackageOptionName` package return a `RequestOption`, which is a closure that mutates a\n`RequestConfig`. These options can be supplied to the client or at individual\nrequests. For example:\n\n```go\nclient := SDK_PackageName.SDK_ClientInitializerName(\n\t// Adds a header to every request made by the client\n\tSDK_PackageOptionName.WithHeader("X-Some-Header", "custom_header_info"),\n)\n\nclient.Autocomplete.ListAccounts(context.TODO(), ...,\n\t// Override the header\n\tSDK_PackageOptionName.WithHeader("X-Some-Header", "some_other_custom_header_info"),\n\t// Add an undocumented field to the request body, using sjson syntax\n\tSDK_PackageOptionName.WithJSONSet("some.json.path", map[string]string{"my": "object"}),\n)\n```\n\nSee the [full list of request options](https://pkg.go.dev/github.com/stainless-sdks/emcees-prod-testing-5-go/SDK_PackageOptionName).\n\n### Pagination\n\nThis library provides some conveniences for working with paginated list endpoints.\n\nYou can use `.ListAutoPaging()` methods to iterate through items across all pages:\n\n\n\nOr you can use simple `.List()` methods to fetch a single page and receive a standard response object\nwith additional helper methods like `.GetNextPage()`, e.g.:\n\n\n\n### Errors\n\nWhen the API returns a non-success status code, we return an error with type\n`*SDK_PackageName.Error`. This contains the `StatusCode`, `*http.Request`, and\n`*http.Response` values of the request, as well as the JSON of the error body\n(much like other response objects in the SDK).\n\nTo handle errors, we recommend that you use the `errors.As` pattern:\n\n```go\n_, err := client.Autocomplete.ListAccounts(context.TODO(), firefly.AutocompleteListAccountsParams{})\nif err != nil {\n\tvar apierr *firefly.Error\n\tif errors.As(err, &apierr) {\n\t\tprintln(string(apierr.DumpRequest(true)))  // Prints the serialized HTTP request\n\t\tprintln(string(apierr.DumpResponse(true))) // Prints the serialized HTTP response\n\t}\n\tpanic(err.Error()) // GET "/v1/autocomplete/accounts": 400 Bad Request { ... }\n}\n```\n\nWhen other errors occur, they are returned unwrapped; for example,\nif HTTP transport fails, you might receive `*url.Error` wrapping `*net.OpError`.\n\n### Timeouts\n\nRequests do not time out by default; use context to configure a timeout for a request lifecycle.\n\nNote that if a request is [retried](#retries), the context timeout does not start over.\nTo set a per-retry timeout, use `SDK_PackageOptionName.WithRequestTimeout()`.\n\n```go\n// This sets the timeout for the request, including all the retries.\nctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)\ndefer cancel()\nclient.Autocomplete.ListAccounts(\n\tctx,\n\tfirefly.AutocompleteListAccountsParams{},\n\t// This sets the per-retry timeout\n\toption.WithRequestTimeout(20*time.Second),\n)\n```\n\n### File uploads\n\nRequest parameters that correspond to file uploads in multipart requests are typed as\n`param.Field[io.Reader]`. The contents of the `io.Reader` will by default be sent as a multipart form\npart with the file name of "anonymous_file" and content-type of "application/octet-stream".\n\nThe file name and content-type can be customized by implementing `Name() string` or `ContentType()\nstring` on the run-time type of `io.Reader`. Note that `os.File` implements `Name() string`, so a\nfile returned by `os.Open` will be sent with the file name on disk.\n\nWe also provide a helper `SDK_PackageName.FileParam(reader io.Reader, filename string, contentType string)`\nwhich can be used to wrap any `io.Reader` with the appropriate file name and content type.\n\n\n\n### Retries\n\nCertain errors will be automatically retried 2 times by default, with a short exponential backoff.\nWe retry by default all connection errors, 408 Request Timeout, 409 Conflict, 429 Rate Limit,\nand >=500 Internal errors.\n\nYou can use the `WithMaxRetries` option to configure or disable this:\n\n```go\n// Configure the default for all requests:\nclient := firefly.NewClient(\n\toption.WithMaxRetries(0), // default is 2\n)\n\n// Override per-request:\nclient.Autocomplete.ListAccounts(\n\tcontext.TODO(),\n\tfirefly.AutocompleteListAccountsParams{},\n\toption.WithMaxRetries(5),\n)\n```\n\n\n### Accessing raw response data (e.g. response headers)\n\nYou can access the raw HTTP response data by using the `option.WithResponseInto()` request option. This is useful when\nyou need to examine response headers, status codes, or other details.\n\n```go\n// Create a variable to store the HTTP response\nvar response *http.Response\nresponse, err := client.Autocomplete.ListAccounts(\n\tcontext.TODO(),\n\tfirefly.AutocompleteListAccountsParams{},\n\toption.WithResponseInto(&response),\n)\nif err != nil {\n\t// handle error\n}\nfmt.Printf("%+v\\n", response)\n\nfmt.Printf("Status Code: %d\\n", response.StatusCode)\nfmt.Printf("Headers: %+#v\\n", response.Header)\n```\n\n### Making custom/undocumented requests\n\nThis library is typed for convenient access to the documented API. If you need to access undocumented\nendpoints, params, or response properties, the library can still be used.\n\n#### Undocumented endpoints\n\nTo make requests to undocumented endpoints, you can use `client.Get`, `client.Post`, and other HTTP verbs.\n`RequestOptions` on the client, such as retries, will be respected when making these requests.\n\n```go\nvar (\n    // params can be an io.Reader, a []byte, an encoding/json serializable object,\n    // or a "…Params" struct defined in this library.\n    params map[string]interface{}\n\n    // result can be an []byte, *http.Response, a encoding/json deserializable object,\n    // or a model defined in this library.\n    result *http.Response\n)\nerr := client.Post(context.Background(), "/unspecified", params, &result)\nif err != nil {\n    …\n}\n```\n\n#### Undocumented request params\n\nTo make requests using undocumented parameters, you may use either the `SDK_PackageOptionName.WithQuerySet()`\nor the `SDK_PackageOptionName.WithJSONSet()` methods.\n\n```go\nparams := FooNewParams{\n    ID:   SDK_PackageName.F("id_xxxx"),\n    Data: SDK_PackageName.F(FooNewParamsData{\n        FirstName: SDK_PackageName.F("John"),\n    }),\n}\nclient.Foo.New(context.Background(), params, SDK_PackageOptionName.WithJSONSet("data.last_name", "Doe"))\n```\n\n#### Undocumented response properties\n\nTo access undocumented response properties, you may either access the raw JSON of the response as a string\nwith `result.JSON.RawJSON()`, or get the raw JSON of a particular field on the result with\n`result.JSON.Foo.Raw()`.\n\nAny fields that are not present on the response struct will be saved and can be accessed by `result.JSON.ExtraFields()` which returns the extra fields as a `map[string]Field`.\n\n### Middleware\n\nWe provide `SDK_PackageOptionName.WithMiddleware` which applies the given\nmiddleware to requests.\n\n```go\nfunc Logger(req *http.Request, next SDK_PackageOptionName.MiddlewareNext) (res *http.Response, err error) {\n\t// Before the request\n\tstart := time.Now()\n\tLogReq(req)\n\n\t// Forward the request to the next handler\n\tres, err = next(req)\n\n\t// Handle stuff after the request\n\tend := time.Now()\n\tLogRes(res, err, start - end)\n\n    return res, err\n}\n\nclient := SDK_PackageName.SDK_ClientInitializerName(\n\tSDK_PackageOptionName.WithMiddleware(Logger),\n)\n```\n\nWhen multiple middlewares are provided as variadic arguments, the middlewares\nare applied left to right. If `SDK_PackageOptionName.WithMiddleware` is given\nmultiple times, for example first in the client then the method, the\nmiddleware in the client will run first and the middleware given in the method\nwill run next.\n\nYou may also replace the default `http.Client` with\n`SDK_PackageOptionName.WithHTTPClient(client)`. Only one http client is\naccepted (this overwrites any previous client) and receives requests after any\nmiddleware has been applied.\n\n## Semantic versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n2. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/emcees-prod-testing-5-go/issues) with questions, bugs, or suggestions.\n\n## Contributing\n\nSee [the contributing documentation](./CONTRIBUTING.md).\n',
+      '# Firefly Go API Library\n\n<a href="https://pkg.go.dev/github.com/steel-gareth/firefly-go"><img src="https://pkg.go.dev/badge/github.com/steel-gareth/firefly-go.svg" alt="Go Reference"></a>\n\nThe Firefly Go library provides convenient access to the [Firefly REST API](https://firefly-iii.org)\nfrom applications written in Go.\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the Firefly MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\n## Installation\n\n<!-- x-release-please-start-version -->\n\n```go\nimport (\n\t"github.com/steel-gareth/firefly-go" // imported as SDK_PackageName\n)\n```\n\n<!-- x-release-please-end -->\n\nOr to pin the version:\n\n<!-- x-release-please-start-version -->\n\n```sh\ngo get -u \'github.com/steel-gareth/firefly-go@v0.0.1\'\n```\n\n<!-- x-release-please-end -->\n\n## Requirements\n\nThis library requires Go 1.22+.\n\n## Usage\n\nThe full API of this library can be found in [api.md](api.md).\n\n```go\npackage main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/steel-gareth/firefly-go"\n\t"github.com/steel-gareth/firefly-go/option"\n)\n\nfunc main() {\n\tclient := firefly.NewClient(\n\t\toption.WithEnvironmentEnvironment1(), // defaults to option.WithEnvironmentProduction()\n\t)\n\tresponse, err := client.Autocomplete.ListAccounts(context.TODO(), firefly.AutocompleteListAccountsParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response)\n}\n\n```\n\n### Request fields\n\nAll request parameters are wrapped in a generic `Field` type,\nwhich we use to distinguish zero values from null or omitted fields.\n\nThis prevents accidentally sending a zero value if you forget a required parameter,\nand enables explicitly sending `null`, `false`, `\'\'`, or `0` on optional parameters.\nAny field not specified is not sent.\n\nTo construct fields with values, use the helpers `String()`, `Int()`, `Float()`, or most commonly, the generic `F[T]()`.\nTo send a null, use `Null[T]()`, and to send a nonconforming value, use `Raw[T](any)`. For example:\n\n```go\nparams := FooParams{\n\tName: SDK_PackageName.F("hello"),\n\n\t// Explicitly send `"description": null`\n\tDescription: SDK_PackageName.Null[string](),\n\n\tPoint: SDK_PackageName.F(SDK_PackageName.Point{\n\t\tX: SDK_PackageName.Int(0),\n\t\tY: SDK_PackageName.Int(1),\n\n\t\t// In cases where the API specifies a given type,\n\t\t// but you want to send something else, use `Raw`:\n\t\tZ: SDK_PackageName.Raw[int64](0.01), // sends a float\n\t}),\n}\n```\n\n### Response objects\n\nAll fields in response structs are value types (not pointers or wrappers).\n\nIf a given field is `null`, not present, or invalid, the corresponding field\nwill simply be its zero value.\n\nAll response structs also include a special `JSON` field, containing more detailed\ninformation about each property, which you can use like so:\n\n```go\nif res.Name == "" {\n\t// true if `"name"` is either not present or explicitly null\n\tres.JSON.Name.IsNull()\n\n\t// true if the `"name"` key was not present in the response JSON at all\n\tres.JSON.Name.IsMissing()\n\n\t// When the API returns data that cannot be coerced to the expected type:\n\tif res.JSON.Name.IsInvalid() {\n\t\traw := res.JSON.Name.Raw()\n\n\t\tlegacyName := struct{\n\t\t\tFirst string `json:"first"`\n\t\t\tLast  string `json:"last"`\n\t\t}{}\n\t\tjson.Unmarshal([]byte(raw), &legacyName)\n\t\tname = legacyName.First + " " + legacyName.Last\n\t}\n}\n```\n\nThese `.JSON` structs also include an `Extras` map containing\nany properties in the json response that were not specified\nin the struct. This can be useful for API features not yet\npresent in the SDK.\n\n```go\nbody := res.JSON.ExtraFields["my_unexpected_field"].Raw()\n```\n\n### RequestOptions\n\nThis library uses the functional options pattern. Functions defined in the\n`SDK_PackageOptionName` package return a `RequestOption`, which is a closure that mutates a\n`RequestConfig`. These options can be supplied to the client or at individual\nrequests. For example:\n\n```go\nclient := SDK_PackageName.SDK_ClientInitializerName(\n\t// Adds a header to every request made by the client\n\tSDK_PackageOptionName.WithHeader("X-Some-Header", "custom_header_info"),\n)\n\nclient.Autocomplete.ListAccounts(context.TODO(), ...,\n\t// Override the header\n\tSDK_PackageOptionName.WithHeader("X-Some-Header", "some_other_custom_header_info"),\n\t// Add an undocumented field to the request body, using sjson syntax\n\tSDK_PackageOptionName.WithJSONSet("some.json.path", map[string]string{"my": "object"}),\n)\n```\n\nSee the [full list of request options](https://pkg.go.dev/github.com/steel-gareth/firefly-go/SDK_PackageOptionName).\n\n### Pagination\n\nThis library provides some conveniences for working with paginated list endpoints.\n\nYou can use `.ListAutoPaging()` methods to iterate through items across all pages:\n\n\n\nOr you can use simple `.List()` methods to fetch a single page and receive a standard response object\nwith additional helper methods like `.GetNextPage()`, e.g.:\n\n\n\n### Errors\n\nWhen the API returns a non-success status code, we return an error with type\n`*SDK_PackageName.Error`. This contains the `StatusCode`, `*http.Request`, and\n`*http.Response` values of the request, as well as the JSON of the error body\n(much like other response objects in the SDK).\n\nTo handle errors, we recommend that you use the `errors.As` pattern:\n\n```go\n_, err := client.Autocomplete.ListAccounts(context.TODO(), firefly.AutocompleteListAccountsParams{})\nif err != nil {\n\tvar apierr *firefly.Error\n\tif errors.As(err, &apierr) {\n\t\tprintln(string(apierr.DumpRequest(true)))  // Prints the serialized HTTP request\n\t\tprintln(string(apierr.DumpResponse(true))) // Prints the serialized HTTP response\n\t}\n\tpanic(err.Error()) // GET "/v1/autocomplete/accounts": 400 Bad Request { ... }\n}\n```\n\nWhen other errors occur, they are returned unwrapped; for example,\nif HTTP transport fails, you might receive `*url.Error` wrapping `*net.OpError`.\n\n### Timeouts\n\nRequests do not time out by default; use context to configure a timeout for a request lifecycle.\n\nNote that if a request is [retried](#retries), the context timeout does not start over.\nTo set a per-retry timeout, use `SDK_PackageOptionName.WithRequestTimeout()`.\n\n```go\n// This sets the timeout for the request, including all the retries.\nctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)\ndefer cancel()\nclient.Autocomplete.ListAccounts(\n\tctx,\n\tfirefly.AutocompleteListAccountsParams{},\n\t// This sets the per-retry timeout\n\toption.WithRequestTimeout(20*time.Second),\n)\n```\n\n### File uploads\n\nRequest parameters that correspond to file uploads in multipart requests are typed as\n`param.Field[io.Reader]`. The contents of the `io.Reader` will by default be sent as a multipart form\npart with the file name of "anonymous_file" and content-type of "application/octet-stream".\n\nThe file name and content-type can be customized by implementing `Name() string` or `ContentType()\nstring` on the run-time type of `io.Reader`. Note that `os.File` implements `Name() string`, so a\nfile returned by `os.Open` will be sent with the file name on disk.\n\nWe also provide a helper `SDK_PackageName.FileParam(reader io.Reader, filename string, contentType string)`\nwhich can be used to wrap any `io.Reader` with the appropriate file name and content type.\n\n\n\n### Retries\n\nCertain errors will be automatically retried 2 times by default, with a short exponential backoff.\nWe retry by default all connection errors, 408 Request Timeout, 409 Conflict, 429 Rate Limit,\nand >=500 Internal errors.\n\nYou can use the `WithMaxRetries` option to configure or disable this:\n\n```go\n// Configure the default for all requests:\nclient := firefly.NewClient(\n\toption.WithMaxRetries(0), // default is 2\n)\n\n// Override per-request:\nclient.Autocomplete.ListAccounts(\n\tcontext.TODO(),\n\tfirefly.AutocompleteListAccountsParams{},\n\toption.WithMaxRetries(5),\n)\n```\n\n\n### Accessing raw response data (e.g. response headers)\n\nYou can access the raw HTTP response data by using the `option.WithResponseInto()` request option. This is useful when\nyou need to examine response headers, status codes, or other details.\n\n```go\n// Create a variable to store the HTTP response\nvar response *http.Response\nresponse, err := client.Autocomplete.ListAccounts(\n\tcontext.TODO(),\n\tfirefly.AutocompleteListAccountsParams{},\n\toption.WithResponseInto(&response),\n)\nif err != nil {\n\t// handle error\n}\nfmt.Printf("%+v\\n", response)\n\nfmt.Printf("Status Code: %d\\n", response.StatusCode)\nfmt.Printf("Headers: %+#v\\n", response.Header)\n```\n\n### Making custom/undocumented requests\n\nThis library is typed for convenient access to the documented API. If you need to access undocumented\nendpoints, params, or response properties, the library can still be used.\n\n#### Undocumented endpoints\n\nTo make requests to undocumented endpoints, you can use `client.Get`, `client.Post`, and other HTTP verbs.\n`RequestOptions` on the client, such as retries, will be respected when making these requests.\n\n```go\nvar (\n    // params can be an io.Reader, a []byte, an encoding/json serializable object,\n    // or a "…Params" struct defined in this library.\n    params map[string]interface{}\n\n    // result can be an []byte, *http.Response, a encoding/json deserializable object,\n    // or a model defined in this library.\n    result *http.Response\n)\nerr := client.Post(context.Background(), "/unspecified", params, &result)\nif err != nil {\n    …\n}\n```\n\n#### Undocumented request params\n\nTo make requests using undocumented parameters, you may use either the `SDK_PackageOptionName.WithQuerySet()`\nor the `SDK_PackageOptionName.WithJSONSet()` methods.\n\n```go\nparams := FooNewParams{\n    ID:   SDK_PackageName.F("id_xxxx"),\n    Data: SDK_PackageName.F(FooNewParamsData{\n        FirstName: SDK_PackageName.F("John"),\n    }),\n}\nclient.Foo.New(context.Background(), params, SDK_PackageOptionName.WithJSONSet("data.last_name", "Doe"))\n```\n\n#### Undocumented response properties\n\nTo access undocumented response properties, you may either access the raw JSON of the response as a string\nwith `result.JSON.RawJSON()`, or get the raw JSON of a particular field on the result with\n`result.JSON.Foo.Raw()`.\n\nAny fields that are not present on the response struct will be saved and can be accessed by `result.JSON.ExtraFields()` which returns the extra fields as a `map[string]Field`.\n\n### Middleware\n\nWe provide `SDK_PackageOptionName.WithMiddleware` which applies the given\nmiddleware to requests.\n\n```go\nfunc Logger(req *http.Request, next SDK_PackageOptionName.MiddlewareNext) (res *http.Response, err error) {\n\t// Before the request\n\tstart := time.Now()\n\tLogReq(req)\n\n\t// Forward the request to the next handler\n\tres, err = next(req)\n\n\t// Handle stuff after the request\n\tend := time.Now()\n\tLogRes(res, err, start - end)\n\n    return res, err\n}\n\nclient := SDK_PackageName.SDK_ClientInitializerName(\n\tSDK_PackageOptionName.WithMiddleware(Logger),\n)\n```\n\nWhen multiple middlewares are provided as variadic arguments, the middlewares\nare applied left to right. If `SDK_PackageOptionName.WithMiddleware` is given\nmultiple times, for example first in the client then the method, the\nmiddleware in the client will run first and the middleware given in the method\nwill run next.\n\nYou may also replace the default `http.Client` with\n`SDK_PackageOptionName.WithHTTPClient(client)`. Only one http client is\naccepted (this overwrites any previous client) and receives requests after any\nmiddleware has been applied.\n\n## Semantic versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n2. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/steel-gareth/firefly-go/issues) with questions, bugs, or suggestions.\n\n## Contributing\n\nSee [the contributing documentation](./CONTRIBUTING.md).\n',
   },
   {
     language: 'java',
@@ -15165,7 +15165,7 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
   {
     language: 'kotlin',
     content:
-      '# Firefly Kotlin API Library\n\n\n[![Maven Central](https://img.shields.io/maven-central/v/com.firefly.api/firefly-kotlin)](https://central.sonatype.com/artifact/com.firefly.api/firefly-kotlin/0.0.1)\n[![javadoc](https://javadoc.io/badge2/com.firefly.api/firefly-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1)\n\n\nThe Firefly Kotlin SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org)   from applications written in Kotlin.\n\n\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the Firefly MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\nThe REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). KDocs are available on [javadoc.io](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1).\n\n## Installation\n\n### Gradle\n\n~~~kotlin\nimplementation("com.firefly.api:firefly-kotlin:0.0.1")\n~~~\n\n### Maven\n\n~~~xml\n<dependency>\n  <groupId>com.firefly.api</groupId>\n  <artifactId>firefly-kotlin</artifactId>\n  <version>0.0.1</version>\n</dependency>\n~~~\n\n## Requirements\n\nThis library requires Java 8 or later.\n\n## Usage\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()\n```\n\n## Client configuration\n\nConfigure the client using system properties or environment variables:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n```\n\nOr manually:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n```\n\nOr using a combination of the two approaches:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    // Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n    // Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\n    .fromEnv()\n    .bearerToken("My Bearer Token")\n    .build()\n```\n\nSee this table for the available options:\n\n| Setter        | System property       | Environment variable   | Required | Default value                        |\n| ------------- | --------------------- | ---------------------- | -------- | ------------------------------------ |\n| `bearerToken` | `firefly.bearerToken` | `FIREFLY_BEARER_TOKEN` | false    | -                                    |\n| `baseUrl`     | `firefly.baseUrl`     | `FIREFLY_BASE_URL`     | true     | `"https://demo.firefly-iii.org/api"` |\n\nSystem properties take precedence over environment variables.\n\n> [!TIP]\n> Don\'t create more than one client in the same application. Each client has a connection pool and\n> thread pools, which are more efficient to share between requests.\n\n### Modifying configuration\n\nTo temporarily use a modified client configuration, while reusing the same connection and thread       pools, call `withOptions()` on any client or service:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\n\nval clientWithOptions: FireflyClient = client.withOptions {\n    it.baseUrl("https://example.com")\n    it.maxRetries(42)\n}\n```\n\nThe `withOptions()` method does not affect the original client or service.\n\n## Requests and responses\n\nTo send a request to the Firefly API, build an instance of some `Params` class and pass it to the     corresponding client method. When the response is received, it will be deserialized into an instance of     a Kotlin class.\n\nFor example, `client.autocomplete().listAccounts(...)` should be called with an instance of `AutocompleteListAccountsParams`, and it     will return an instance of `List<AutocompleteListAccountsResponse>`.\n\n## Immutability\n\nEach class in the SDK has an associated   [builder](https://blogs.oracle.com/javamagazine/post/exploring-joshua-blochs-builder-design-pattern-in-java)   or factory method for constructing it.\n\nEach class is [immutable](https://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html)   once constructed. If the class has an associated builder, then it has a `toBuilder()` method, which can   be used to convert it back to a builder for making a modified copy.\n\nBecause each class is immutable, builder modification will _never_ affect already built class instances.\n\n## Asynchronous execution\n\nThe default client is synchronous. To switch to asynchronous execution, call the `async()` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n\nval response: List<AutocompleteListAccountsResponse> = client.async().autocomplete().listAccounts()\n```\n\nOr create an asynchronous client from the beginning:\n\n```kotlin\nimport com.firefly.api.client.FireflyClientAsync\nimport com.firefly.api.client.okhttp.FireflyOkHttpClientAsync\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClientAsync = FireflyOkHttpClientAsync.fromEnv()\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()\n```\n\nThe asynchronous client supports the same options as the synchronous one, except most methods are [suspending](https://kotlinlang.org/docs/coroutines-guide.html).\n\n\n\n\n\n## Binary responses\n\nThe SDK defines methods that return binary responses, which are used for API responses that shouldn\'t     necessarily be parsed, like non-JSON data.\n\nThese methods return [`HttpResponse`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/http/HttpResponse.kt):\n\n```kotlin\nimport com.firefly.api.core.http.HttpResponse\nimport com.firefly.api.models.data.export.ExportExportAccountsParams\n\nval response: HttpResponse = client.data().export().exportAccounts()\n```\n\nTo save the response content to a file, use the     [`Files.copy(...)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#copy-java.io.InputStream-java.nio.file.Path-java.nio.file.CopyOption...-)     method:\n\n```kotlin\nimport java.nio.file.Files\nimport java.nio.file.Paths\nimport java.nio.file.StandardCopyOption\n\nclient.data().export().exportAccounts(params).use {\n    Files.copy(\n        it.body(),\n        Paths.get(path),\n        StandardCopyOption.REPLACE_EXISTING\n    )\n}\n```\n\nOr transfer the response content to any     [`OutputStream`](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html):\n\n```kotlin\nimport java.nio.file.Files\nimport java.nio.file.Paths\n\nclient.data().export().exportAccounts(params).use {\n    it.body().transferTo(Files.newOutputStream(Paths.get(path)))\n}\n```\n\n## Raw responses\n\nThe SDK defines methods that deserialize responses into instances of Kotlin classes.       However, these methods don\'t provide access to the response headers, status code, or the raw response       body.\n\nTo access this data, prefix any HTTP method call on a client or service with `withRawResponse()`:\n\n```kotlin\nimport com.firefly.api.core.http.Headers\nimport com.firefly.api.core.http.HttpResponseFor\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval response: HttpResponseFor<List<AutocompleteListAccountsResponse>> = client.autocomplete().withRawResponse().listAccounts()\n\nval statusCode: Int = response.statusCode()\nval headers: Headers = response.headers()\n```\n\nYou can still deserialize the response into an instance of a Kotlin class if needed:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval parsedResponse: List<AutocompleteListAccountsResponse> = response.parse()\n```\n\n## Error handling\n\nThe SDK throws custom unchecked exception types:\n\n- [`FireflyServiceException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyServiceException.kt): Base class for HTTP errors. See this table for which exception       subclass is thrown for each HTTP status code:\n\n  | Status | Exception                                          |\n  | ------ | -------------------------------------------------- |\n  | 400    | [`BadRequestException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/BadRequestException.kt)           |\n  | 401    | [`UnauthorizedException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnauthorizedException.kt)         |\n  | 403    | [`PermissionDeniedException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/PermissionDeniedException.kt)     |\n  | 404    | [`NotFoundException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/NotFoundException.kt)             |\n  | 422    | [`UnprocessableEntityException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnprocessableEntityException.kt)  |\n  | 429    | [`RateLimitException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/RateLimitException.kt)            |\n  | 5xx    | [`InternalServerException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/InternalServerException.kt)       |\n  | others | [`UnexpectedStatusCodeException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnexpectedStatusCodeException.kt) |\n\n- [`FireflyIoException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyIoException.kt): I/O networking errors.\n\n- [`FireflyRetryableException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyRetryableException.kt): Generic error indicating a failure that could be retried by the client.\n\n- [`FireflyInvalidDataException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyInvalidDataException.kt): Failure to interpret successfully parsed data. For example,       when accessing a property that\'s supposed to be required, but the API unexpectedly omitted it from the       response.\n\n- [`FireflyException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyException.kt): Base class for all exceptions. Most errors will result in one of the       previously mentioned ones, but completely generic errors may be thrown using the base class.\n\n\n\n## Logging\n\nEnable logging by setting the `FIREFLY_LOG` environment variable to   `info`:\n\n```sh\nexport FIREFLY_LOG=info\n```\n\nOr to `debug` for more verbose logging:\n\n```sh\nexport FIREFLY_LOG=debug\n```\n\nOr configure the client manually using the `logLevel` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.core.LogLevel\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .logLevel(LogLevel.INFO)\n    .build()\n```\n\n## ProGuard and R8\n\nAlthough the SDK uses reflection, it is still usable with     [ProGuard](https://github.com/Guardsquare/proguard) and     [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because     `firefly-kotlin-core` is published with a     [configuration file](firefly-kotlin-core/src/main/resources/META-INF/proguard/firefly-kotlin-core.pro) containing     [keep rules](https://www.guardsquare.com/manual/configuration/usage).\n\nProGuard and R8 should automatically detect and use the published rules, but you can also manually copy     the keep rules if necessary.\n\n\n\n\n\n## Jackson\n\nThe SDK depends on [Jackson](https://github.com/FasterXML/jackson) for JSON     serialization/deserialization. It is compatible with version 2.13.4 or higher,     but depends on version 2.18.2 by default.\n\nThe SDK throws an exception if it detects an incompatible Jackson version at runtime (e.g. if the     default version was overridden in your Maven or Gradle config).\n\nIf the SDK threw an exception, but you\'re _certain_ the version is compatible, then disable the version     check using the `checkJacksonVersionCompatibility` on [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or     [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt).\n\n> [!CAUTION]\n> We make no guarantee that the SDK works correctly when the Jackson version check is disabled.\n\nAlso note that there are bugs in older Jackson versions that can affect the SDK. We don\'t work around all     Jackson bugs ([example](https://github.com/FasterXML/jackson-databind/issues/3240)) and expect users to     upgrade Jackson for those instead.\n\n## Network options\n\n### Retries\n\nThe SDK automatically retries 2 times by default, with a short exponential backoff between requests.\n\nOnly the following error types are retried:\n- Connection errors (for example, due to a network connectivity problem)\n- 408 Request Timeout\n- 409 Conflict\n- 429 Rate Limit\n- 5xx Internal\n\nThe API may also explicitly instruct the SDK to retry or not retry a request.\n\nTo set a custom number of retries, configure the client using the `maxRetries` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .maxRetries(4)\n    .build()\n```\n\n### Timeouts\n\nRequests time out after 1 minute by default.\n\nTo set a custom timeout, configure the method call using the `timeout` method:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().timeout(Duration.ofSeconds(30)).build())\n```\n\nOr configure the default for all method calls at the client level:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport java.time.Duration\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .timeout(Duration.ofSeconds(30))\n    .build()\n```\n\n### Proxies\n\nTo route requests through a proxy, configure the client using the `proxy` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport java.net.InetSocketAddress\nimport java.net.Proxy\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .proxy(Proxy(\n      Proxy.Type.HTTP, InetSocketAddress(\n        "https://example.com", 8080\n      )\n    ))\n    .build()\n```\n\nIf the proxy responds with `407 Proxy Authentication Required`, supply credentials by also   configuring `proxyAuthenticator`:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.core.http.ProxyAuthenticator\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .proxy(...)\n    // Or a custom implementation of `ProxyAuthenticator`.\n    .proxyAuthenticator(ProxyAuthenticator.basic("username", "password"))\n    .build()\n```\n\n### Connection pooling\n\nTo customize the underlying OkHttp connection pool, configure the client using the   `maxIdleConnections` and `keepAliveDuration` methods:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport java.time.Duration\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    // If `maxIdleConnections` is set, then `keepAliveDuration` must be set, and vice versa.\n    .maxIdleConnections(10)\n    .keepAliveDuration(Duration.ofMinutes(2))\n    .build()\n```\n\nIf both options are unset, OkHttp\'s default connection pool settings are used.\n\n### HTTPS\n\n> [!NOTE]\n> Most applications should not call these methods, and instead use the system defaults. The defaults include\n> special optimizations that can be lost if the implementations are modified.\n\nTo configure how HTTPS connections are secured, configure the client using the `sslSocketFactory`,   `trustManager`, and `hostnameVerifier` methods:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    // If `sslSocketFactory` is set, then `trustManager` must be set, and vice versa.\n    .sslSocketFactory(yourSSLSocketFactory)\n    .trustManager(yourTrustManager)\n    .hostnameVerifier(yourHostnameVerifier)\n    .build()\n```\n\n### Environments\n\nThe SDK sends requests to the production by default. To send requests to a different     environment, configure the client like so:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .environment1()\n    .build()\n```\n\n### Custom HTTP client\n\nThe SDK consists of three artifacts:\n- `firefly-kotlin-core`\n  - Contains core SDK logic\n  - Does not depend on [OkHttp](https://square.github.io/okhttp)\n  - Exposes [`FireflyClient`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClient.kt), [`FireflyClientAsync`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsync.kt),             [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt), and [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), all of which can             work with any HTTP client\n- `firefly-kotlin-client-okhttp`\n  - Depends on [OkHttp](https://square.github.io/okhttp)\n  - Exposes [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) and [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), which             provide a way to construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) and             [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), respectively, using OkHttp\n- `firefly-kotlin`\n  - Depends on and exposes the APIs of both `firefly-kotlin-core` and `firefly-kotlin-client-okhttp`\n  - Does not have its own logic\n\nThis structure allows replacing the SDK\'s default HTTP client without pulling in unnecessary dependencies.\n\n#### Customized [`OkHttpClient`](https://square.github.io/okhttp/3.x/okhttp/okhttp3/OkHttpClient.html)\n\n> [!TIP]\n> Try the available [network options](#network-options) before replacing the default client.\n\nTo use a customized `OkHttpClient`:\n\n1. Replace your [`firefly-kotlin` dependency](#installation) with `firefly-kotlin-core`\n2. Copy `firefly-kotlin-client-okhttp`\'s [`OkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/OkHttpClient.kt) class into your code and        customize it\n3. Construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) or [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), similarly to        [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), using your        customized client\n\n### Completely custom HTTP client\n\nTo use a completely custom HTTP client:\n\n1. Replace your [`firefly-kotlin` dependency](#installation) with `firefly-kotlin-core`\n2. Write a class that implements the [`HttpClient`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/http/HttpClient.kt) interface\n3. Construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) or [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), similarly to        [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), using your new        client class\n\n## Undocumented API functionality\n\nThe SDK is typed for convenient usage of the documented API. However, it also supports working with undocumented or not yet supported parts of the API.\n\n### Parameters\n\nTo set undocumented parameters, call the `putAdditionalHeader`, `putAdditionalQueryParam`, or       `putAdditionalBodyProperty` methods on any `Params` class:\n\n```kotlin\nimport com.firefly.api.core.JsonValue\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\n\nval params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder()\n    .putAdditionalHeader("Secret-Header", "42")\n    .putAdditionalQueryParam("secret_query_param", "42")\n    .putAdditionalBodyProperty("secretProperty", JsonValue.from("42"))\n    .build()\n```\n\nThese can be accessed on the built object later using the `_additionalHeaders()`,       `_additionalQueryParams()`, and `_additionalBodyProperties()` methods.\n\nTo set a documented parameter or property to an undocumented or not yet supported _value_, pass a       [`JsonValue`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt) object to its setter:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\n\nval params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder().build()\n```\n\nThe most straightforward way to create a [`JsonValue`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt) is using its       `from(...)` method:\n\n```kotlin\nimport com.firefly.api.core.JsonValue\n\n// Create primitive JSON values\nval nullValue: JsonValue = JsonValue.from(null)\nval booleanValue: JsonValue = JsonValue.from(true)\nval numberValue: JsonValue = JsonValue.from(42)\nval stringValue: JsonValue = JsonValue.from("Hello World!")\n\n// Create a JSON array value equivalent to `["Hello", "World"]`\nval arrayValue: JsonValue = JsonValue.from(listOf(\n  "Hello", "World"\n))\n\n// Create a JSON object value equivalent to `{ "a": 1, "b": 2 }`\nval objectValue: JsonValue = JsonValue.from(mapOf(\n  "a" to 1, "b" to 2\n))\n\n// Create an arbitrarily nested JSON equivalent to:\n// {\n//   "a": [1, 2],\n//   "b": [3, 4]\n// }\nval complexValue: JsonValue = JsonValue.from(mapOf(\n  "a" to listOf(\n    1, 2\n  ), "b" to listOf(\n    3, 4\n  )\n))\n```\n\nNormally a `Builder` class\'s `build` method will throw         [`IllegalStateException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html)         if any required parameter or property is unset.\n\nTo forcibly omit a required parameter or property, pass [`JsonMissing`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt):\n\n```kotlin\nimport com.firefly.api.core.JsonMissing\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.chart.account.AccountRetrieveOverviewParams\nimport java.time.LocalDate\n\nval params: AutocompleteListAccountsParams = AccountRetrieveOverviewParams.builder()\n    .start(LocalDate.parse("2019-12-27"))\n    .end(JsonMissing.of())\n    .build()\n```\n\n### Response properties\n\nTo access undocumented response properties, call the `_additionalProperties()` method:\n\n```kotlin\nimport com.firefly.api.core.JsonBoolean\nimport com.firefly.api.core.JsonNull\nimport com.firefly.api.core.JsonNumber\nimport com.firefly.api.core.JsonValue\n\nval additionalProperties: Map<String, JsonValue> = client.accounts().create(params)._additionalProperties()\nval secretPropertyValue: JsonValue = additionalProperties.get("secretProperty")\n\nval result = when (secretPropertyValue) {\n    is JsonNull -> "It\'s null!"\n    is JsonBoolean -> "It\'s a boolean!"\n    is JsonNumber -> "It\'s a number!"\n    // Other types include `JsonMissing`, `JsonString`, `JsonArray`, and `JsonObject`\n    else -> "It\'s something else!"\n}\n```\n\nTo access a property\'s raw JSON value, which may be undocumented, call its `_` prefixed method:\n\n```kotlin\nimport com.firefly.api.core.JsonField\n\nval name: JsonField<String> = client.accounts().create(params)._name()\n\nif (name.isMissing()) {\n  // The property is absent from the JSON response\n} else if (name.isNull()) {\n  // The property was set to literal null\n} else {\n  // Check if value was provided as a string\n  // Other methods include `asNumber()`, `asBoolean()`, etc.\n  val jsonString: String? = name.asString();\n\n  // Try to deserialize into a custom type\n  val myObject: MyClass = name.asUnknown()!!.convert(MyClass::class.java)\n}\n```\n\n### Response validation\n\nIn rare cases, the API may return a response that doesn\'t match the expected type. For example, the SDK     may expect a property to contain a `String`, but the API could return something else.\n\nBy default, the SDK will not throw an exception in this case. It will throw     [`FireflyInvalidDataException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyInvalidDataException.kt) only if you directly access the property.\n\nValidating the response is _not_ forwards compatible with new types from the API for existing fields.\n\nIf you would still prefer to check that the response is completely well-typed upfront, then either call     `validate()`:\n\n```kotlin\nimport com.firefly.api.models.accounts.AccountSingle\n\nval accountSingle: AccountSingle = client.accounts().create(params).validate()\n```\n\nOr configure the method call to validate the response using the `responseValidation` method:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().responseValidation(true).build())\n```\n\nOr configure the default for all method calls at the client level:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .responseValidation(true)\n    .build()\n```\n\n## FAQ\n\n### Why don\'t you use plain `enum` classes?\n\nKotlin `enum` classes are not trivially   [forwards compatible](https://www.stainless.com/blog/making-java-enums-forwards-compatible). Using them in   the SDK could cause runtime exceptions if the API is updated to respond with a new enum value.\n\n### Why do you represent fields using `JsonField<T>` instead of just plain `T`?\n\nUsing `JsonField<T>` enables a few features:\n\n- Allowing usage of [undocumented API functionality](#undocumented-api-functionality)\n- Lazily [validating the API response against the expected shape](#response-validation)\n- Representing absent vs explicitly null values\n\n### Why don\'t you use [`data` classes](https://kotlinlang.org/docs/data-classes.html)?\n\nIt is not [backwards compatible to add new fields to a data class](https://kotlinlang.org/docs/api-guidelines-backward-compatibility.html#avoid-using-data-classes-in-your-api)   and we don\'t want to introduce a breaking change every time we add a field to a class.\n\n### Why don\'t you use checked exceptions?\n\nChecked exceptions are widely considered a mistake in the Java programming language. In fact, they were   omitted from Kotlin for this reason.\n\nChecked exceptions:\n\n- Are verbose to handle\n- Encourage error handling at the wrong level of abstraction, where nothing can be done about the error\n- Are tedious to propagate due to the [function coloring problem](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function)\n- Don\'t play well with lambdas (also due to the function coloring problem)\n\n## Semantic versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n2. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/emcees-prod-testing-5-kotlin/issues) with questions, bugs, or suggestions.\n',
+      '# Firefly Kotlin API Library\n\n<!-- x-release-please-start-version -->\n[![Maven Central](https://img.shields.io/maven-central/v/com.firefly.api/firefly-kotlin)](https://central.sonatype.com/artifact/com.firefly.api/firefly-kotlin/0.0.1)\n[![javadoc](https://javadoc.io/badge2/com.firefly.api/firefly-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1)\n<!-- x-release-please-end -->\n\nThe Firefly Kotlin SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org)   from applications written in Kotlin.\n\n\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the Firefly MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\n<!-- x-release-please-start-version -->\n\nThe REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). KDocs are available on [javadoc.io](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1).\n\n<!-- x-release-please-end -->\n\n## Installation\n\n<!-- x-release-please-start-version -->\n\n### Gradle\n\n~~~kotlin\nimplementation("com.firefly.api:firefly-kotlin:0.0.1")\n~~~\n\n### Maven\n\n~~~xml\n<dependency>\n  <groupId>com.firefly.api</groupId>\n  <artifactId>firefly-kotlin</artifactId>\n  <version>0.0.1</version>\n</dependency>\n~~~\n\n<!-- x-release-please-end -->\n\n## Requirements\n\nThis library requires Java 8 or later.\n\n## Usage\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()\n```\n\n## Client configuration\n\nConfigure the client using system properties or environment variables:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n```\n\nOr manually:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n```\n\nOr using a combination of the two approaches:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    // Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n    // Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\n    .fromEnv()\n    .bearerToken("My Bearer Token")\n    .build()\n```\n\nSee this table for the available options:\n\n| Setter        | System property       | Environment variable   | Required | Default value                        |\n| ------------- | --------------------- | ---------------------- | -------- | ------------------------------------ |\n| `bearerToken` | `firefly.bearerToken` | `FIREFLY_BEARER_TOKEN` | false    | -                                    |\n| `baseUrl`     | `firefly.baseUrl`     | `FIREFLY_BASE_URL`     | true     | `"https://demo.firefly-iii.org/api"` |\n\nSystem properties take precedence over environment variables.\n\n> [!TIP]\n> Don\'t create more than one client in the same application. Each client has a connection pool and\n> thread pools, which are more efficient to share between requests.\n\n### Modifying configuration\n\nTo temporarily use a modified client configuration, while reusing the same connection and thread       pools, call `withOptions()` on any client or service:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\n\nval clientWithOptions: FireflyClient = client.withOptions {\n    it.baseUrl("https://example.com")\n    it.maxRetries(42)\n}\n```\n\nThe `withOptions()` method does not affect the original client or service.\n\n## Requests and responses\n\nTo send a request to the Firefly API, build an instance of some `Params` class and pass it to the     corresponding client method. When the response is received, it will be deserialized into an instance of     a Kotlin class.\n\nFor example, `client.autocomplete().listAccounts(...)` should be called with an instance of `AutocompleteListAccountsParams`, and it     will return an instance of `List<AutocompleteListAccountsResponse>`.\n\n## Immutability\n\nEach class in the SDK has an associated   [builder](https://blogs.oracle.com/javamagazine/post/exploring-joshua-blochs-builder-design-pattern-in-java)   or factory method for constructing it.\n\nEach class is [immutable](https://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html)   once constructed. If the class has an associated builder, then it has a `toBuilder()` method, which can   be used to convert it back to a builder for making a modified copy.\n\nBecause each class is immutable, builder modification will _never_ affect already built class instances.\n\n## Asynchronous execution\n\nThe default client is synchronous. To switch to asynchronous execution, call the `async()` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClient = FireflyOkHttpClient.fromEnv()\n\nval response: List<AutocompleteListAccountsResponse> = client.async().autocomplete().listAccounts()\n```\n\nOr create an asynchronous client from the beginning:\n\n```kotlin\nimport com.firefly.api.client.FireflyClientAsync\nimport com.firefly.api.client.okhttp.FireflyOkHttpClientAsync\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\n// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties\n// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables\nval client: FireflyClientAsync = FireflyOkHttpClientAsync.fromEnv()\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()\n```\n\nThe asynchronous client supports the same options as the synchronous one, except most methods are [suspending](https://kotlinlang.org/docs/coroutines-guide.html).\n\n\n\n\n\n## Binary responses\n\nThe SDK defines methods that return binary responses, which are used for API responses that shouldn\'t     necessarily be parsed, like non-JSON data.\n\nThese methods return [`HttpResponse`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/http/HttpResponse.kt):\n\n```kotlin\nimport com.firefly.api.core.http.HttpResponse\nimport com.firefly.api.models.data.export.ExportExportAccountsParams\n\nval response: HttpResponse = client.data().export().exportAccounts()\n```\n\nTo save the response content to a file, use the     [`Files.copy(...)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#copy-java.io.InputStream-java.nio.file.Path-java.nio.file.CopyOption...-)     method:\n\n```kotlin\nimport java.nio.file.Files\nimport java.nio.file.Paths\nimport java.nio.file.StandardCopyOption\n\nclient.data().export().exportAccounts(params).use {\n    Files.copy(\n        it.body(),\n        Paths.get(path),\n        StandardCopyOption.REPLACE_EXISTING\n    )\n}\n```\n\nOr transfer the response content to any     [`OutputStream`](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html):\n\n```kotlin\nimport java.nio.file.Files\nimport java.nio.file.Paths\n\nclient.data().export().exportAccounts(params).use {\n    it.body().transferTo(Files.newOutputStream(Paths.get(path)))\n}\n```\n\n## Raw responses\n\nThe SDK defines methods that deserialize responses into instances of Kotlin classes.       However, these methods don\'t provide access to the response headers, status code, or the raw response       body.\n\nTo access this data, prefix any HTTP method call on a client or service with `withRawResponse()`:\n\n```kotlin\nimport com.firefly.api.core.http.Headers\nimport com.firefly.api.core.http.HttpResponseFor\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval response: HttpResponseFor<List<AutocompleteListAccountsResponse>> = client.autocomplete().withRawResponse().listAccounts()\n\nval statusCode: Int = response.statusCode()\nval headers: Headers = response.headers()\n```\n\nYou can still deserialize the response into an instance of a Kotlin class if needed:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval parsedResponse: List<AutocompleteListAccountsResponse> = response.parse()\n```\n\n## Error handling\n\nThe SDK throws custom unchecked exception types:\n\n- [`FireflyServiceException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyServiceException.kt): Base class for HTTP errors. See this table for which exception       subclass is thrown for each HTTP status code:\n\n  | Status | Exception                                          |\n  | ------ | -------------------------------------------------- |\n  | 400    | [`BadRequestException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/BadRequestException.kt)           |\n  | 401    | [`UnauthorizedException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnauthorizedException.kt)         |\n  | 403    | [`PermissionDeniedException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/PermissionDeniedException.kt)     |\n  | 404    | [`NotFoundException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/NotFoundException.kt)             |\n  | 422    | [`UnprocessableEntityException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnprocessableEntityException.kt)  |\n  | 429    | [`RateLimitException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/RateLimitException.kt)            |\n  | 5xx    | [`InternalServerException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/InternalServerException.kt)       |\n  | others | [`UnexpectedStatusCodeException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnexpectedStatusCodeException.kt) |\n\n- [`FireflyIoException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyIoException.kt): I/O networking errors.\n\n- [`FireflyRetryableException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyRetryableException.kt): Generic error indicating a failure that could be retried by the client.\n\n- [`FireflyInvalidDataException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyInvalidDataException.kt): Failure to interpret successfully parsed data. For example,       when accessing a property that\'s supposed to be required, but the API unexpectedly omitted it from the       response.\n\n- [`FireflyException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyException.kt): Base class for all exceptions. Most errors will result in one of the       previously mentioned ones, but completely generic errors may be thrown using the base class.\n\n\n\n## Logging\n\nEnable logging by setting the `FIREFLY_LOG` environment variable to   `info`:\n\n```sh\nexport FIREFLY_LOG=info\n```\n\nOr to `debug` for more verbose logging:\n\n```sh\nexport FIREFLY_LOG=debug\n```\n\nOr configure the client manually using the `logLevel` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.core.LogLevel\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .logLevel(LogLevel.INFO)\n    .build()\n```\n\n## ProGuard and R8\n\nAlthough the SDK uses reflection, it is still usable with     [ProGuard](https://github.com/Guardsquare/proguard) and     [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because     `firefly-kotlin-core` is published with a     [configuration file](firefly-kotlin-core/src/main/resources/META-INF/proguard/firefly-kotlin-core.pro) containing     [keep rules](https://www.guardsquare.com/manual/configuration/usage).\n\nProGuard and R8 should automatically detect and use the published rules, but you can also manually copy     the keep rules if necessary.\n\n\n\n\n\n## Jackson\n\nThe SDK depends on [Jackson](https://github.com/FasterXML/jackson) for JSON     serialization/deserialization. It is compatible with version 2.13.4 or higher,     but depends on version 2.18.2 by default.\n\nThe SDK throws an exception if it detects an incompatible Jackson version at runtime (e.g. if the     default version was overridden in your Maven or Gradle config).\n\nIf the SDK threw an exception, but you\'re _certain_ the version is compatible, then disable the version     check using the `checkJacksonVersionCompatibility` on [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or     [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt).\n\n> [!CAUTION]\n> We make no guarantee that the SDK works correctly when the Jackson version check is disabled.\n\nAlso note that there are bugs in older Jackson versions that can affect the SDK. We don\'t work around all     Jackson bugs ([example](https://github.com/FasterXML/jackson-databind/issues/3240)) and expect users to     upgrade Jackson for those instead.\n\n## Network options\n\n### Retries\n\nThe SDK automatically retries 2 times by default, with a short exponential backoff between requests.\n\nOnly the following error types are retried:\n- Connection errors (for example, due to a network connectivity problem)\n- 408 Request Timeout\n- 409 Conflict\n- 429 Rate Limit\n- 5xx Internal\n\nThe API may also explicitly instruct the SDK to retry or not retry a request.\n\nTo set a custom number of retries, configure the client using the `maxRetries` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .maxRetries(4)\n    .build()\n```\n\n### Timeouts\n\nRequests time out after 1 minute by default.\n\nTo set a custom timeout, configure the method call using the `timeout` method:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().timeout(Duration.ofSeconds(30)).build())\n```\n\nOr configure the default for all method calls at the client level:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport java.time.Duration\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .timeout(Duration.ofSeconds(30))\n    .build()\n```\n\n### Proxies\n\nTo route requests through a proxy, configure the client using the `proxy` method:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport java.net.InetSocketAddress\nimport java.net.Proxy\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .proxy(Proxy(\n      Proxy.Type.HTTP, InetSocketAddress(\n        "https://example.com", 8080\n      )\n    ))\n    .build()\n```\n\nIf the proxy responds with `407 Proxy Authentication Required`, supply credentials by also   configuring `proxyAuthenticator`:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport com.firefly.api.core.http.ProxyAuthenticator\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .proxy(...)\n    // Or a custom implementation of `ProxyAuthenticator`.\n    .proxyAuthenticator(ProxyAuthenticator.basic("username", "password"))\n    .build()\n```\n\n### Connection pooling\n\nTo customize the underlying OkHttp connection pool, configure the client using the   `maxIdleConnections` and `keepAliveDuration` methods:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\nimport java.time.Duration\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    // If `maxIdleConnections` is set, then `keepAliveDuration` must be set, and vice versa.\n    .maxIdleConnections(10)\n    .keepAliveDuration(Duration.ofMinutes(2))\n    .build()\n```\n\nIf both options are unset, OkHttp\'s default connection pool settings are used.\n\n### HTTPS\n\n> [!NOTE]\n> Most applications should not call these methods, and instead use the system defaults. The defaults include\n> special optimizations that can be lost if the implementations are modified.\n\nTo configure how HTTPS connections are secured, configure the client using the `sslSocketFactory`,   `trustManager`, and `hostnameVerifier` methods:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    // If `sslSocketFactory` is set, then `trustManager` must be set, and vice versa.\n    .sslSocketFactory(yourSSLSocketFactory)\n    .trustManager(yourTrustManager)\n    .hostnameVerifier(yourHostnameVerifier)\n    .build()\n```\n\n### Environments\n\nThe SDK sends requests to the production by default. To send requests to a different     environment, configure the client like so:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .environment1()\n    .build()\n```\n\n### Custom HTTP client\n\nThe SDK consists of three artifacts:\n- `firefly-kotlin-core`\n  - Contains core SDK logic\n  - Does not depend on [OkHttp](https://square.github.io/okhttp)\n  - Exposes [`FireflyClient`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClient.kt), [`FireflyClientAsync`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsync.kt),             [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt), and [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), all of which can             work with any HTTP client\n- `firefly-kotlin-client-okhttp`\n  - Depends on [OkHttp](https://square.github.io/okhttp)\n  - Exposes [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) and [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), which             provide a way to construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) and             [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), respectively, using OkHttp\n- `firefly-kotlin`\n  - Depends on and exposes the APIs of both `firefly-kotlin-core` and `firefly-kotlin-client-okhttp`\n  - Does not have its own logic\n\nThis structure allows replacing the SDK\'s default HTTP client without pulling in unnecessary dependencies.\n\n#### Customized [`OkHttpClient`](https://square.github.io/okhttp/3.x/okhttp/okhttp3/OkHttpClient.html)\n\n> [!TIP]\n> Try the available [network options](#network-options) before replacing the default client.\n\nTo use a customized `OkHttpClient`:\n\n1. Replace your [`firefly-kotlin` dependency](#installation) with `firefly-kotlin-core`\n2. Copy `firefly-kotlin-client-okhttp`\'s [`OkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/OkHttpClient.kt) class into your code and        customize it\n3. Construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) or [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), similarly to        [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), using your        customized client\n\n### Completely custom HTTP client\n\nTo use a completely custom HTTP client:\n\n1. Replace your [`firefly-kotlin` dependency](#installation) with `firefly-kotlin-core`\n2. Write a class that implements the [`HttpClient`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/http/HttpClient.kt) interface\n3. Construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) or [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), similarly to        [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), using your new        client class\n\n## Undocumented API functionality\n\nThe SDK is typed for convenient usage of the documented API. However, it also supports working with undocumented or not yet supported parts of the API.\n\n### Parameters\n\nTo set undocumented parameters, call the `putAdditionalHeader`, `putAdditionalQueryParam`, or       `putAdditionalBodyProperty` methods on any `Params` class:\n\n```kotlin\nimport com.firefly.api.core.JsonValue\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\n\nval params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder()\n    .putAdditionalHeader("Secret-Header", "42")\n    .putAdditionalQueryParam("secret_query_param", "42")\n    .putAdditionalBodyProperty("secretProperty", JsonValue.from("42"))\n    .build()\n```\n\nThese can be accessed on the built object later using the `_additionalHeaders()`,       `_additionalQueryParams()`, and `_additionalBodyProperties()` methods.\n\nTo set a documented parameter or property to an undocumented or not yet supported _value_, pass a       [`JsonValue`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt) object to its setter:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\n\nval params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder().build()\n```\n\nThe most straightforward way to create a [`JsonValue`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt) is using its       `from(...)` method:\n\n```kotlin\nimport com.firefly.api.core.JsonValue\n\n// Create primitive JSON values\nval nullValue: JsonValue = JsonValue.from(null)\nval booleanValue: JsonValue = JsonValue.from(true)\nval numberValue: JsonValue = JsonValue.from(42)\nval stringValue: JsonValue = JsonValue.from("Hello World!")\n\n// Create a JSON array value equivalent to `["Hello", "World"]`\nval arrayValue: JsonValue = JsonValue.from(listOf(\n  "Hello", "World"\n))\n\n// Create a JSON object value equivalent to `{ "a": 1, "b": 2 }`\nval objectValue: JsonValue = JsonValue.from(mapOf(\n  "a" to 1, "b" to 2\n))\n\n// Create an arbitrarily nested JSON equivalent to:\n// {\n//   "a": [1, 2],\n//   "b": [3, 4]\n// }\nval complexValue: JsonValue = JsonValue.from(mapOf(\n  "a" to listOf(\n    1, 2\n  ), "b" to listOf(\n    3, 4\n  )\n))\n```\n\nNormally a `Builder` class\'s `build` method will throw         [`IllegalStateException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html)         if any required parameter or property is unset.\n\nTo forcibly omit a required parameter or property, pass [`JsonMissing`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt):\n\n```kotlin\nimport com.firefly.api.core.JsonMissing\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsParams\nimport com.firefly.api.models.chart.account.AccountRetrieveOverviewParams\nimport java.time.LocalDate\n\nval params: AutocompleteListAccountsParams = AccountRetrieveOverviewParams.builder()\n    .start(LocalDate.parse("2019-12-27"))\n    .end(JsonMissing.of())\n    .build()\n```\n\n### Response properties\n\nTo access undocumented response properties, call the `_additionalProperties()` method:\n\n```kotlin\nimport com.firefly.api.core.JsonBoolean\nimport com.firefly.api.core.JsonNull\nimport com.firefly.api.core.JsonNumber\nimport com.firefly.api.core.JsonValue\n\nval additionalProperties: Map<String, JsonValue> = client.accounts().create(params)._additionalProperties()\nval secretPropertyValue: JsonValue = additionalProperties.get("secretProperty")\n\nval result = when (secretPropertyValue) {\n    is JsonNull -> "It\'s null!"\n    is JsonBoolean -> "It\'s a boolean!"\n    is JsonNumber -> "It\'s a number!"\n    // Other types include `JsonMissing`, `JsonString`, `JsonArray`, and `JsonObject`\n    else -> "It\'s something else!"\n}\n```\n\nTo access a property\'s raw JSON value, which may be undocumented, call its `_` prefixed method:\n\n```kotlin\nimport com.firefly.api.core.JsonField\n\nval name: JsonField<String> = client.accounts().create(params)._name()\n\nif (name.isMissing()) {\n  // The property is absent from the JSON response\n} else if (name.isNull()) {\n  // The property was set to literal null\n} else {\n  // Check if value was provided as a string\n  // Other methods include `asNumber()`, `asBoolean()`, etc.\n  val jsonString: String? = name.asString();\n\n  // Try to deserialize into a custom type\n  val myObject: MyClass = name.asUnknown()!!.convert(MyClass::class.java)\n}\n```\n\n### Response validation\n\nIn rare cases, the API may return a response that doesn\'t match the expected type. For example, the SDK     may expect a property to contain a `String`, but the API could return something else.\n\nBy default, the SDK will not throw an exception in this case. It will throw     [`FireflyInvalidDataException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyInvalidDataException.kt) only if you directly access the property.\n\nValidating the response is _not_ forwards compatible with new types from the API for existing fields.\n\nIf you would still prefer to check that the response is completely well-typed upfront, then either call     `validate()`:\n\n```kotlin\nimport com.firefly.api.models.accounts.AccountSingle\n\nval accountSingle: AccountSingle = client.accounts().create(params).validate()\n```\n\nOr configure the method call to validate the response using the `responseValidation` method:\n\n```kotlin\nimport com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse\n\nval response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().responseValidation(true).build())\n```\n\nOr configure the default for all method calls at the client level:\n\n```kotlin\nimport com.firefly.api.client.FireflyClient\nimport com.firefly.api.client.okhttp.FireflyOkHttpClient\n\nval client: FireflyClient = FireflyOkHttpClient.builder()\n    .fromEnv()\n    .responseValidation(true)\n    .build()\n```\n\n## FAQ\n\n### Why don\'t you use plain `enum` classes?\n\nKotlin `enum` classes are not trivially   [forwards compatible](https://www.stainless.com/blog/making-java-enums-forwards-compatible). Using them in   the SDK could cause runtime exceptions if the API is updated to respond with a new enum value.\n\n### Why do you represent fields using `JsonField<T>` instead of just plain `T`?\n\nUsing `JsonField<T>` enables a few features:\n\n- Allowing usage of [undocumented API functionality](#undocumented-api-functionality)\n- Lazily [validating the API response against the expected shape](#response-validation)\n- Representing absent vs explicitly null values\n\n### Why don\'t you use [`data` classes](https://kotlinlang.org/docs/data-classes.html)?\n\nIt is not [backwards compatible to add new fields to a data class](https://kotlinlang.org/docs/api-guidelines-backward-compatibility.html#avoid-using-data-classes-in-your-api)   and we don\'t want to introduce a breaking change every time we add a field to a class.\n\n### Why don\'t you use checked exceptions?\n\nChecked exceptions are widely considered a mistake in the Java programming language. In fact, they were   omitted from Kotlin for this reason.\n\nChecked exceptions:\n\n- Are verbose to handle\n- Encourage error handling at the wrong level of abstraction, where nothing can be done about the error\n- Are tedious to propagate due to the [function coloring problem](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function)\n- Don\'t play well with lambdas (also due to the function coloring problem)\n\n## Semantic versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n2. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/steel-gareth/firefly-kotlin/issues) with questions, bugs, or suggestions.\n',
   },
   {
     language: 'php',
@@ -15175,7 +15175,7 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
   {
     language: 'python',
     content:
-      '# Firefly Python API library\n\n<!-- prettier-ignore -->\n[![PyPI version](https://img.shields.io/pypi/v/firefly.svg?label=pypi%20(stable))](https://pypi.org/project/firefly/)\n\nThe Firefly Python library provides convenient access to the Firefly REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).\n\n\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the Firefly MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\n## Documentation\n\nThe REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). The full API of this library can be found in [api.md](api.md).\n\n## Installation\n\n```sh\n# install from this staging repo\npip install git+ssh://git@github.com/stainless-sdks/emcees-prod-testing-5-python.git\n```\n> [!NOTE]\n> Once this package is [published to PyPI](https://www.stainless.com/docs/guides/publish), this will become: `pip install firefly`\n\n## Usage\n\nThe full API of this library can be found in [api.md](api.md).\n\n```python\nfrom firefly import Firefly\n\nclient = Firefly(\n    # defaults to "production".\n    environment="environment_1",\n)\n\nresponse = client.autocomplete.list_accounts()\n```\n\nWhile you can provide a `bearer_token` keyword argument,\nwe recommend using [python-dotenv](https://pypi.org/project/python-dotenv/)\nto add `FIREFLY_BEARER_TOKEN="My Bearer Token"` to your `.env` file\nso that your Bearer Token is not stored in source control.\n\n## Async usage\n\nSimply import `AsyncFirefly` instead of `Firefly` and use `await` with each API call:\n\n```python\nimport asyncio\nfrom firefly import AsyncFirefly\n\nclient = AsyncFirefly(\n    # defaults to "production".\n    environment="environment_1",\n)\n\nasync def main() -> None:\n  response = await client.autocomplete.list_accounts()\n\nasyncio.run(main())\n```\n\nFunctionality between the synchronous and asynchronous clients is otherwise identical.\n\n### With aiohttp\n\nBy default, the async client uses `httpx` for HTTP requests. However, for improved concurrency performance you may also use `aiohttp` as the HTTP backend.\n\nYou can enable this by installing `aiohttp`:\n\n```sh\n# install from this staging repo\npip install \'firefly[aiohttp] @ git+ssh://git@github.com/stainless-sdks/emcees-prod-testing-5-python.git\'\n```\n\nThen you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:\n\n```python\nimport asyncio\nfrom firefly import DefaultAioHttpClient\nfrom firefly import AsyncFirefly\n\nasync def main() -> None:\n  async with AsyncFirefly(\n    http_client=DefaultAioHttpClient(),\n) as client:\n    response = await client.autocomplete.list_accounts()\n\nasyncio.run(main())\n```\n\n\n\n## Using types\n\nNested request parameters are [TypedDicts](https://docs.python.org/3/library/typing.html#typing.TypedDict). Responses are [Pydantic models](https://docs.pydantic.dev) which also provide helper methods for things like:\n\n- Serializing back into JSON, `model.to_json()`\n- Converting to a dictionary, `model.to_dict()`\n\nTyped requests and responses provide autocomplete and documentation within your editor. If you would like to see type errors in VS Code to help catch bugs earlier, set `python.analysis.typeCheckingMode` to `basic`.\n\n\n\n\n\n\n\n## Handling errors\n\nWhen the library is unable to connect to the API (for example, due to network connection problems or a timeout), a subclass of `firefly.APIConnectionError` is raised.\n\nWhen the API returns a non-success status code (that is, 4xx or 5xx\nresponse), a subclass of `firefly.APIStatusError` is raised, containing `status_code` and `response` properties.\n\nAll errors inherit from `firefly.APIError`.\n\n```python\nimport firefly\nfrom firefly import Firefly\n\nclient = Firefly()\n\ntry:\n    client.autocomplete.list_accounts()\nexcept firefly.APIConnectionError as e:\n    print("The server could not be reached")\n    print(e.__cause__) # an underlying Exception, likely raised within httpx.\nexcept firefly.RateLimitError as e:\n    print("A 429 status code was received; we should back off a bit.")\nexcept firefly.APIStatusError as e:\n    print("Another non-200-range status code was received")\n    print(e.status_code)\n    print(e.response)\n```\n\nError codes are as follows:\n\n| Status Code | Error Type                 |\n| ----------- | -------------------------- |\n| 400         | `BadRequestError`          |\n| 401         | `AuthenticationError`      |\n| 403         | `PermissionDeniedError`    |\n| 404         | `NotFoundError`            |\n| 422         | `UnprocessableEntityError` |\n| 429         | `RateLimitError`           |\n| >=500       | `InternalServerError`      |\n| N/A         | `APIConnectionError`       |\n\n### Retries\n\nCertain errors are automatically retried 2 times by default, with a short exponential backoff.\nConnection errors (for example, due to a network connectivity problem), 408 Request Timeout, 409 Conflict,\n429 Rate Limit, and >=500 Internal errors are all retried by default.\n\nYou can use the `max_retries` option to configure or disable retry settings:\n\n```python\nfrom firefly import Firefly\n\n# Configure the default for all requests:\nclient = Firefly(\n    # default is 2\n    max_retries=0,\n)\n\n# Or, configure per-request:\nclient.with_options(max_retries = 5).autocomplete.list_accounts()\n```\n\n### Timeouts\n\nBy default requests time out after 1 minute. You can configure this with a `timeout` option,\nwhich accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/timeouts/#fine-tuning-the-configuration) object:\n\n```python\nfrom firefly import Firefly\n\n# Configure the default for all requests:\nclient = Firefly(\n    # 20 seconds (default is 1 minute)\n    timeout=20.0,\n)\n\n# More granular control:\nclient = Firefly(\n    timeout=httpx.Timeout(60.0, read=5.0, write=10.0, connect=2.0),\n)\n\n# Override per-request:\nclient.with_options(timeout = 5.0).autocomplete.list_accounts()\n```\n\nOn timeout, an `APITimeoutError` is thrown.\n\nNote that requests that time out are [retried twice by default](#retries).\n\n\n\n## Advanced\n\n### Logging\n\nWe use the standard library [`logging`](https://docs.python.org/3/library/logging.html) module.\n\nYou can enable logging by setting the environment variable `FIREFLY_LOG` to `info`.\n\n```shell\n$ export FIREFLY_LOG=info\n```\n\nOr to `debug` for more verbose logging.\n\n### How to tell whether `None` means `null` or missing\n\nIn an API response, a field may be explicitly `null`, or missing entirely; in either case, its value is `None` in this library. You can differentiate the two cases with `.model_fields_set`:\n\n```py\nif response.my_field is None:\n  if \'my_field\' not in response.model_fields_set:\n    print(\'Got json like {}, without a "my_field" key present at all.\')\n  else:\n    print(\'Got json like {"my_field": null}.\')\n```\n\n### Accessing raw response data (e.g. headers)\n\nThe "raw" Response object can be accessed by prefixing `.with_raw_response.` to any HTTP method call, e.g.,\n\n```py\nfrom firefly import Firefly\n\nclient = Firefly()\nresponse = client.autocomplete.with_raw_response.list_accounts()\nprint(response.headers.get(\'X-My-Header\'))\n\nautocomplete = response.parse()  # get the object that `autocomplete.list_accounts()` would have returned\nprint(autocomplete)\n```\n\nThese methods return an [`APIResponse`](https://github.com/stainless-sdks/emcees-prod-testing-5-python/tree/main/src/firefly/_response.py) object.\n\nThe async client returns an [`AsyncAPIResponse`](https://github.com/stainless-sdks/emcees-prod-testing-5-python/tree/main/src/firefly/_response.py) with the same structure, the only difference being `await`able methods for reading the response content.\n\n#### `.with_streaming_response`\n\nThe above interface eagerly reads the full response body when you make the request, which may not always be what you want.\n\nTo stream the response body, use `.with_streaming_response` instead, which requires a context manager and only reads the response body once you call `.read()`, `.text()`, `.json()`, `.iter_bytes()`, `.iter_text()`, `.iter_lines()` or `.parse()`. In the async client, these are async methods.\n\n```python\nwith client.autocomplete.with_streaming_response.list_accounts() as response :\n    print(response.headers.get(\'X-My-Header\'))\n\n    for line in response.iter_lines():\n      print(line)\n```\n\nThe context manager is required so that the response will reliably be closed.\n\n### Making custom/undocumented requests\n\nThis library is typed for convenient access to the documented API.\n\nIf you need to access undocumented endpoints, params, or response properties, the library can still be used.\n\n#### Undocumented endpoints\n\nTo make requests to undocumented endpoints, you can make requests using `client.get`, `client.post`, and other\nhttp verbs. Options on the client will be respected (such as retries) when making this request.\n\n```py\nimport httpx\n\nresponse = client.post(\n    "/foo",\n    cast_to=httpx.Response,\n    body={"my_param": True},\n)\n\nprint(response.headers.get("x-foo"))\n```\n\n#### Undocumented request params\n\nIf you want to explicitly send an extra param, you can do so with the `extra_query`, `extra_body`, and `extra_headers` request\noptions.\n\n#### Undocumented response properties\n\nTo access undocumented response properties, you can access the extra fields like `response.unknown_prop`. You\ncan also get all the extra fields on the Pydantic model as a dict with\n[`response.model_extra`](https://docs.pydantic.dev/latest/api/base_model/#pydantic.BaseModel.model_extra).\n\n### Configuring the HTTP client\n\nYou can directly override the [httpx client](https://www.python-httpx.org/api/#client) to customize it for your use case, including:\n\n- Support for [proxies](https://www.python-httpx.org/advanced/proxies/)\n- Custom [transports](https://www.python-httpx.org/advanced/transports/)\n- Additional [advanced](https://www.python-httpx.org/advanced/clients/) functionality\n\n```python\nimport httpx\nfrom firefly import Firefly, DefaultHttpxClient\n\nclient = Firefly(\n    # Or use the `FIREFLY_BASE_URL` env var\n    base_url="http://my.test.server.example.com:8083",\n    http_client=DefaultHttpxClient(proxy="http://my.test.proxy.example.com", transport=httpx.HTTPTransport(local_address="0.0.0.0")),\n)\n```\n\nYou can also customize the client on a per-request basis by using `with_options()`:\n\n```python\nclient.with_options(http_client=DefaultHttpxClient(...))\n```\n\n### Managing HTTP resources\n\nBy default the library closes underlying HTTP connections whenever the client is [garbage collected](https://docs.python.org/3/reference/datamodel.html#object.__del__). You can manually close the client using the `.close()` method if desired, or with a context manager that closes when exiting.\n\n```py\nfrom firefly import Firefly\n\nwith Firefly() as client:\n  # make requests here\n  ...\n\n# HTTP client is now closed\n```\n\n## Versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes that only affect static types, without breaking runtime behavior.\n2. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n3. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/emcees-prod-testing-5-python/issues) with questions, bugs, or suggestions.\n\n### Determining the installed version\n\nIf you\'ve upgraded to the latest version but aren\'t seeing any new features you were expecting then your python environment is likely still using an older version.\n\nYou can determine the version that is being used at runtime with:\n\n```py\nimport firefly\nprint(firefly.__version__)\n```\n\n## Requirements\n\nPython 3.9 or higher.\n\n## Contributing\n\nSee [the contributing documentation](./CONTRIBUTING.md).\n',
+      '# Firefly Python API library\n\n<!-- prettier-ignore -->\n[![PyPI version](https://img.shields.io/pypi/v/firefly-iii-api.svg?label=pypi%20(stable))](https://pypi.org/project/firefly-iii-api/)\n\nThe Firefly Python library provides convenient access to the Firefly REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).\n\n\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## MCP Server\n\nUse the Firefly MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.\n\n[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=firefly-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImZpcmVmbHktbWNwIl0sImVudiI6eyJGSVJFRkxZX0JFQVJFUl9UT0tFTiI6Ik15IEJlYXJlciBUb2tlbiJ9fQ)\n[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22firefly-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22firefly-mcp%22%5D%2C%22env%22%3A%7B%22FIREFLY_BEARER_TOKEN%22%3A%22My%20Bearer%20Token%22%7D%7D)\n\n> Note: You may need to set environment variables in your MCP client.\n\n## Documentation\n\nThe REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). The full API of this library can be found in [api.md](api.md).\n\n## Installation\n\n```sh\n# install from PyPI\npip install firefly-iii-api\n```\n\n## Usage\n\nThe full API of this library can be found in [api.md](api.md).\n\n```python\nfrom firefly import Firefly\n\nclient = Firefly(\n    # defaults to "production".\n    environment="environment_1",\n)\n\nresponse = client.autocomplete.list_accounts()\n```\n\nWhile you can provide a `bearer_token` keyword argument,\nwe recommend using [python-dotenv](https://pypi.org/project/python-dotenv/)\nto add `FIREFLY_BEARER_TOKEN="My Bearer Token"` to your `.env` file\nso that your Bearer Token is not stored in source control.\n\n## Async usage\n\nSimply import `AsyncFirefly` instead of `Firefly` and use `await` with each API call:\n\n```python\nimport asyncio\nfrom firefly import AsyncFirefly\n\nclient = AsyncFirefly(\n    # defaults to "production".\n    environment="environment_1",\n)\n\nasync def main() -> None:\n  response = await client.autocomplete.list_accounts()\n\nasyncio.run(main())\n```\n\nFunctionality between the synchronous and asynchronous clients is otherwise identical.\n\n### With aiohttp\n\nBy default, the async client uses `httpx` for HTTP requests. However, for improved concurrency performance you may also use `aiohttp` as the HTTP backend.\n\nYou can enable this by installing `aiohttp`:\n\n```sh\n# install from PyPI\npip install firefly-iii-api[aiohttp]\n```\n\nThen you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:\n\n```python\nimport asyncio\nfrom firefly import DefaultAioHttpClient\nfrom firefly import AsyncFirefly\n\nasync def main() -> None:\n  async with AsyncFirefly(\n    http_client=DefaultAioHttpClient(),\n) as client:\n    response = await client.autocomplete.list_accounts()\n\nasyncio.run(main())\n```\n\n\n\n## Using types\n\nNested request parameters are [TypedDicts](https://docs.python.org/3/library/typing.html#typing.TypedDict). Responses are [Pydantic models](https://docs.pydantic.dev) which also provide helper methods for things like:\n\n- Serializing back into JSON, `model.to_json()`\n- Converting to a dictionary, `model.to_dict()`\n\nTyped requests and responses provide autocomplete and documentation within your editor. If you would like to see type errors in VS Code to help catch bugs earlier, set `python.analysis.typeCheckingMode` to `basic`.\n\n\n\n\n\n\n\n## Handling errors\n\nWhen the library is unable to connect to the API (for example, due to network connection problems or a timeout), a subclass of `firefly.APIConnectionError` is raised.\n\nWhen the API returns a non-success status code (that is, 4xx or 5xx\nresponse), a subclass of `firefly.APIStatusError` is raised, containing `status_code` and `response` properties.\n\nAll errors inherit from `firefly.APIError`.\n\n```python\nimport firefly\nfrom firefly import Firefly\n\nclient = Firefly()\n\ntry:\n    client.autocomplete.list_accounts()\nexcept firefly.APIConnectionError as e:\n    print("The server could not be reached")\n    print(e.__cause__) # an underlying Exception, likely raised within httpx.\nexcept firefly.RateLimitError as e:\n    print("A 429 status code was received; we should back off a bit.")\nexcept firefly.APIStatusError as e:\n    print("Another non-200-range status code was received")\n    print(e.status_code)\n    print(e.response)\n```\n\nError codes are as follows:\n\n| Status Code | Error Type                 |\n| ----------- | -------------------------- |\n| 400         | `BadRequestError`          |\n| 401         | `AuthenticationError`      |\n| 403         | `PermissionDeniedError`    |\n| 404         | `NotFoundError`            |\n| 422         | `UnprocessableEntityError` |\n| 429         | `RateLimitError`           |\n| >=500       | `InternalServerError`      |\n| N/A         | `APIConnectionError`       |\n\n### Retries\n\nCertain errors are automatically retried 2 times by default, with a short exponential backoff.\nConnection errors (for example, due to a network connectivity problem), 408 Request Timeout, 409 Conflict,\n429 Rate Limit, and >=500 Internal errors are all retried by default.\n\nYou can use the `max_retries` option to configure or disable retry settings:\n\n```python\nfrom firefly import Firefly\n\n# Configure the default for all requests:\nclient = Firefly(\n    # default is 2\n    max_retries=0,\n)\n\n# Or, configure per-request:\nclient.with_options(max_retries = 5).autocomplete.list_accounts()\n```\n\n### Timeouts\n\nBy default requests time out after 1 minute. You can configure this with a `timeout` option,\nwhich accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/timeouts/#fine-tuning-the-configuration) object:\n\n```python\nfrom firefly import Firefly\n\n# Configure the default for all requests:\nclient = Firefly(\n    # 20 seconds (default is 1 minute)\n    timeout=20.0,\n)\n\n# More granular control:\nclient = Firefly(\n    timeout=httpx.Timeout(60.0, read=5.0, write=10.0, connect=2.0),\n)\n\n# Override per-request:\nclient.with_options(timeout = 5.0).autocomplete.list_accounts()\n```\n\nOn timeout, an `APITimeoutError` is thrown.\n\nNote that requests that time out are [retried twice by default](#retries).\n\n\n\n## Advanced\n\n### Logging\n\nWe use the standard library [`logging`](https://docs.python.org/3/library/logging.html) module.\n\nYou can enable logging by setting the environment variable `FIREFLY_LOG` to `info`.\n\n```shell\n$ export FIREFLY_LOG=info\n```\n\nOr to `debug` for more verbose logging.\n\n### How to tell whether `None` means `null` or missing\n\nIn an API response, a field may be explicitly `null`, or missing entirely; in either case, its value is `None` in this library. You can differentiate the two cases with `.model_fields_set`:\n\n```py\nif response.my_field is None:\n  if \'my_field\' not in response.model_fields_set:\n    print(\'Got json like {}, without a "my_field" key present at all.\')\n  else:\n    print(\'Got json like {"my_field": null}.\')\n```\n\n### Accessing raw response data (e.g. headers)\n\nThe "raw" Response object can be accessed by prefixing `.with_raw_response.` to any HTTP method call, e.g.,\n\n```py\nfrom firefly import Firefly\n\nclient = Firefly()\nresponse = client.autocomplete.with_raw_response.list_accounts()\nprint(response.headers.get(\'X-My-Header\'))\n\nautocomplete = response.parse()  # get the object that `autocomplete.list_accounts()` would have returned\nprint(autocomplete)\n```\n\nThese methods return an [`APIResponse`](https://github.com/steel-gareth/firefly-python/tree/main/src/firefly/_response.py) object.\n\nThe async client returns an [`AsyncAPIResponse`](https://github.com/steel-gareth/firefly-python/tree/main/src/firefly/_response.py) with the same structure, the only difference being `await`able methods for reading the response content.\n\n#### `.with_streaming_response`\n\nThe above interface eagerly reads the full response body when you make the request, which may not always be what you want.\n\nTo stream the response body, use `.with_streaming_response` instead, which requires a context manager and only reads the response body once you call `.read()`, `.text()`, `.json()`, `.iter_bytes()`, `.iter_text()`, `.iter_lines()` or `.parse()`. In the async client, these are async methods.\n\n```python\nwith client.autocomplete.with_streaming_response.list_accounts() as response :\n    print(response.headers.get(\'X-My-Header\'))\n\n    for line in response.iter_lines():\n      print(line)\n```\n\nThe context manager is required so that the response will reliably be closed.\n\n### Making custom/undocumented requests\n\nThis library is typed for convenient access to the documented API.\n\nIf you need to access undocumented endpoints, params, or response properties, the library can still be used.\n\n#### Undocumented endpoints\n\nTo make requests to undocumented endpoints, you can make requests using `client.get`, `client.post`, and other\nhttp verbs. Options on the client will be respected (such as retries) when making this request.\n\n```py\nimport httpx\n\nresponse = client.post(\n    "/foo",\n    cast_to=httpx.Response,\n    body={"my_param": True},\n)\n\nprint(response.headers.get("x-foo"))\n```\n\n#### Undocumented request params\n\nIf you want to explicitly send an extra param, you can do so with the `extra_query`, `extra_body`, and `extra_headers` request\noptions.\n\n#### Undocumented response properties\n\nTo access undocumented response properties, you can access the extra fields like `response.unknown_prop`. You\ncan also get all the extra fields on the Pydantic model as a dict with\n[`response.model_extra`](https://docs.pydantic.dev/latest/api/base_model/#pydantic.BaseModel.model_extra).\n\n### Configuring the HTTP client\n\nYou can directly override the [httpx client](https://www.python-httpx.org/api/#client) to customize it for your use case, including:\n\n- Support for [proxies](https://www.python-httpx.org/advanced/proxies/)\n- Custom [transports](https://www.python-httpx.org/advanced/transports/)\n- Additional [advanced](https://www.python-httpx.org/advanced/clients/) functionality\n\n```python\nimport httpx\nfrom firefly import Firefly, DefaultHttpxClient\n\nclient = Firefly(\n    # Or use the `FIREFLY_BASE_URL` env var\n    base_url="http://my.test.server.example.com:8083",\n    http_client=DefaultHttpxClient(proxy="http://my.test.proxy.example.com", transport=httpx.HTTPTransport(local_address="0.0.0.0")),\n)\n```\n\nYou can also customize the client on a per-request basis by using `with_options()`:\n\n```python\nclient.with_options(http_client=DefaultHttpxClient(...))\n```\n\n### Managing HTTP resources\n\nBy default the library closes underlying HTTP connections whenever the client is [garbage collected](https://docs.python.org/3/reference/datamodel.html#object.__del__). You can manually close the client using the `.close()` method if desired, or with a context manager that closes when exiting.\n\n```py\nfrom firefly import Firefly\n\nwith Firefly() as client:\n  # make requests here\n  ...\n\n# HTTP client is now closed\n```\n\n## Versioning\n\nThis package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:\n\n1. Changes that only affect static types, without breaking runtime behavior.\n2. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_\n3. Changes that we do not expect to impact the vast majority of users in practice.\n\nWe take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.\n\nWe are keen for your feedback; please open an [issue](https://www.github.com/steel-gareth/firefly-python/issues) with questions, bugs, or suggestions.\n\n### Determining the installed version\n\nIf you\'ve upgraded to the latest version but aren\'t seeing any new features you were expecting then your python environment is likely still using an older version.\n\nYou can determine the version that is being used at runtime with:\n\n```py\nimport firefly\nprint(firefly.__version__)\n```\n\n## Requirements\n\nPython 3.9 or higher.\n\n## Contributing\n\nSee [the contributing documentation](./CONTRIBUTING.md).\n',
   },
   {
     language: 'ruby',

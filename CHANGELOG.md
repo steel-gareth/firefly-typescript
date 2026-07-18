@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.0 (2026-07-18)
+
+Full Changelog: [v0.1.1...v0.2.0](https://github.com/steel-gareth/firefly-typescript/compare/v0.1.1...v0.2.0)
+
+### Features
+
+* **stlc:** configurable CI runner and private-production-repo support in workflow templates ([df7419a](https://github.com/steel-gareth/firefly-typescript/commit/df7419ad6b7b695bd511bc96c9dc5f5b988fb4f1))
+
+
+### Bug Fixes
+
+* **ci:** bump @arethetypeswrong/cli to ^0.18.0 and run CI workflows on Node 24 ([ef12c56](https://github.com/steel-gareth/firefly-typescript/commit/ef12c56cde514228a1260aa63b601d85d13526ad))
+* **client:** send content-type header for requests with an omitted optional body ([7d11d2f](https://github.com/steel-gareth/firefly-typescript/commit/7d11d2fa039ce9775df0e022cda47e9123578bb1))
+
 ## 0.1.1 (2026-06-02)
 
 Full Changelog: [v0.1.0...v0.1.1](https://github.com/steel-gareth/firefly-typescript/compare/v0.1.0...v0.1.1)
